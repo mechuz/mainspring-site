@@ -71,7 +71,9 @@ LEGACY = {
     "operational-financial-restructuring.html": "/services/operational-financial-restructuring/",
     "operating-systems-buildout.html": "/services/operating-systems-buildout/",
     "capital-projects-redesign.html": "/services/capital-projects-redesign/",
-    "rebranding-census-recovery.html": "/services/rebranding-census-recovery/",
+    "rebranding-census-recovery.html": "/services/",
+    "services/rebranding-census-recovery/index.html": "/services/",
+    "services/technology-agentic-advisory/index.html": "/services/",
     "privacy-policy.html": "/privacy-policy/",
     "terms-of-use.html": "/terms-of-use/",
     "disclosures.html": "/disclosures/",
@@ -240,6 +242,8 @@ def main():
         if f.name.endswith(".head.html") or f.name == "case-studies.html" or f.name.startswith("_"):
             continue
         meta, body = parse_meta(f.read_text(encoding="utf-8"))
+        if meta.get("status", "published") != "published":
+            continue
         head = CONTENT / f.name.replace(".html", ".head.html")
         meta["_head"] = tokens(head.read_text(encoding="utf-8")) if head.exists() else ""
         if "{{booking_block}}" in body:
