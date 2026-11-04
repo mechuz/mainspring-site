@@ -35,13 +35,13 @@ PHONE_TEL = "+16504182280"
 BOOKING_URL = ""
 
 # nav label -> path; the meta block's `nav:` key marks the current one
-NAV = [
+NAV = [  # ordered by how likely the click is to turn into a lead
     ("services", "/services/", "Services"),
     ("how-we-work", "/how-we-work/", "How we work"),
     ("state", "/state-agencies/", "State agencies"),
-    ("industry", "/industry/", "Industry"),
-    ("insights", "/insights/", "Insights"),
     ("about", "/about/", "About"),
+    ("insights", "/insights/", "Insights"),
+    ("industry", "/industry/", "Industry"),
 ]
 
 STICKY = f"""<div class="sticky-cta">
@@ -116,10 +116,11 @@ def tokens(s, extra=None):
 def tabstrip(current):
     home_cur = ' aria-current="page"' if current == "" else ""
     rows = [f'    <a href="/"{home_cur}>Home</a>']
-    for key, href, label in NAV:
+    for i, (key, href, label) in enumerate(NAV):
         cur = ' aria-current="page"' if key == current else ""
         rows.append(f'    <a href="{href}"{cur}>{label}</a>')
-    rows.append('    <a href="/contact/">Contact</a>')
+        if i == 1:
+            rows.append('    <a href="/contact/" class="tab-cta">Contact</a>')
     return "\n".join(rows)
 
 
