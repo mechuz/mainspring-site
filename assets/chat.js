@@ -31,7 +31,7 @@
     { k: ['news', 'industry', 'headline', 'article', 'insight', 'blog', 'read'], a: 'Two things to read: our operating notes, and a live feed of skilled nursing and senior living headlines updated through the day.', links: [['Insights', '/insights/'], ['Industry news', '/industry/']] },
     { k: ['hello', 'hi', 'hey', 'good morning', 'good afternoon'], a: 'Hello. Ask me about a service, how we work, fees, or how fast we can be in a building — or tell me what is going on and I will point you to a partner.', links: [] }
   ];
-  var CHIPS = [['Survey trouble', 'survey'], ['Need an administrator', 'interim administrator'], ['Census is down', 'census'], ['Fees', 'pricing'], ['Talk to a partner', '__human']];
+  var CHIPS = [['Survey trouble', 'survey'], ['Need a leader placed', 'interim placement'], ['Census is down', 'census'], ['Fees', 'pricing'], ['Talk to a partner', '__human']];
 
   function el(tag, cls, html) { var e = document.createElement(tag); if (cls) e.className = cls; if (html != null) e.innerHTML = html; return e; }
   function esc(s) { return String(s).replace(/[&<>"']/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]; }); }
