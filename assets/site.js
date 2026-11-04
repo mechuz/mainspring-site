@@ -149,3 +149,20 @@
     setTimeout(function () { s.remove(); }, 700);
   });
 })();
+
+/* Services chooser: tap a situation, the matching card lights up and scrolls into view. */
+(function () {
+  document.querySelectorAll('.choose[data-target]').forEach(function (a) {
+    var id = a.getAttribute('data-target');
+    if (!id) return;
+    a.addEventListener('click', function (e) {
+      var card = document.getElementById(id);
+      if (!card) return;
+      e.preventDefault();
+      document.querySelectorAll('.choose.on').forEach(function (x) { x.classList.remove('on'); });
+      document.querySelectorAll('.svc-card.hit').forEach(function (x) { x.classList.remove('hit'); });
+      a.classList.add('on'); card.classList.add('hit');
+      card.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    });
+  });
+})();

@@ -37,9 +37,9 @@ BOOKING_URL = ""
 # nav label -> path; the meta block's `nav:` key marks the current one
 NAV = [
     ("services", "/services/", "Services"),
+    ("cases", "/case-studies/", "Case studies"),
     ("how-we-work", "/how-we-work/", "How we work"),
     ("state", "/state-agencies/", "State agencies"),
-    ("industry", "/industry/", "Industry"),
     ("insights", "/insights/", "Insights"),
     ("about", "/about/", "About"),
 ]
@@ -119,6 +119,7 @@ def tabstrip(current):
     for key, href, label in NAV:
         cur = ' aria-current="page"' if key == current else ""
         rows.append(f'    <a href="{href}"{cur}>{label}</a>')
+    rows.append('    <a href="/industry/">Industry</a>')
     rows.append('    <a href="/contact/">Contact</a>')
     return "\n".join(rows)
 
@@ -236,7 +237,7 @@ def main():
 
     # pages
     for f in sorted(CONTENT.glob("*.html")):
-        if f.name.endswith(".head.html"):
+        if f.name.endswith(".head.html") or f.name == "case-studies.html":
             continue
         meta, body = parse_meta(f.read_text(encoding="utf-8"))
         head = CONTENT / f.name.replace(".html", ".head.html")
@@ -263,6 +264,33 @@ def main():
         meta.setdefault("nav", "insights")
         paths.append((render(meta, body, template, assetv), "0.7", "monthly"))
         posts.append(meta)
+
+    # case studies: content/case-studies/<slug>.html -> /case-studies/<slug>/, index gets cards
+    studies = []
+    for f in sorted(CONTENT.glob("case-studies/*.html")):
+        if f.name.endswith(".head.html"):
+            continue
+        meta, body = parse_meta(f.read_text(encoding="utf-8"))
+        if meta.get("status", "published") != "published":
+            continue
+        head = f.parent / f.name.replace(".html", ".head.html")
+        meta["_head"] = tokens(head.read_text(encoding="utf-8")) if head.exists() else ""
+        meta.setdefault("nav", "cases")
+        paths.append((render(meta, body, template, assetv), "0.8", "monthly"))
+        studies.append(meta)
+    idx = CONTENT / "case-studies.html"
+    if idx.exists():
+        meta, body = parse_meta(idx.read_text(encoding="utf-8"))
+        head = CONTENT / "case-studies.head.html"
+        meta["_head"] = tokens(head.read_text(encoding="utf-8")) if head.exists() else ""
+        cards = "".join(
+            '<a class="post-card reveal" href="%s"><p class="meta">%s</p><h3>%s</h3><p>%s</p>'
+            '<span class="more">Read the case study &rarr;</span></a>' % (
+                m["path"], escape(m.get("sector", "Case study")), escape(m.get("headline", m["title"])),
+                escape(m.get("summary", m.get("description", "")))) for m in studies)
+        body = body.replace("{{case_study_cards}}", cards or
+            '<p class="lead">Case studies are being added. Ask us for references in the meantime.</p>')
+        paths.append((render(meta, body, template, assetv), "0.9", "monthly"))
 
     # legacy .html -> clean URL, so older links keep working
     for old, new in LEGACY.items():

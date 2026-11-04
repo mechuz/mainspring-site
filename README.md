@@ -102,6 +102,25 @@ partner's calendar directly. To wire it: in Google Calendar (the Mainspring Work
 embed** → copy the iframe `src` → paste it into `BOOKING_URL` in `build.py` → push. Until it
 is set, `/book/` shows the intake form instead, so the page never dead-ends.
 
+
+## Case studies
+
+One file per study in `content/case-studies/<slug>.html`, published at `/case-studies/<slug>/`.
+The `<!--meta -->` block carries `sector`, `headline` and `summary`; `build.py` turns those into
+the cards on `/case-studies/` automatically, so adding a study is one file. Communities are not
+named on the site. Felix supplies further studies; drop them in the same shape.
+
+## Chat assistant
+
+`assets/chat.js` is a built-in assistant on every page: it answers general questions from a
+knowledge base in the file (services, fees model, timing, locations, people, state work) and
+hands anything else to a human through the same FormSubmit path as the forms, so chat leads land
+in the same inbox. It runs entirely in the browser — GitHub Pages has no server.
+
+To make it a real AI assistant, set `CHAT_ENDPOINT` at the top of `chat.js` to a small worker
+that holds the AI key and answers `POST {q, page}` with `{answer, links}`. A Cloudflare Worker is
+the natural home (the domain's DNS is already there).
+
 ## Still outstanding
 
 - Click the FormSubmit activation email at admin@mainspringhcp.com (above).
