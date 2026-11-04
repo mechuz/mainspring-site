@@ -38,10 +38,10 @@ BOOKING_URL = ""
 NAV = [  # ordered by how likely the click is to turn into a lead
     ("services", "/services/", "Services"),
     ("how-we-work", "/how-we-work/", "How we work"),
+    ("cases", "/case-studies/", "Case studies"),
     ("state", "/state-agencies/", "State agencies"),
     ("about", "/about/", "About"),
     ("insights", "/insights/", "Insights"),
-    ("industry", "/industry/", "Industry news"),
 ]
 
 STICKY = f"""<div class="sticky-cta">
@@ -123,6 +123,7 @@ def tabstrip(current):
         rows.append(f'    <a href="{href}"{cur}>{label}</a>')
         if i == 1:
             rows.append('    <a href="/contact/" class="tab-cta">Contact</a>')
+    rows.append('    <a href="/industry/">Industry news</a>')
     return "\n".join(rows)
 
 
