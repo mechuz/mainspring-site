@@ -45,7 +45,7 @@
    pre-filled email to the partner inbox, so no enquiry is ever lost.
    --------------------------------------------------------------------------- */
 (function () {
-  var TO = 'db@mainspringhcp.com';
+  var TO = 'info@mainspringhcp.com';
   function lines(form) {
     var seen = {}, out = [];
     new FormData(form).forEach(function (v, k) {

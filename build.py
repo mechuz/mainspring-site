@@ -25,7 +25,7 @@ PUBLIC = ROOT / "public"
 
 SITE = "https://mainspringhcp.com"
 DOMAIN = "mainspringhcp.com"
-EMAIL = "db@mainspringhcp.com"
+EMAIL = "info@mainspringhcp.com"
 PHONE_FMT = "650-418-2280"
 PHONE_TEL = "+16504182280"
 

@@ -88,12 +88,12 @@ read — no server and no client-side fetch, which is what lets the site live on
 ## Intake forms (FormSubmit — same as Kirby)
 
 The intake form (`/contact/`), the short form on the home page and the consultant application
-all post to **FormSubmit** at `admin@mainspringhcp.com`, with a copy (`_cc`) to
-db@mainspringhcp.com, and send the visitor to `/thank-you/`. `site.js` submits in the
+all post to **FormSubmit** at `info@mainspringhcp.com`, with a copy (`_cc`) to
+info@mainspringhcp.com, and send the visitor to `/thank-you/`. `site.js` submits in the
 background through FormSubmit's AJAX endpoint; if that fails (service down, address not yet
 activated, no network) it falls back to a pre-filled email to db@, so no enquiry is lost.
 
-**One-time activation:** the first submission makes FormSubmit email admin@mainspringhcp.com a
+**One-time activation:** the first submission makes FormSubmit email info@mainspringhcp.com a
 confirmation link. Click it once. Until then every submission arrives by the email fallback,
 which still works. After activation FormSubmit also offers a random string to use in place of
 the address in the `action` URL (hides it from scrapers) — swap it into the three forms if wanted.
@@ -127,6 +127,6 @@ the natural home (the domain's DNS is already there).
 
 ## Still outstanding
 
-- Click the FormSubmit activation email at admin@mainspringhcp.com (above).
+- Click the FormSubmit activation email at info@mainspringhcp.com (above).
 - Paste the appointment-schedule URL into `BOOKING_URL` (above).
 - **Google Search Console** — verify the domain and submit `https://mainspringhcp.com/sitemap.xml`.

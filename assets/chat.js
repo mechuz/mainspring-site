@@ -5,7 +5,7 @@
    anything else goes to a human through the same FormSubmit path the forms use. */
 (function () {
   var CHAT_ENDPOINT = '';          // e.g. https://chat.mainspringhcp.com/ask — leave empty for the built-in assistant
-  var FORM = 'https://formsubmit.co/ajax/admin@mainspringhcp.com';
+  var FORM = 'https://formsubmit.co/ajax/info@mainspringhcp.com';
   var PHONE = '650-418-2280', TEL = 'tel:+16504182280';
 
   var KB = [
@@ -25,7 +25,7 @@
     { k: ['who', 'felix', 'david', 'team', 'partner', 'founder', 'leadership', 'about'], a: 'Felix Strickland III, Managing Director of Operations and Compliance, is a licensed Nursing Home Administrator with multi-state experience across skilled nursing, assisted living and memory care. David Bloch, Managing Partner, leads engagements and client relationships.', links: [['About the firm', '/about/']] },
     { k: ['fast', 'quick', 'soon', 'urgent', 'emergency', 'today', 'tonight', 'same day', 'response time', 'how quickly'], a: 'Survey and leadership emergencies get a same-day response, and we can usually have a licensed leader in the building within days. If it is urgent, call ' + PHONE + ' now.', links: [['Call ' + PHONE, TEL]] },
     { k: ['book', 'schedule', 'calendar', 'appointment', 'meeting', 'call you', 'talk to'], a: 'You can put 30 minutes straight onto a partner’s calendar, or call ' + PHONE + '.', links: [['Book a call', '/book/'], ['Call ' + PHONE, TEL]] },
-    { k: ['email', 'contact', 'reach', 'phone number', 'number'], a: 'db@mainspringhcp.com or ' + PHONE + '. Or leave your details here and a partner will reply today.', links: [['Contact', '/contact/']] },
+    { k: ['email', 'contact', 'reach', 'phone number', 'number'], a: 'info@mainspringhcp.com or ' + PHONE + '. Or leave your details here and a partner will reply today.', links: [['Contact', '/contact/']] },
     { k: ['job', 'career', 'work for', 'join', 'consultant', 'network', 'hiring', 'apply', 'nurse', 'employment'], a: 'We run a vetted network of executive directors and nurse leaders who take paid consulting engagements matched to their licensure and schedule. Apply through the consultant network page.', links: [['Consultant network', '/consultant-network/']] },
     { k: ['case stud', 'result', 'example', 'track record', 'reference', 'proof', 'client'], a: 'Our case studies are told with the numbers we can stand behind; communities are not named, and references are available to serious enquiries.', links: [['Case studies', '/case-studies/']] },
     { k: ['news', 'industry', 'headline', 'article', 'insight', 'blog', 'read'], a: 'Two things to read: our operating notes, and a live feed of skilled nursing and senior living headlines updated through the day.', links: [['Insights', '/insights/'], ['Industry news', '/industry/']] },
@@ -69,12 +69,12 @@
     var f = msgs.querySelector('.chat-lead:last-of-type');
     f.addEventListener('submit', function (e) {
       e.preventDefault();
-      var fd = new FormData(f); fd.append('_subject', 'CHAT LEAD — mainspringhcp.com'); fd.append('_cc', 'db@mainspringhcp.com'); fd.append('_template', 'table');
+      var fd = new FormData(f); fd.append('_subject', 'CHAT LEAD — mainspringhcp.com'); fd.append('_cc', 'info@mainspringhcp.com'); fd.append('_template', 'table');
       var btn = f.querySelector('button'); btn.disabled = true; btn.textContent = 'Sending…';
       var done = function (ok) {
         f.remove();
         add('bot', ok ? 'Got it — thank you. A partner will reply today. If it cannot wait, call ' + PHONE + '.' :
-          'That did not go through. Please call ' + PHONE + ' or email <a href="mailto:db@mainspringhcp.com">db@mainspringhcp.com</a> — we answer the same day.');
+          'That did not go through. Please call ' + PHONE + ' or email <a href="mailto:info@mainspringhcp.com">info@mainspringhcp.com</a> — we answer the same day.');
       };
       fetch(FORM, { method: 'POST', body: fd, headers: { Accept: 'application/json' } }).then(function (r) { return r.json(); })
         .then(function (j) { done(j && (j.success === 'true' || j.success === true)); }).catch(function () { done(false); });
