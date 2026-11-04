@@ -41,7 +41,7 @@ NAV = [  # ordered by how likely the click is to turn into a lead
     ("state", "/state-agencies/", "State agencies"),
     ("about", "/about/", "About"),
     ("insights", "/insights/", "Insights"),
-    ("industry", "/industry/", "Industry"),
+    ("industry", "/industry/", "Industry news"),
 ]
 
 STICKY = f"""<div class="sticky-cta">
