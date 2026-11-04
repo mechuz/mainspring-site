@@ -30,8 +30,9 @@ MAX_AGE_DAYS = 21
 MAX_ITEMS = 24
 PER_SOURCE = 8
 
-# Verified Oct 30 + Nov 3 2026. McKnight's is deliberately absent: its edge
-# returns 403 to datacenter IPs, so it cannot be fetched from a runner.
+# Verified Oct 30 + Nov 4 2026. McKnight's and HHS news are absent (403 to
+# datacenter IPs); LeadingAge's feed stopped updating in 2022; OIG publishes no
+# RSS. DOJ is filtered by topic and is legitimately empty on quiet days.
 SOURCES = [
     # name, feed urls, home, group, topic filter (None = keep everything)
     ("Skilled Nursing News", ["https://skillednursingnews.com/feed/"], "https://skillednursingnews.com", "industry", None),
@@ -39,8 +40,10 @@ SOURCES = [
     ("Home Health Care News", ["https://homehealthcarenews.com/feed/"], "https://homehealthcarenews.com", "industry", None),
     ("CMS Newsroom", ["https://www.cms.gov/newsroom/rss-feeds"], "https://www.cms.gov", "regulatory", None),
     ("Federal Register \u00b7 CMS", ["https://www.federalregister.gov/api/v1/documents.rss?conditions%5Bagencies%5D%5B%5D=centers-for-medicare-medicaid-services&order=newest"], "https://www.federalregister.gov", "regulatory", None),
-    ("Federal Register \u00b7 Nursing homes", ["https://www.federalregister.gov/api/v1/documents.rss?conditions%5Bterm%5D=nursing+home&order=newest"], "https://www.federalregister.gov", "regulatory", None),
-    ("LeadingAge", ["https://leadingage.org/feed/"], "https://leadingage.org", "regulatory", None),
+    ("Federal Register \u00b7 Nursing homes", ["https://www.federalregister.gov/api/v1/documents.rss?conditions%5Bterm%5D=nursing+home&order=newest"], "https://www.federalregister.gov", "regulatory",
+     r"nursing|long-term care|skilled nursing|assisted living|hospice|home health|medicare|medicaid|civil money|survey|certification|staffing|minimum staff|resident"),
+    ("Federal Register \u00b7 Long-term care", ["https://www.federalregister.gov/api/v1/documents.rss?conditions%5Bterm%5D=long-term+care+facilities&conditions%5Bagencies%5D%5B%5D=centers-for-medicare-medicaid-services&order=newest"], "https://www.federalregister.gov", "regulatory",
+     r"nursing|long-term care|skilled nursing|assisted living|hospice|home health|medicare|medicaid|civil money|survey|certification|staffing|minimum staff|resident"),
     ("U.S. Department of Justice", ["https://www.justice.gov/news/rss?type=press_release"], "https://www.justice.gov", "regulatory",
      r"nursing home|nursing facilit|skilled nursing|long-term care|assisted living|hospice|home health|medicare|medicaid|elder|senior living"),
 ]

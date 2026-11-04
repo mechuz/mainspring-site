@@ -45,8 +45,9 @@ deploy, so the site can be updated from a phone.
 `scripts/fetch_news_feeds.py` pulls two streams and writes `content/news_feeds.json`:
 **industry** (Skilled Nursing News, Senior Housing News, Home Health Care News) and
 **regulatory** (Federal Register — CMS documents and anything mentioning nursing homes — the CMS
-Newsroom, LeadingAge policy, and DOJ press releases filtered by a topic regex to long-term care,
-Medicare and Medicaid). Each source carries a `group`; a source can carry a topic filter. `build.py` renders
+Newsroom, and DOJ press releases filtered by a topic regex to long-term care, Medicare and
+Medicaid — empty on quiet days by design). Each source carries a `group`; a source can carry a
+topic filter. LeadingAge was dropped: its feed stopped updating in 2022. `build.py` renders
 those into `/industry/` **at build time**, so the headlines are real HTML that search engines
 read — no server and no client-side fetch, which is what lets the site live on GitHub Pages.
 
