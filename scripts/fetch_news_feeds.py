@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Collect skilled nursing and senior living headlines into content/news_feeds.json.
+"""Collect skilled nursing / senior living headlines AND regulatory news into content/news_feeds.json.
 
 Runs in GitHub Actions (deploy.yml before each build, and refresh-news-feeds.yml
 on a schedule). build.py turns the file into the /industry/ page, so the
@@ -33,10 +33,16 @@ PER_SOURCE = 8
 # Verified Oct 30 + Nov 3 2026. McKnight's is deliberately absent: its edge
 # returns 403 to datacenter IPs, so it cannot be fetched from a runner.
 SOURCES = [
-    ("Skilled Nursing News", ["https://skillednursingnews.com/feed/"], "https://skillednursingnews.com"),
-    ("Senior Housing News", ["https://seniorhousingnews.com/feed/"], "https://seniorhousingnews.com"),
-    ("Home Health Care News", ["https://homehealthcarenews.com/feed/"], "https://homehealthcarenews.com"),
-    ("CMS Newsroom", ["https://www.cms.gov/newsroom/rss-feeds"], "https://www.cms.gov"),
+    # name, feed urls, home, group, topic filter (None = keep everything)
+    ("Skilled Nursing News", ["https://skillednursingnews.com/feed/"], "https://skillednursingnews.com", "industry", None),
+    ("Senior Housing News", ["https://seniorhousingnews.com/feed/"], "https://seniorhousingnews.com", "industry", None),
+    ("Home Health Care News", ["https://homehealthcarenews.com/feed/"], "https://homehealthcarenews.com", "industry", None),
+    ("CMS Newsroom", ["https://www.cms.gov/newsroom/rss-feeds"], "https://www.cms.gov", "regulatory", None),
+    ("Federal Register \u00b7 CMS", ["https://www.federalregister.gov/api/v1/documents.rss?conditions%5Bagencies%5D%5B%5D=centers-for-medicare-medicaid-services&order=newest"], "https://www.federalregister.gov", "regulatory", None),
+    ("Federal Register \u00b7 Nursing homes", ["https://www.federalregister.gov/api/v1/documents.rss?conditions%5Bterm%5D=nursing+home&order=newest"], "https://www.federalregister.gov", "regulatory", None),
+    ("LeadingAge", ["https://leadingage.org/feed/"], "https://leadingage.org", "regulatory", None),
+    ("U.S. Department of Justice", ["https://www.justice.gov/news/rss?type=press_release"], "https://www.justice.gov", "regulatory",
+     r"nursing home|nursing facilit|skilled nursing|long-term care|assisted living|hospice|home health|medicare|medicaid|elder|senior living"),
 ]
 
 
@@ -122,7 +128,7 @@ def fetch(url):
 def collect(now):
     cutoff = now - dt.timedelta(days=MAX_AGE_DAYS)
     sources, per_source, seen = [], [], set()
-    for name, urls, home in SOURCES:
+    for name, urls, home, group, topic in SOURCES:
         entries, used, error = None, None, ""
         for url in urls:
             try:
@@ -135,29 +141,35 @@ def collect(now):
             per_source.append([])
             continue
         kept = []
+        topic_re = re.compile(topic, re.I) if topic else None
         for title, link, when in entries:
             if len(kept) >= PER_SOURCE:
                 break
             if when is None or when < cutoff or when > now + dt.timedelta(days=1):
                 continue
+            if topic_re and not topic_re.search(title):
+                continue
             key = re.sub(r"[^a-z0-9]+", " ", title.lower()).strip()
             if key in seen or len(title) < 15:
                 continue
             seen.add(key)
-            kept.append({"title": title[:200], "link": link, "source": name,
+            kept.append({"title": title[:200], "link": link, "source": name, "group": group,
                          "published": when.strftime("%Y-%m-%dT%H:%M:%SZ")})
         kept.sort(key=lambda i: i["published"], reverse=True)
         per_source.append(kept)
-        sources.append({"name": name, "url": used, "ok": True, "count": len(kept), "error": ""})
+        sources.append({"name": name, "url": used, "ok": True, "count": len(kept), "error": "", "group": group})
 
-    # round-robin, so no single publisher fills the page
-    items = []
-    for i in range(PER_SOURCE):
-        for lst in per_source:
-            if i < len(lst):
-                items.append(lst[i])
-    return {"fetched_at": now.strftime("%Y-%m-%dT%H:%M:%SZ"),
-            "sources": sources, "items": items[:MAX_ITEMS]}
+    # round-robin inside each group, so no single publisher fills a section
+    def interleave(group):
+        lists = [l for l in per_source if l and l[0]["group"] == group]
+        out = []
+        for i in range(PER_SOURCE):
+            for lst in lists:
+                if i < len(lst):
+                    out.append(lst[i])
+        return out[:MAX_ITEMS]
+    return {"fetched_at": now.strftime("%Y-%m-%dT%H:%M:%SZ"), "sources": sources,
+            "items": interleave("industry"), "regulatory": interleave("regulatory")}
 
 
 def main(argv):
@@ -172,13 +184,13 @@ def main(argv):
     result = collect(dt.datetime.now(dt.timezone.utc))
     for s in result["sources"]:
         print(f"{'ok ' if s['ok'] else 'ERR'} {s['name']}: {s['count'] if s['ok'] else s['error']}")
-    if not result["items"] and out.exists():
+    if not result["items"] and not result["regulatory"] and out.exists():
         print("no headlines collected; keeping the previous file")
         return 0
     out.parent.mkdir(parents=True, exist_ok=True)
     out.write_text(json.dumps(result, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
     ok = sum(1 for s in result["sources"] if s["ok"])
-    print(f"{len(result['items'])} headlines from {ok} of {len(result['sources'])} feeds -> {out}")
+    print(f"{len(result['items'])} industry + {len(result['regulatory'])} regulatory headlines from {ok} of {len(result['sources'])} feeds -> {out}")
     return 0
 
 

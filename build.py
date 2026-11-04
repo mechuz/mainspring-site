@@ -164,49 +164,49 @@ def render(meta, body, template, assetv):
 
 
 # ----------------------------------------------------------------- news feed
-def news_html():
-    """Render the industry headlines at BUILD time from content/news_feeds.json.
+def _when(iso):
+    try:
+        d = dt.datetime.strptime(iso, "%Y-%m-%dT%H:%M:%SZ").replace(tzinfo=dt.timezone.utc)
+    except ValueError:
+        return ""
+    days = (dt.datetime.now(dt.timezone.utc) - d).days
+    if days <= 0:
+        return "Today"
+    if days == 1:
+        return "Yesterday"
+    if days <= 6:
+        return f"{days} days ago"
+    return d.strftime("%b %-d, %Y")
 
-    Baking them in means the page is real HTML for search engines and needs no
-    server, which is what lets this site live on GitHub Pages. The file is
-    refreshed by scripts/fetch_news_feeds.py in Actions.
-    """
-    f = CONTENT / "news_feeds.json"
-    if not f.exists():
-        return ('<div class="feed-skel">Headlines are refreshed automatically several '
-                'times a day; the next run will fill this in.</div>', "")
-    data = json.loads(f.read_text(encoding="utf-8"))
-    items = data.get("items", [])
+
+def _cards(items, empty):
     if not items:
-        return ('<div class="feed-skel">No headlines came back on the last run.</div>', "")
+        return '<div class="feed-skel">%s</div>' % empty
+    return "\n".join(
+        '<a class="feed-item" href="%s" target="_blank" rel="noopener nofollow">'
+        '<span class="src">%s</span><h3>%s</h3><span class="date">%s</span></a>' % (
+            escape(it["link"], quote=True), escape(it["source"]), escape(it["title"]),
+            escape(_when(it.get("published", "")))) for it in items[:24])
 
-    def when(iso):
-        try:
-            d = dt.datetime.strptime(iso, "%Y-%m-%dT%H:%M:%SZ").replace(tzinfo=dt.timezone.utc)
-        except ValueError:
-            return ""
-        days = (dt.datetime.now(dt.timezone.utc) - d).days
-        if days <= 0:
-            return "Today"
-        if days == 1:
-            return "Yesterday"
-        if days <= 6:
-            return f"{days} days ago"
-        return d.strftime("%b %-d, %Y")
 
-    cards = []
-    for it in items[:24]:
-        cards.append(
-            '<a class="feed-item" href="%s" target="_blank" rel="noopener nofollow">'
-            '<span class="src">%s</span><h3>%s</h3><span class="date">%s</span></a>' % (
-                escape(it["link"], quote=True), escape(it["source"]),
-                escape(it["title"]), escape(when(it.get("published", "")))))
+def news_html():
+    """Render the industry AND regulatory headlines at BUILD time from
+    content/news_feeds.json, so the page is real HTML and needs no server.
+    Returns (industry_cards, regulatory_cards, updated_label)."""
+    f = CONTENT / "news_feeds.json"
+    waiting = ("Headlines are refreshed automatically several times a day; "
+               "the next run will fill this in.")
+    if not f.exists():
+        return '<div class="feed-skel">%s</div>' % waiting, '<div class="feed-skel">%s</div>' % waiting, ""
+    data = json.loads(f.read_text(encoding="utf-8"))
     stamp = data.get("fetched_at", "")
     try:
         label = dt.datetime.strptime(stamp, "%Y-%m-%dT%H:%M:%SZ").strftime("%b %-d, %H:%M UTC")
     except ValueError:
         label = ""
-    return "\n".join(cards), label
+    return (_cards(data.get("items", []), "No industry headlines came back on the last run."),
+            _cards(data.get("regulatory", []), "No regulatory items came back on the last run."),
+            label)
 
 
 # ----------------------------------------------------------------- booking
@@ -245,8 +245,9 @@ def main():
         if "{{booking_block}}" in body:
             body = body.replace("{{booking_block}}", booking_block())
         if meta.get("feed") == "yes":
-            cards, label = news_html()
-            body = body.replace("{{feed_items}}", cards).replace("{{feed_updated}}", label)
+            cards, reg, label = news_html()
+            body = (body.replace("{{feed_items}}", cards).replace("{{reg_items}}", reg)
+                        .replace("{{feed_updated}}", label))
         p = render(meta, body, template, assetv)
         if meta.get("sitemap") != "no" and not p.endswith(".html"):
             paths.append((p, meta.get("priority", "0.7"), meta.get("changefreq", "monthly")))

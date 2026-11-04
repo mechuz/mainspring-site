@@ -1,6 +1,6 @@
 <!--meta
-title: Industry News — Skilled Nursing & Senior Living | Mainspring
-description: A live feed of skilled nursing, senior living and CMS headlines for operators and owners — Skilled Nursing News, Senior Housing News, Home Health Care News and the CMS Newsroom, updated through the day.
+title: Industry & Regulatory News — Skilled Nursing & Senior Living | Mainspring
+description: Regulatory news — Federal Register rules and notices, CMS, DOJ enforcement, LeadingAge policy — alongside skilled nursing and senior living headlines, refreshed through the day for operators and owners.
 path: /industry/
 feed: yes
 nav: industry
@@ -11,20 +11,33 @@ changefreq: daily
 
 <div class="hero-sub"><div class="container">
   <p class="eyebrow">Industry news</p>
-  <h1>What is moving in skilled nursing and senior living.</h1>
-  <p class="lede">A live feed from the outlets operators actually read, plus the CMS newsroom. Updated through the day, no account required. Headlines open at the original publisher.</p>
+  <h1>What is moving &mdash; and what is being regulated.</h1>
+  <p class="lede">Two feeds, refreshed through the day: the rules, notices and enforcement actions that land on buildings, and the outlets operators actually read. Headlines open at the source.</p>
 </div></div>
 
-<section style="padding-top:8px">
+<section style="padding-top:8px" id="regulatory">
   <div class="container">
     <div class="feed-head">
-      <p class="seclabel" style="margin:0">Latest headlines</p>
+      <p class="seclabel" style="margin:0">Regulatory &middot; rules, notices, enforcement</p>
+      <p class="upd">Updated {{feed_updated}}</p>
+    </div>
+    <div class="feed-grid">
+{{reg_items}}
+    </div>
+    <p class="feed-note">Sources: the Federal Register (CMS documents, and anything mentioning nursing homes), the CMS Newsroom, LeadingAge policy, and U.S. Department of Justice press releases filtered to long-term care, Medicare and Medicaid. Official documents open at the agency.</p>
+  </div>
+</section>
+<hr class="rule">
+<section id="industry-news">
+  <div class="container">
+    <div class="feed-head">
+      <p class="seclabel" style="margin:0">Industry &middot; what operators are reading</p>
       <p class="upd">Updated {{feed_updated}}</p>
     </div>
     <div class="feed-grid">
 {{feed_items}}
     </div>
-    <p class="feed-note">Sources: Skilled Nursing News, Senior Housing News, Home Health Care News and the CMS Newsroom. Headlines and summaries belong to their publishers and link back to the original article; Mainspring is not the publisher and does not endorse the contents.</p>
+    <p class="feed-note">Sources: Skilled Nursing News, Senior Housing News and Home Health Care News. Headlines belong to their publishers and link back to the original article; Mainspring is not the publisher and does not endorse the contents.</p>
   </div>
 </section>
 
