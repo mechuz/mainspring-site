@@ -1,3 +1,18 @@
+/* Stale-page guard. GitHub Pages lets browsers keep a page for ten minutes; phones
+   keep it longer. On load, ask the server (uncached) which build is current and, if
+   this page is older, reload once. Never loops: one reload per build per tab. */
+(function () {
+  var mine = (document.querySelector('meta[name="build"]') || {}).content;
+  if (!mine || !window.fetch) return;
+  fetch('/version.txt', { cache: 'no-store' }).then(function (r) { return r.ok ? r.text() : ''; }).then(function (t) {
+    t = (t || '').trim();
+    if (!t || t === mine) return;
+    var key = 'ms_build_' + t;
+    try { if (sessionStorage.getItem(key)) return; sessionStorage.setItem(key, '1'); } catch (e) {}
+    location.reload();
+  }).catch(function () {});
+})();
+
 /* Mainspring — shared behaviour: scroll reveals, sticky conversion bar, nav state. */
 (function () {
   var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;

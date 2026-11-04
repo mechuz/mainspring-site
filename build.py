@@ -317,6 +317,7 @@ def main():
           '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + urls + "\n</urlset>\n")
     write(PUBLIC / "robots.txt", f"User-agent: *\nAllow: /\nSitemap: {SITE}/sitemap.xml\n")
     write(PUBLIC / "CNAME", DOMAIN + "\n")
+    write(PUBLIC / "version.txt", assetv + "\n")
 
     print(f"built {len(paths)} pages ({len(posts)} posts) + {len(LEGACY)} redirects -> public/")
 
