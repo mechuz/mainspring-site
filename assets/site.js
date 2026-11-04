@@ -38,42 +38,63 @@
 })();
 
 /* ---------------------------------------------------------------------------
-   Form fallback. Formspree IDs are not wired yet (two are pending from Max).
-   Until they are, every form still works: the submit is intercepted and turned
-   into a pre-filled email to the partner inbox, so no lead is ever lost.
-   Once action= holds a real Formspree URL this handler steps aside.
+   Intake forms — same pattern as the Kirby Gate site.
+   Every form posts to FormSubmit. 1) Submit in the background through the AJAX
+   endpoint and send the visitor to /thank-you/ ourselves. 2) If that fails
+   (FormSubmit down, address not yet activated, no network) fall back to a
+   pre-filled email to the partner inbox, so no enquiry is ever lost.
    --------------------------------------------------------------------------- */
 (function () {
   var TO = 'db@mainspringhcp.com';
-  document.querySelectorAll('form.site-form').forEach(function (form) {
-    var action = form.getAttribute('action') || '';
-    var wired = action.indexOf('formspree.io/f/') > -1 && action.indexOf('YOUR_ID') === -1;
-    if (wired) return;
-
+  function lines(form) {
+    var seen = {}, out = [];
+    new FormData(form).forEach(function (v, k) {
+      if (k.charAt(0) === '_' || !String(v).trim()) return;
+      (seen[k] = seen[k] || []).push(v);
+    });
+    Object.keys(seen).forEach(function (k) {
+      out.push(k.charAt(0).toUpperCase() + k.slice(1).replace(/[-_]/g, ' ') + ': ' + seen[k].join(', '));
+    });
+    return out.join('\n');
+  }
+  function status(form, msg) {
+    var el = form.querySelector('.form-status');
+    if (!el) return;
+    el.textContent = msg || '';
+    el.classList.toggle('on', !!msg);
+  }
+  function mailtoFallback(form) {
+    var subj = (form.querySelector('[name="_subject"]') || {}).value || 'Website enquiry';
+    status(form, 'Opening your email app with this message ready to send to ' + TO + '.');
+    window.location.href = 'mailto:' + TO + '?subject=' + encodeURIComponent(subj) +
+      '&body=' + encodeURIComponent(lines(form) + '\n\n- sent from mainspringhcp.com');
+  }
+  function send(form) {
+    var btn = form.querySelector('button[type="submit"]');
+    var next = (form.querySelector('[name="_next"]') || {}).value || '/thank-you/';
+    if (btn) { btn.disabled = true; btn.dataset.label = btn.textContent; btn.textContent = 'Sending...'; }
+    status(form, '');
+    var done = false;
+    var fail = function () {
+      if (done) return; done = true;
+      if (btn) { btn.disabled = false; btn.textContent = btn.dataset.label; }
+      mailtoFallback(form);
+    };
+    var timer = setTimeout(fail, 12000);
+    fetch(form.action.replace('formsubmit.co/', 'formsubmit.co/ajax/'), {
+      method: 'POST', body: new FormData(form), headers: { Accept: 'application/json' }
+    }).then(function (r) { return r.json(); }).then(function (j) {
+      clearTimeout(timer);
+      if (done) return;
+      if (j && (j.success === 'true' || j.success === true)) { done = true; window.location.href = next; }
+      else fail();
+    }).catch(function () { clearTimeout(timer); fail(); });
+  }
+  document.querySelectorAll('form[action*="formsubmit.co"]').forEach(function (form) {
     form.addEventListener('submit', function (e) {
       e.preventDefault();
-      var honey = form.getAttribute('netlify-honeypot') || 'company';
-      var data = new FormData(form);
-      var lines = [];
-      var seen = {};
-      data.forEach(function (v, k) {
-        if (k === 'form-name' || k === honey || !String(v).trim()) return;
-        if (seen[k]) { seen[k].push(v); } else { seen[k] = [v]; }
-      });
-      Object.keys(seen).forEach(function (k) {
-        var label = k.charAt(0).toUpperCase() + k.slice(1).replace(/[-_]/g, ' ');
-        lines.push(label + ': ' + seen[k].join(', '));
-      });
-      var subject = form.getAttribute('data-subject') || 'Website enquiry';
-      var href = 'mailto:' + TO +
-        '?subject=' + encodeURIComponent(subject) +
-        '&body=' + encodeURIComponent(lines.join('\n') + '\n\n— sent from mainspringhcp.com');
-      var status = form.querySelector('.form-status');
-      if (status) {
-        status.textContent = 'Opening your email app with this message ready to send to ' + TO + '.';
-        status.classList.add('on');
-      }
-      window.location.href = href;
+      if (!window.fetch || !window.FormData) { form.submit(); return; }
+      send(form);
     });
   });
 })();

@@ -1,7 +1,7 @@
 # mainspringhcp.com — Mainspring Healthcare Partners
 
-Static site for Mainspring Healthcare Partners (turnaround and interim leadership for
-skilled nursing and senior living). Same setup as the Kirby Gate site: content files plus
+Static site for Mainspring Healthcare Partners (turnaround, interim leadership, financial and
+forensic analysis, marketing and agentic technology for skilled nursing and senior living). Same setup as the Kirby Gate site: content files plus
 one template, assembled by `build.py`, hosted free on **GitHub Pages**, with the domain and
 DNS at **Cloudflare**.
 
@@ -81,8 +81,29 @@ read — no server and no client-side fetch, which is what lets the site live on
    - Leave MX and any email records alone.
 5. Delete the old `mainspring` Cloudflare Pages project once the new site is confirmed live.
 
+## Intake forms (FormSubmit — same as Kirby)
+
+The intake form (`/contact/`), the short form on the home page and the consultant application
+all post to **FormSubmit** at `admin@mainspringhcp.com`, with a copy (`_cc`) to
+db@mainspringhcp.com, and send the visitor to `/thank-you/`. `site.js` submits in the
+background through FormSubmit's AJAX endpoint; if that fails (service down, address not yet
+activated, no network) it falls back to a pre-filled email to db@, so no enquiry is lost.
+
+**One-time activation:** the first submission makes FormSubmit email admin@mainspringhcp.com a
+confirmation link. Click it once. Until then every submission arrives by the email fallback,
+which still works. After activation FormSubmit also offers a random string to use in place of
+the address in the `action` URL (hides it from scrapers) — swap it into the three forms if wanted.
+
+## Booking (Google Calendar)
+
+`/book/` embeds a **Google Calendar appointment schedule** so a prospect can put 30 minutes on a
+partner's calendar directly. To wire it: in Google Calendar (the Mainspring Workspace account)
+→ Create → Appointment schedule → set the hours and a Google Meet link → Share → **Website
+embed** → copy the iframe `src` → paste it into `BOOKING_URL` in `build.py` → push. Until it
+is set, `/book/` shows the intake form instead, so the page never dead-ends.
+
 ## Still outstanding
 
-- **Formspree IDs (×2).** Until they are wired, `site.js` intercepts every form submit and
-  opens a pre-filled email to db@mainspringhcp.com, so no enquiry is lost.
+- Click the FormSubmit activation email at admin@mainspringhcp.com (above).
+- Paste the appointment-schedule URL into `BOOKING_URL` (above).
 - **Google Search Console** — verify the domain and submit `https://mainspringhcp.com/sitemap.xml`.

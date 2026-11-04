@@ -29,9 +29,13 @@ EMAIL = "db@mainspringhcp.com"
 PHONE_FMT = "650-418-2280"
 PHONE_TEL = "+16504182280"
 
+# Google Calendar appointment schedule (Google Workspace -> Calendar -> Appointment
+# schedules -> Share -> "Website embed"). Paste the iframe's src here. Empty =
+# /book/ shows the intake form instead, so the page never dead-ends.
+BOOKING_URL = ""
+
 # nav label -> path; the meta block's `nav:` key marks the current one
 NAV = [
-    ("overview", "/overview/", "Overview"),
     ("services", "/services/", "Services"),
     ("how-we-work", "/how-we-work/", "How we work"),
     ("industry", "/industry/", "Industry"),
@@ -52,7 +56,8 @@ STICKY = f"""<div class="sticky-cta">
 
 # Old .html URLs that existed before clean URLs, so nothing already indexed 404s.
 LEGACY = {
-    "overview.html": "/overview/",
+    "overview.html": "/",
+    "overview/index.html": "/",
     "services.html": "/services/",
     "assessment.html": "/how-we-work/",
     "about.html": "/about/",
@@ -191,6 +196,19 @@ def news_html():
     return "\n".join(cards), label
 
 
+# ----------------------------------------------------------------- booking
+def booking_block():
+    if BOOKING_URL:
+        return ('<div class="panel reveal" style="padding:0;overflow:hidden;background:#fff">'
+                f'<iframe src="{BOOKING_URL}" title="Book a call with Mainspring" style="border:0;width:100%;height:760px;display:block" loading="lazy"></iframe></div>'
+                '<p class="fineprint" style="margin-top:1rem">Times are shown in your time zone. You will receive a calendar invitation with a video link.</p>')
+    # not wired yet: fall back to the full intake form so the page still converts
+    contact = (CONTENT / "contact.html").read_text(encoding="utf-8")
+    form = re.search(r'<form class="site-form"[\s\S]*?</form>', contact)
+    return ('<p class="lead reveal" style="margin:0 0 1.6rem">Online booking is being connected to our calendar. '
+            'In the meantime tell us what is going on and we will send times the same day.</p>' + (form.group(0) if form else ""))
+
+
 # ----------------------------------------------------------------- build
 def main():
     if PUBLIC.exists():
@@ -211,6 +229,8 @@ def main():
         meta, body = parse_meta(f.read_text(encoding="utf-8"))
         head = CONTENT / f.name.replace(".html", ".head.html")
         meta["_head"] = tokens(head.read_text(encoding="utf-8")) if head.exists() else ""
+        if "{{booking_block}}" in body:
+            body = body.replace("{{booking_block}}", booking_block())
         if meta.get("feed") == "yes":
             cards, label = news_html()
             body = body.replace("{{feed_items}}", cards).replace("{{feed_updated}}", label)

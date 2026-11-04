@@ -17,36 +17,57 @@ changefreq: monthly
 <section style="padding-top:6px"><div class="container"><div class="split reveal" style="grid-template-columns:1fr 1.3fr;align-items:start">
   <div class="prose">
     <p class="seclabel">Direct</p>
-    <p class="body"><strong>Email:</strong> <a href="mailto:db@mainspringhcp.com" style="color:var(--brass-text)">db@mainspringhcp.com</a><br>
+    <p class="body"><strong>Email:</strong> <a href="mailto:db@mainspringhcp.com" style="color:var(--accent)">db@mainspringhcp.com</a><br>
     <strong>Locations:</strong> New York · Memphis<br>
     <strong>Service area:</strong> Engagements nationwide</p>
-    <p class="body" style="font-size:13.5px;color:var(--steel)">Mainspring provides management consulting services. We do not provide medical care, and we do not guarantee regulatory outcomes.</p>
+    <p class="body" style="font-size:13.5px;color:var(--mute)">Mainspring provides management consulting services. We do not provide medical care, and we do not guarantee regulatory outcomes.</p>
   </div>
   <!-- Netlify: works automatically once deployed there. Elsewhere: set action="https://formspree.io/f/YOUR_ID" -->
-  <form class="site-form" action="https://formspree.io/f/YOUR_ID" name="assessment-request" method="POST" data-netlify="true" netlify-honeypot="company-website" data-subject="Website enquiry &mdash; speak with a partner">
-    <input type="hidden" name="form-name" value="assessment-request">
-    <p style="display:none"><label>Company website <input name="company-website"></label></p>
-    <div class="row">
-      <div><label for="name">Name</label><input id="name" name="name" required autocomplete="name"></div>
-      <div><label for="email">Work email</label><input id="email" name="email" type="email" required autocomplete="email"></div>
-    </div>
-    <div class="row">
-      <div><label for="phone">Phone</label><input id="phone" name="phone" type="tel" autocomplete="tel"></div>
-      <div><label for="community">Community / organization</label><input id="community" name="community"></div>
-    </div>
-    <label for="need">What's going on?</label>
-    <select id="need" name="need">
-      <option>Survey deficiencies / admissions hold</option>
-      <option>Executive director vacancy</option>
-      <option>Census decline</option>
-      <option>Cost pressure / financial concerns</option>
-      <option>Renovation or repositioning</option>
-      <option>Something else</option>
-    </select>
-    <label for="msg">Details — timeline pressure, survey windows, what you've tried</label>
-    <textarea id="msg" name="message" rows="5"></textarea>
-    <button type="submit">Speak with a partner</button>
-    <p class="form-status" role="status"></p>
-    <p class="fineprint">We respond within one business day — same day for survey or leadership emergencies. By submitting, you agree to our <a href="/privacy-policy/" style="color:var(--brass-text)">privacy policy</a>.</p>
-  </form>
+  <form class="site-form" action="https://formsubmit.co/admin@mainspringhcp.com" method="POST" style="max-width:none">
+      <input type="hidden" name="_cc" value="db@mainspringhcp.com">
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_subject" value="NEW INTAKE — mainspringhcp.com">
+      <input type="hidden" name="_next" value="https://mainspringhcp.com/thank-you/">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_blacklist" value="seeking employment, job opportunity, my resume, backlinks, seo services, guest post, web design services, bitcoin, crypto, casino">
+      <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+      <h2 style="margin-bottom:.2rem">Tell us about the building.</h2>
+      <p class="fineprint" style="margin:0 0 .4rem">Five minutes. A partner reads it the same day. Survey and leadership emergencies: call <a href="tel:+16504182280" style="color:var(--accent);font-weight:600">650-418-2280</a> instead.</p>
+      <div class="row">
+        <div><label for="i-name">Your name *</label><input id="i-name" name="name" required autocomplete="name"></div>
+        <div><label for="i-role">Your role *</label><input id="i-role" name="role" required placeholder="Owner, administrator, regional, lender…"></div>
+      </div>
+      <div class="row">
+        <div><label for="i-email">Email *</label><input id="i-email" name="email" type="email" required autocomplete="email"></div>
+        <div><label for="i-phone">Phone *</label><input id="i-phone" name="phone" type="tel" required autocomplete="tel"></div>
+      </div>
+      <div class="row">
+        <div><label for="i-org">Organization</label><input id="i-org" name="organization" autocomplete="organization"></div>
+        <div><label for="i-community">Community name</label><input id="i-community" name="community"></div>
+      </div>
+      <div class="row">
+        <div><label for="i-state">State *</label><input id="i-state" name="state" required placeholder="e.g., NY" maxlength="40"></div>
+        <div><label for="i-type">Building type *</label>
+          <select id="i-type" name="building_type" required>
+            <option value="">Select…</option><option>Skilled nursing</option><option>Assisted living</option><option>Memory care</option>
+            <option>CCRC / life plan</option><option>Independent living</option><option>Multiple / portfolio</option><option>Other</option>
+          </select></div>
+      </div>
+      <div class="row">
+        <div><label for="i-beds">Licensed beds / units</label><input id="i-beds" name="beds" inputmode="numeric"></div>
+        <div><label for="i-urgency">How urgent *</label>
+          <select id="i-urgency" name="urgency" required>
+            <option value="">Select…</option><option>Today — survey or leadership emergency</option><option>This week</option>
+            <option>This month</option><option>Planning ahead</option>
+          </select></div>
+      </div>
+      <fieldset><legend>What is going on? (tick all that apply) *</legend><div class="checks"><label><input type="checkbox" name="situation" value="Survey deficiencies / plan of correction"> Survey deficiencies / plan of correction</label><label><input type="checkbox" name="situation" value="Immediate jeopardy"> Immediate jeopardy</label><label><input type="checkbox" name="situation" value="Admissions hold"> Admissions hold</label><label><input type="checkbox" name="situation" value="Executive director or administrator vacancy"> Executive director or administrator vacancy</label><label><input type="checkbox" name="situation" value="Census decline"> Census decline</label><label><input type="checkbox" name="situation" value="Cash, margin or budget pressure"> Cash, margin or budget pressure</label><label><input type="checkbox" name="situation" value="Numbers that do not reconcile"> Numbers that do not reconcile</label><label><input type="checkbox" name="situation" value="Capital project or renovation"> Capital project or renovation</label><label><input type="checkbox" name="situation" value="Acquisition, refinance or takeover"> Acquisition, refinance or takeover</label><label><input type="checkbox" name="situation" value="Marketing, website or reviews"> Marketing, website or reviews</label><label><input type="checkbox" name="situation" value="Technology / automation"> Technology / automation</label><label><input type="checkbox" name="situation" value="Something else"> Something else</label></div></fieldset>
+      <label for="i-detail">Tell us what is happening *</label>
+      <textarea id="i-detail" name="details" rows="5" required placeholder="What happened, when, and what has been tried. Dates that matter — revisit windows, closings, lender deadlines."></textarea>
+      <label for="i-heard">How did you hear about us?</label>
+      <input id="i-heard" name="heard_from">
+      <button type="submit">Send to a partner</button>
+      <p class="form-status" role="status"></p>
+      <p class="fineprint">We reply from db@mainspringhcp.com. Your details are used to respond to this enquiry only &mdash; see our <a href="/privacy-policy/" style="color:var(--accent)">privacy policy</a>. Prefer to put time on the calendar instead? <a href="/book/" style="color:var(--accent);font-weight:600">Book a call &rarr;</a></p>
+    </form>
 </div></div></section>
