@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{title}}</title>
+<meta name="description" content="{{description}}">
+<link rel="canonical" href="{{site}}{{path}}">
+<link rel="icon" href="/assets/favicon.png?v=3" type="image/png">
+<link rel="apple-touch-icon" href="/assets/favicon.png?v=3">
+<meta property="og:type" content="{{og_type}}">
+<meta property="og:title" content="{{title}}">
+<meta property="og:description" content="{{description}}">
+<meta property="og:image" content="{{site}}/assets/og-lifeline.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:url" content="{{site}}{{path}}">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{title}}">
+<meta name="twitter:description" content="{{description}}">
+<meta name="twitter:image" content="{{site}}/assets/og-lifeline.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=Newsreader:ital,opsz@1,6..72&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/styles.css?v={{assetv}}">
+<noscript><style>.reveal{opacity:1 !important;transform:none !important}</style></noscript>
+{{head}}</head>
+<body>
+<header class="nav{{nav_dark}}">
+  <div class="container nav-inner">
+    <a class="brand" href="/" aria-label="Mainspring home">
+      <svg width="52" height="30" viewBox="6 44 196 112" aria-hidden="true"><path d="M16 100 L84 100 L92 112 L102 58 L112 128 L120 100 L172 100" fill="none" stroke="#1C2024" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/><circle cx="189" cy="100" r="9" fill="#B5792B"/></svg>
+      <span class="wm">MAINSPRING</span>
+    </a>
+    <nav class="nav-links" aria-label="Primary">
+{{navlinks}}
+      <a class="btn btn-primary nav-cta" href="/contact/">Speak with a partner</a>
+    </nav>
+  </div>
+</header>
+{{body}}
+{{sticky}}
+<footer class="ft">
+  <div class="container ft-inner">
+    <div>
+      <div class="wm">MAINSPRING</div>
+      <small>Mainspring Healthcare Partners &middot; Turnaround and interim leadership for senior living &middot; New York &middot; Memphis &middot; &copy; {{year}}</small>
+    </div>
+    <div class="ft-cols">
+      <nav class="ft-nav" aria-label="Firm">
+        <b>Firm</b>
+        <a href="/overview/">Overview</a>
+        <a href="/about/">About</a>
+        <a href="/how-we-work/">How we work</a>
+        <a href="/industry/">Industry news</a>
+        <a href="/insights/">Insights</a>
+        <a href="/consultant-network/">Consultant network</a>
+        <a href="/contact/">Contact</a>
+      </nav>
+      <nav class="ft-nav" aria-label="Services">
+        <b>Services</b>
+        <a href="/services/interim-executive-leadership/">Interim executive leadership</a>
+        <a href="/services/survey-remediation/">Survey remediation</a>
+        <a href="/services/operational-financial-restructuring/">Operational &amp; financial restructuring</a>
+        <a href="/services/operating-systems-buildout/">Operating systems build-out</a>
+        <a href="/services/capital-projects-redesign/">Capital projects &amp; redesign</a>
+        <a href="/services/rebranding-census-recovery/">Rebranding &amp; census recovery</a>
+      </nav>
+      <nav class="ft-nav" aria-label="Legal">
+        <b>Legal</b>
+        <a href="/privacy-policy/">Privacy policy</a>
+        <a href="/terms-of-use/">Terms of use</a>
+        <a href="/disclosures/">Disclosures</a>
+      </nav>
+    </div>
+  </div>
+</footer>
+<script src="/assets/site.js?v={{assetv}}" defer></script>
+</body>
+</html>

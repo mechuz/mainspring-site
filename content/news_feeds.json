@@ -1,0 +1,179 @@
+{
+ "fetched_at": "2026-11-04T01:38:05Z",
+ "sources": [
+  {
+   "name": "Skilled Nursing News",
+   "url": "https://skillednursingnews.com/feed/",
+   "ok": true,
+   "count": 8,
+   "error": ""
+  },
+  {
+   "name": "Senior Housing News",
+   "url": "https://seniorhousingnews.com/feed/",
+   "ok": true,
+   "count": 8,
+   "error": ""
+  },
+  {
+   "name": "Home Health Care News",
+   "url": "https://homehealthcarenews.com/feed/",
+   "ok": true,
+   "count": 8,
+   "error": ""
+  },
+  {
+   "name": "CMS Newsroom",
+   "url": "https://www.cms.gov/newsroom/rss-feeds",
+   "ok": true,
+   "count": 8,
+   "error": ""
+  }
+ ],
+ "items": [
+  {
+   "title": "Skilled Nursing Dealbook: UW Health Adds Medical Center With Nursing Facility; 126-Bed Colorado Facility Sold",
+   "link": "https://skillednursingnews.com/2026/11/skilled-nursing-dealbook-uw-health-adds-medical-center-with-nursing-facility-126-bed-colorado-facility-sold/",
+   "source": "Skilled Nursing News",
+   "published": "2026-11-03T23:00:00Z"
+  },
+  {
+   "title": "Diversified Healthcare Trust Ups Senior Housing Guidance With SHOP Leading the Way",
+   "link": "https://seniorhousingnews.com/2026/11/03/diversified-healthcare-trust-ups-senior-housing-guidance-with-shop-leading-the-way/",
+   "source": "Senior Housing News",
+   "published": "2026-11-03T21:26:56Z"
+  },
+  {
+   "title": "Home Health Agencies Face 13% More Paperwork For $60 Less Per Visit Under Medicare Advantage",
+   "link": "https://homehealthcarenews.com/2026/11/home-health-agencies-face-13-more-paperwork-for-60-less-per-visit-under-medicare-advantage/",
+   "source": "Home Health Care News",
+   "published": "2026-11-03T22:17:42Z"
+  },
+  {
+   "title": "CMS Finalizes Rule to Help More Organs Reach Patients and Strengthen Accountability for Organ Procurement Organizations",
+   "link": "https://www.cms.gov/newsroom/press-releases/cms-finalizes-rule-help-more-organs-reach-patients-strengthen-accountability-organ-procurement",
+   "source": "CMS Newsroom",
+   "published": "2026-11-02T16:21:41Z"
+  },
+  {
+   "title": "Sabra CEO on Nursing Home Asset Optimization and Lease Negotiations Being ‘Where the Upside Is’",
+   "link": "https://skillednursingnews.com/2026/11/sabra-ceo-on-nursing-home-asset-optimization-and-lease-negotiations-being-where-the-upside-is/",
+   "source": "Skilled Nursing News",
+   "published": "2026-11-03T22:38:28Z"
+  },
+  {
+   "title": "Janus Living More Than Doubles Senior Housing Portfolio with More Acquisitions to Come",
+   "link": "https://seniorhousingnews.com/2026/11/03/janus-living-more-than-doubles-senior-housing-portfolio-with-more-acquisitions-to-come/",
+   "source": "Senior Housing News",
+   "published": "2026-11-03T21:14:00Z"
+  },
+  {
+   "title": "The State Of HCBS In 2026: Policy Upheaval, Staffing Shortages Squeeze Providers",
+   "link": "https://homehealthcarenews.com/2026/11/the-state-of-hcbs-in-2026-policy-upheaval-staffing-shortages-squeeze-providers/",
+   "source": "Home Health Care News",
+   "published": "2026-11-03T21:48:46Z"
+  },
+  {
+   "title": "Medicare and Medicaid Programs; Organ Procurement Organizations Conditions for Coverage: Revisions to the Conditions for Coverage, Final Rule (CMS 3409-F)",
+   "link": "https://www.cms.gov/newsroom/fact-sheets/medicare-medicaid-programs-organ-procurement-organizations-conditions-coverage-revisions-conditions",
+   "source": "CMS Newsroom",
+   "published": "2026-10-30T20:36:03Z"
+  },
+  {
+   "title": "The GLP-1 Wave Reaches Nursing Homes, Raising Questions About Cost and Care",
+   "link": "https://skillednursingnews.com/2026/11/the-glp-1-wave-reaches-nursing-homes-raising-questions-about-cost-and-care/",
+   "source": "Skilled Nursing News",
+   "published": "2026-11-02T23:00:00Z"
+  },
+  {
+   "title": "‘Opportunities Are In SHOP’: Sabra Health Care REIT Targets More Senior Living Growth",
+   "link": "https://seniorhousingnews.com/2026/11/03/opportunities-are-in-shop-sabra-health-care-reit-targets-more-senior-living-growth/",
+   "source": "Senior Housing News",
+   "published": "2026-11-03T21:13:24Z"
+  },
+  {
+   "title": "Amid Fraud Crackdown, Home-Based Care Operators Look To Differentiate",
+   "link": "https://homehealthcarenews.com/2026/11/amid-fraud-crackdown-home-based-care-operators-look-to-differentiate/",
+   "source": "Home Health Care News",
+   "published": "2026-11-02T21:25:52Z"
+  },
+  {
+   "title": "Plan Year 2027 Marketplace Plans and Prices Fact Sheet",
+   "link": "https://www.cms.gov/newsroom/fact-sheets/plan-year-2027-marketplace-plans-prices-fact-sheet-0",
+   "source": "CMS Newsroom",
+   "published": "2026-10-30T18:30:49Z"
+  },
+  {
+   "title": "Medicare Advantage Patients Less Likely to Receive Care at Top-Rated Nursing Homes",
+   "link": "https://skillednursingnews.com/2026/11/medicare-advantage-patients-less-likely-to-receive-care-at-top-rated-nursing-homes/",
+   "source": "Skilled Nursing News",
+   "published": "2026-11-02T23:00:00Z"
+  },
+  {
+   "title": "Discovery Acquires Management Agreements for 26 Senior Living Communities",
+   "link": "https://seniorhousingnews.com/2026/11/02/discovery-acquires-management-agreements-for-26-senior-living-communities/",
+   "source": "Senior Housing News",
+   "published": "2026-11-02T22:28:35Z"
+  },
+  {
+   "title": "BrightSpring Home Health Revenue Jumps 50% As Company Sets Sights On Primary Care, New ACO Model",
+   "link": "https://homehealthcarenews.com/2026/11/brightspring-home-health-revenue-jumps-50-as-company-sets-sights-on-primary-care-new-aco-model/",
+   "source": "Home Health Care News",
+   "published": "2026-11-02T21:04:20Z"
+  },
+  {
+   "title": "Trump Administration Announces $39.7 Million to Modernize Rural Healthcare Across Missouri",
+   "link": "https://www.cms.gov/newsroom/press-releases/trump-administration-announces-39-7-million-modernize-rural-healthcare-across-missouri",
+   "source": "CMS Newsroom",
+   "published": "2026-10-30T15:04:28Z"
+  },
+  {
+   "title": "Announcing the Winners of the Inaugural Product of the Year Awards",
+   "link": "https://skillednursingnews.com/2026/11/announcing-the-winners-of-the-inaugural-product-of-the-year-awards/",
+   "source": "Skilled Nursing News",
+   "published": "2026-11-02T19:01:20Z"
+  },
+  {
+   "title": "With New Incoming CEO, Aegis Living Looks Ahead to Next Chapter of Growth",
+   "link": "https://seniorhousingnews.com/2026/11/02/with-new-incoming-ceo-aegis-living-looks-ahead-to-next-chapter-of-growth/",
+   "source": "Senior Housing News",
+   "published": "2026-11-02T19:26:29Z"
+  },
+  {
+   "title": "Gold Cards, Geographic Limits: Potential Paths For The Home Health Enrollment Freeze",
+   "link": "https://homehealthcarenews.com/2026/10/gold-cards-geographic-limits-potential-paths-for-the-home-health-enrollment-freeze/",
+   "source": "Home Health Care News",
+   "published": "2026-10-30T20:16:45Z"
+  },
+  {
+   "title": "Trump Administration Announces More Than $19 Million to Expand Telehealth, Specialty Care, and the Healthcare Workforce Across West Virginia",
+   "link": "https://www.cms.gov/newsroom/press-releases/trump-administration-announces-more-19-million-expand-telehealth-specialty-care-healthcare-workforce",
+   "source": "CMS Newsroom",
+   "published": "2026-10-30T12:31:07Z"
+  },
+  {
+   "title": "War on Fraud or ‘Rewards’ for Allies: Report Calls for Nursing Home Transparency Amid Industry Divisions Over Reform",
+   "link": "https://skillednursingnews.com/2026/10/war-on-fraud-or-rewards-for-allies-report-calls-for-nursing-home-transparency-amid-industry-divisions-over-reform/",
+   "source": "Skilled Nursing News",
+   "published": "2026-10-30T22:00:00Z"
+  },
+  {
+   "title": "Beyond Coastal Markets: Inside Alliance Residential’s $3B Senior Living Development Plan",
+   "link": "https://seniorhousingnews.com/2026/11/02/beyond-coastal-markets-inside-alliance-residentials-3b-senior-living-development-plan/",
+   "source": "Senior Housing News",
+   "published": "2026-11-02T19:12:07Z"
+  },
+  {
+   "title": "CMS Moves To Expand Home Health Review Choice Demonstration To California",
+   "link": "https://homehealthcarenews.com/2026/10/cms-moves-to-expand-home-health-review-choice-demonstration-to-california/",
+   "source": "Home Health Care News",
+   "published": "2026-10-30T16:27:15Z"
+  },
+  {
+   "title": "Trump Administration Announces $87 Million for 129 Rural Healthcare Providers Across Texas",
+   "link": "https://www.cms.gov/newsroom/press-releases/trump-administration-announces-87-million-129-rural-healthcare-providers-across-texas",
+   "source": "CMS Newsroom",
+   "published": "2026-10-29T18:00:19Z"
+  }
+ ]
+}

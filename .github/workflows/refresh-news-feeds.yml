@@ -1,0 +1,46 @@
+name: Refresh industry headlines
+
+# Collects the latest skilled nursing and senior living headlines into
+# content/news_feeds.json (scripts/fetch_news_feeds.py), commits the file when
+# it changed and redeploys. The deploy workflow also refreshes headlines every
+# 30 minutes without committing; this one keeps the committed copy current so
+# the repo always holds what is live. A feed that fails is skipped.
+
+on:
+  schedule:
+    - cron: '17 9 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: refresh-news-feeds
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Collect headlines
+        run: python3 scripts/fetch_news_feeds.py
+
+      - name: Commit and redeploy when the headlines changed
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if git diff --quiet -- content/news_feeds.json; then
+            echo "no new headlines"; exit 0
+          fi
+          git config user.name "Mainspring Site Agent"
+          git config user.email "admin@mainspringhcp.com"
+          git add content/news_feeds.json
+          git commit -m "News: refresh industry headlines"
+          git pull --rebase origin main
+          git push origin HEAD:main
+          gh workflow run deploy.yml --ref main

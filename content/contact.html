@@ -1,0 +1,52 @@
+<!--meta
+title: Contact Mainspring | Senior Living Turnaround Partners
+description: Speak with a Mainspring partner about your community. A clear read and a clear path within one business day — same day for survey and leadership emergencies.
+path: /contact/
+sticky: no
+priority: 0.8
+changefreq: monthly
+-->
+<div class="container"><p class="crumbs"><a href="/">Home</a> · Contact</p></div>
+<div class="hero-sub"><div class="container">
+    <p class="eyebrow">Contact</p>
+    <h1>Start the conversation.</h1>
+    <p class="lede">Tell us what's happening in your community. A partner will come back to you within one business day — same day for survey or leadership emergencies — with a clear read and a clear path.</p>
+    <div class="hero-cta"><a class="btn btn-primary" href="/contact/">Speak with a partner</a>
+    <a class="btn btn-ghost" href="/how-we-work/">Our engagement model</a></div>
+  </div></div>
+<section style="padding-top:6px"><div class="container"><div class="split reveal" style="grid-template-columns:1fr 1.3fr;align-items:start">
+  <div class="prose">
+    <p class="seclabel">Direct</p>
+    <p class="body"><strong>Email:</strong> <a href="mailto:db@mainspringhcp.com" style="color:var(--brass-text)">db@mainspringhcp.com</a><br>
+    <strong>Locations:</strong> New York · Memphis<br>
+    <strong>Service area:</strong> Engagements nationwide</p>
+    <p class="body" style="font-size:13.5px;color:var(--steel)">Mainspring provides management consulting services. We do not provide medical care, and we do not guarantee regulatory outcomes.</p>
+  </div>
+  <!-- Netlify: works automatically once deployed there. Elsewhere: set action="https://formspree.io/f/YOUR_ID" -->
+  <form class="site-form" action="https://formspree.io/f/YOUR_ID" name="assessment-request" method="POST" data-netlify="true" netlify-honeypot="company-website" data-subject="Website enquiry &mdash; speak with a partner">
+    <input type="hidden" name="form-name" value="assessment-request">
+    <p style="display:none"><label>Company website <input name="company-website"></label></p>
+    <div class="row">
+      <div><label for="name">Name</label><input id="name" name="name" required autocomplete="name"></div>
+      <div><label for="email">Work email</label><input id="email" name="email" type="email" required autocomplete="email"></div>
+    </div>
+    <div class="row">
+      <div><label for="phone">Phone</label><input id="phone" name="phone" type="tel" autocomplete="tel"></div>
+      <div><label for="community">Community / organization</label><input id="community" name="community"></div>
+    </div>
+    <label for="need">What's going on?</label>
+    <select id="need" name="need">
+      <option>Survey deficiencies / admissions hold</option>
+      <option>Executive director vacancy</option>
+      <option>Census decline</option>
+      <option>Cost pressure / financial concerns</option>
+      <option>Renovation or repositioning</option>
+      <option>Something else</option>
+    </select>
+    <label for="msg">Details — timeline pressure, survey windows, what you've tried</label>
+    <textarea id="msg" name="message" rows="5"></textarea>
+    <button type="submit">Speak with a partner</button>
+    <p class="form-status" role="status"></p>
+    <p class="fineprint">We respond within one business day — same day for survey or leadership emergencies. By submitting, you agree to our <a href="/privacy-policy/" style="color:var(--brass-text)">privacy policy</a>.</p>
+  </form>
+</div></div></section>

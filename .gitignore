@@ -1,0 +1,8 @@
+.DS_Store
+__pycache__/
+*.pyc
+.claude/
+
+# Build output. GitHub Actions rebuilds it on every deploy, so a committed copy
+# could only go stale — and it would store the 3.7MB overview video twice.
+public/

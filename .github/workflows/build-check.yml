@@ -1,0 +1,33 @@
+name: Build check
+
+# Runs on pull requests and on demand so a broken content file is caught
+# before it reaches main and the live site.
+
+on:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build
+        run: python3 build.py
+      - name: Check every page rendered and no template tokens leaked
+        run: |
+          python3 - <<'PY'
+          import pathlib, sys
+          pages = list(pathlib.Path("public").rglob("index.html")) + [pathlib.Path("public/404.html")]
+          bad = []
+          for p in pages:
+              s = p.read_text(encoding="utf-8")
+              if "{{" in s:
+                  bad.append(f"{p}: unreplaced template token")
+              if "<footer" not in s or "<header" not in s:
+                  bad.append(f"{p}: missing chrome")
+          print(f"checked {len(pages)} pages")
+          if bad:
+              print("\n".join(bad)); sys.exit(1)
+          print("ok")
+          PY
