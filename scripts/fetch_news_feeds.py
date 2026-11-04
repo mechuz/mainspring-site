@@ -28,24 +28,27 @@ OUT = ROOT / "content" / "news_feeds.json"
 UA = "Mozilla/5.0 (compatible; MainspringNewsBot/1.0; +https://mainspringhcp.com/industry/)"
 MAX_AGE_DAYS = 21
 MAX_ITEMS = 24
-PER_SOURCE = 8
+PER_SOURCE = 16
 
 # Verified Oct 30 + Nov 4 2026. McKnight's and HHS news are absent (403 to
 # datacenter IPs); LeadingAge's feed stopped updating in 2022; OIG publishes no
 # RSS. DOJ is filtered by topic and is legitimately empty on quiet days.
+REG_RE = re.compile(
+    r"\b(CMS|regulat\w*|rules?\b|rulemaking|surveys?\b|surveyors?|staffing (mandate|rule|requirement|standard)s?|minimum staffing|"
+    r"enforce\w*|penalt\w*|fines?\b|fined|citations?|deficienc\w*|complian\w*|Medicaid|Medicare|legislat\w*|lawmakers?|"
+    r"Congress|Senate|governor|bill\b|statute|lawsuit|court|settles?|settlement|OIG|inspector general|audits?|"
+    r"reimburse\w*|PDPM|PBJ|Five-Star|immediate jeopardy|HHS|federal|state (regulators?|agency|agencies|law)|"
+    r"licens\w*|certif\w*|oversight|inspection|crackdown|fraud|kickback|False Claims)\b", re.I)
+LTC_RE = re.compile(r"nursing home|nursing facilit|skilled nursing|long-term care|assisted living|hospice|home health|"
+                    r"senior living|elder|older adult|Medicaid|Medicare|post-acute|SNF\b|PDPM|PBJ|Five-Star|survey", re.I)
+
 SOURCES = [
-    # name, feed urls, home, group, topic filter (None = keep everything)
-    ("Skilled Nursing News", ["https://skillednursingnews.com/feed/"], "https://skillednursingnews.com", "industry", None),
-    ("Senior Housing News", ["https://seniorhousingnews.com/feed/"], "https://seniorhousingnews.com", "industry", None),
-    ("Home Health Care News", ["https://homehealthcarenews.com/feed/"], "https://homehealthcarenews.com", "industry", None),
-    ("CMS Newsroom", ["https://www.cms.gov/newsroom/rss-feeds"], "https://www.cms.gov", "regulatory", None),
-    ("Federal Register \u00b7 CMS", ["https://www.federalregister.gov/api/v1/documents.rss?conditions%5Bagencies%5D%5B%5D=centers-for-medicare-medicaid-services&order=newest"], "https://www.federalregister.gov", "regulatory", None),
-    ("Federal Register \u00b7 Nursing homes", ["https://www.federalregister.gov/api/v1/documents.rss?conditions%5Bterm%5D=nursing+home&order=newest"], "https://www.federalregister.gov", "regulatory",
-     r"nursing|long-term care|skilled nursing|assisted living|hospice|home health|medicare|medicaid|civil money|survey|certification|staffing|minimum staff|resident"),
-    ("Federal Register \u00b7 Long-term care", ["https://www.federalregister.gov/api/v1/documents.rss?conditions%5Bterm%5D=long-term+care+facilities&conditions%5Bagencies%5D%5B%5D=centers-for-medicare-medicaid-services&order=newest"], "https://www.federalregister.gov", "regulatory",
-     r"nursing|long-term care|skilled nursing|assisted living|hospice|home health|medicare|medicaid|civil money|survey|certification|staffing|minimum staff|resident"),
-    ("U.S. Department of Justice", ["https://www.justice.gov/news/rss?type=press_release"], "https://www.justice.gov", "regulatory",
-     r"nursing home|nursing facilit|skilled nursing|long-term care|assisted living|hospice|home health|medicare|medicaid|elder|senior living"),
+    # name, feed urls (all are fetched and merged), home, group, topic filter (None = keep everything)
+    ("Skilled Nursing News", ["https://skillednursingnews.com/feed/", "https://skillednursingnews.com/feed/?paged=2"], "https://skillednursingnews.com", "industry", None),
+    ("Senior Housing News", ["https://seniorhousingnews.com/feed/", "https://seniorhousingnews.com/feed/?paged=2"], "https://seniorhousingnews.com", "industry", None),
+    ("Home Health Care News", ["https://homehealthcarenews.com/feed/", "https://homehealthcarenews.com/feed/?paged=2"], "https://homehealthcarenews.com", "industry", None),
+    ("CMS Newsroom", ["https://www.cms.gov/newsroom/rss-feeds"], "https://www.cms.gov", "regulatory", LTC_RE.pattern),
+    ("U.S. Department of Justice", ["https://www.justice.gov/news/rss?type=press_release"], "https://www.justice.gov", "regulatory", LTC_RE.pattern),
 ]
 
 
@@ -135,9 +138,10 @@ def collect(now):
         entries, used, error = None, None, ""
         for url in urls:
             try:
-                entries, used = parse_feed(fetch(url), home), url
-                break
-            except Exception as e:  # noqa: BLE001 — any failure just skips the feed
+                got = parse_feed(fetch(url), home)
+                entries = (entries or []) + got
+                used = used or url
+            except Exception as e:  # noqa: BLE001 — a failed page is skipped; a failed source is recorded
                 error = f"{type(e).__name__}: {e}"[:200]
         if entries is None:
             sources.append({"name": name, "url": urls[0], "ok": False, "count": 0, "error": error})
@@ -162,9 +166,19 @@ def collect(now):
         per_source.append(kept)
         sources.append({"name": name, "url": used, "ok": True, "count": len(kept), "error": "", "group": group})
 
-    # round-robin inside each group, so no single publisher fills a section
-    def interleave(group):
-        lists = [l for l in per_source if l and l[0]["group"] == group]
+    # Regulatory news = the regulators' own announcements + the publishers' stories about
+    # rules, surveys, enforcement and reimbursement. Those stories move out of the industry list.
+    reg_lists, ind_lists = [], []
+    for lst in per_source:
+        if not lst:
+            continue
+        if lst[0]["group"] == "regulatory":
+            reg_lists.append(lst)
+        else:
+            reg_lists.append([i for i in lst if REG_RE.search(i["title"])])
+            ind_lists.append([i for i in lst if not REG_RE.search(i["title"])])
+
+    def interleave(lists):  # round-robin, so no single publisher fills a section
         out = []
         for i in range(PER_SOURCE):
             for lst in lists:
@@ -172,7 +186,7 @@ def collect(now):
                     out.append(lst[i])
         return out[:MAX_ITEMS]
     return {"fetched_at": now.strftime("%Y-%m-%dT%H:%M:%SZ"), "sources": sources,
-            "items": interleave("industry"), "regulatory": interleave("regulatory")}
+            "items": interleave(ind_lists), "regulatory": interleave(reg_lists)}
 
 
 def main(argv):
