@@ -38,6 +38,7 @@ BOOKING_URL = ""
 NAV = [
     ("services", "/services/", "Services"),
     ("how-we-work", "/how-we-work/", "How we work"),
+    ("state", "/state-agencies/", "State agencies"),
     ("industry", "/industry/", "Industry"),
     ("insights", "/insights/", "Insights"),
     ("about", "/about/", "About"),
@@ -112,6 +113,16 @@ def tokens(s, extra=None):
     return out
 
 
+def tabstrip(current):
+    home_cur = ' aria-current="page"' if current == "" else ""
+    rows = [f'    <a href="/"{home_cur}>Home</a>']
+    for key, href, label in NAV:
+        cur = ' aria-current="page"' if key == current else ""
+        rows.append(f'    <a href="{href}"{cur}>{label}</a>')
+    rows.append('    <a href="/contact/">Contact</a>')
+    return "\n".join(rows)
+
+
 def navlinks(current):
     rows = []
     for key, href, label in NAV:
@@ -135,6 +146,7 @@ def render(meta, body, template, assetv):
         "head": meta.get("_head", ""),
         "body": tokens(body),
         "navlinks": navlinks(meta.get("nav", "")),
+        "tabstrip": tabstrip(meta.get("nav", "") if meta["path"] != "/" else ""),
         "nav_dark": " nav-dark" if meta.get("nav_dark") == "yes" else "",
         "sticky": "" if meta.get("sticky") == "no" else STICKY,
         "year": str(dt.date.today().year),
