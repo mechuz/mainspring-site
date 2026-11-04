@@ -621,3 +621,9 @@ html.no-js .reveal{opacity:1;transform:none}
 .chat-form input:focus{outline:none;border-color:var(--navy);background:#fff}
 .chat-form button{width:48px;height:48px;border-radius:50%;border:0;background:var(--navy);color:#fff;cursor:pointer;display:grid;place-items:center;flex:none}
 .chat-form button svg{width:20px;height:20px}
+
+/* footer disclosures */
+.ft-legal{margin-top:clamp(1.6rem,4vw,2.6rem);padding-top:1.4rem;border-top:1px solid var(--line);display:grid;gap:.6rem}
+.ft-legal p{font-size:.84rem;line-height:1.5;color:var(--mute);max-width:100ch;margin:0}
+.ft-legal strong{color:var(--text);font-weight:600}
+.ft-legal a{color:var(--navy);font-weight:500}

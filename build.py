@@ -37,9 +37,9 @@ BOOKING_URL = ""
 # nav label -> path; the meta block's `nav:` key marks the current one
 NAV = [
     ("services", "/services/", "Services"),
-    ("cases", "/case-studies/", "Case studies"),
     ("how-we-work", "/how-we-work/", "How we work"),
     ("state", "/state-agencies/", "State agencies"),
+    ("industry", "/industry/", "Industry"),
     ("insights", "/insights/", "Insights"),
     ("about", "/about/", "About"),
 ]
@@ -119,7 +119,6 @@ def tabstrip(current):
     for key, href, label in NAV:
         cur = ' aria-current="page"' if key == current else ""
         rows.append(f'    <a href="{href}"{cur}>{label}</a>')
-    rows.append('    <a href="/industry/">Industry</a>')
     rows.append('    <a href="/contact/">Contact</a>')
     return "\n".join(rows)
 
@@ -237,7 +236,7 @@ def main():
 
     # pages
     for f in sorted(CONTENT.glob("*.html")):
-        if f.name.endswith(".head.html") or f.name == "case-studies.html":
+        if f.name.endswith(".head.html") or f.name == "case-studies.html" or f.name.startswith("_"):
             continue
         meta, body = parse_meta(f.read_text(encoding="utf-8"))
         head = CONTENT / f.name.replace(".html", ".head.html")
