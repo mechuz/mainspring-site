@@ -632,3 +632,10 @@ html.no-js .reveal{opacity:1;transform:none}
 .nav-links .nav-cta+.nav-cta{margin-left:-.6rem}
 .tabstrip a.tab-cta{background:var(--navy);color:#fff}
 .tabstrip a.tab-cta[aria-current="page"]{background:var(--navy-deep)}
+
+/* ---------- simplified home (Nov 2026) ---------- */
+.pnls.solo{height:auto;min-height:0}
+.pnls.solo .pnl{min-height:min(78svh,720px)}
+@media(max-width:860px){.pnls.solo .pnl.p-main{min-height:calc(100svh - var(--hdr) - 50px - env(safe-area-inset-top,0px) - 84px - 20px)}}
+@media(min-width:860px){.related.two{grid-template-columns:1fr 1fr}}
+.head .lead{margin-inline:auto}

@@ -37,11 +37,8 @@ BOOKING_URL = ""
 # nav label -> path; the meta block's `nav:` key marks the current one
 NAV = [  # ordered by how likely the click is to turn into a lead
     ("services", "/services/", "Services"),
-    ("how-we-work", "/how-we-work/", "How we work"),
-    ("cases", "/case-studies/", "Case studies"),
     ("state", "/state-agencies/", "State agencies"),
     ("about", "/about/", "About"),
-    ("insights", "/insights/", "Insights"),
 ]
 
 STICKY = f"""<div class="sticky-cta">
@@ -121,7 +118,7 @@ def tabstrip(current):
     for i, (key, href, label) in enumerate(NAV):
         cur = ' aria-current="page"' if key == current else ""
         rows.append(f'    <a href="{href}"{cur}>{label}</a>')
-        if i == 1:
+        if i == 0:
             rows.append('    <a href="/contact/" class="tab-cta">Contact</a>')
     rows.append('    <a href="/industry/">Industry news</a>')
     return "\n".join(rows)
