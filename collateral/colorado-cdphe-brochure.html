@@ -1,0 +1,291 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Mainspring Healthcare Partners — Capabilities for the Colorado Department of Public Health and Environment</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#14315C; --navy-deep:#0C2342; --navy-pale:#8DB4E8; --navy-mid:#2F6FBF;
+    --soft:#F3F5F8; --soft-2:#E6EAF0; --ink:#0A1526; --text-2:#2A3647; --mute:#5B6778;
+    --f-head:"Space Grotesk",Inter,system-ui,sans-serif; --f-body:Inter,system-ui,sans-serif;
+  }
+  @page{ size: Letter; margin: 0; }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0;background:#fff;color:var(--ink);font-family:var(--f-body);-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  .page{width:8.5in;height:11in;position:relative;overflow:hidden;page-break-after:always;padding:.5in .7in .42in;display:flex;flex-direction:column}
+  .page:last-child{page-break-after:auto}
+  h1,h2,h3{font-family:var(--f-head);letter-spacing:-.015em;margin:0}
+  p{margin:0}
+  .eyebrow{font:600 9.5pt var(--f-body);color:var(--navy);letter-spacing:.02em;text-transform:uppercase;margin:0 0 6pt}
+  .dark .eyebrow{color:var(--navy-pale)}
+  ul{margin:0;padding:0;list-style:none}
+
+  /* running header / footer */
+  .rh{display:flex;justify-content:space-between;align-items:center;font:500 8.5pt var(--f-body);color:var(--mute);padding-bottom:7pt;border-bottom:1px solid var(--soft-2);margin-bottom:12pt}
+  .rh b{color:var(--ink);font-weight:600}
+  .rf{margin-top:auto;display:flex;justify-content:space-between;font:500 8pt var(--f-body);color:var(--mute);padding-top:6pt;border-top:1px solid var(--soft-2)}
+  .dark .rh,.dark .rf{color:var(--navy-pale);border-color:rgba(255,255,255,.18)}
+  .dark .rh b{color:#fff}
+
+  /* brand lockup */
+  .lockup{display:flex;align-items:center;gap:10pt}
+  .lockup svg{display:block}
+  .wordmark{font:700 15pt var(--f-head);letter-spacing:.14em;line-height:1}
+  .wordsub{font:500 7.5pt var(--f-body);letter-spacing:.2em;text-transform:uppercase;color:var(--mute);margin-top:3pt}
+  .dark .wordsub{color:var(--navy-pale)}
+
+  /* cover */
+  .cover{background:var(--navy);color:#fff}
+  .cover .hero{margin-top:1.7in}
+  .cover h1{font-size:34pt;line-height:1.08;max-width:6.4in;font-weight:700}
+  .cover .lede{font-size:12.5pt;line-height:1.5;color:#DCE6F5;max-width:6in;margin-top:14pt}
+  .prep{margin-top:auto;padding-top:16pt;border-top:1px solid rgba(255,255,255,.18);display:grid;grid-template-columns:1fr 1fr;gap:16pt}
+  .prep .k{font:600 8pt var(--f-body);letter-spacing:.08em;text-transform:uppercase;color:var(--navy-pale);margin-bottom:4pt}
+  .prep .v{font-size:10.5pt;line-height:1.45;color:#fff}
+  .statband{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-top:30pt;border-top:1px solid rgba(255,255,255,.18);border-bottom:1px solid rgba(255,255,255,.18)}
+  .statband div{padding:14pt 10pt 14pt 0;border-right:1px solid rgba(255,255,255,.18)}
+  .statband div:last-child{border-right:0}
+  .statband div+div{padding-left:12pt}
+  .statband b{display:block;font:700 19pt var(--f-head);letter-spacing:-.02em;color:#fff;line-height:1}
+  .statband span{display:block;font-size:8.5pt;color:#DCE6F5;margin-top:5pt;line-height:1.35}
+
+  /* content */
+  h2{font-size:19pt;line-height:1.15;font-weight:700;color:var(--ink);max-width:6.2in}
+  .dark h2{color:#fff}
+  .intro{font-size:10pt;line-height:1.5;color:var(--text-2);max-width:6.4in;margin-top:7pt}
+  .cols{display:grid;grid-template-columns:1fr 1fr;gap:20pt;margin-top:12pt}
+  .list li{position:relative;padding-left:13pt;font-size:9.1pt;line-height:1.42;color:var(--text-2);margin-bottom:4pt}
+  .list li::before{content:"";position:absolute;left:0;top:6pt;width:7pt;height:2.2pt;background:var(--navy);border-radius:2pt}
+  .list li b{color:var(--ink);font-weight:600}
+  .box{background:var(--soft);border-radius:10pt;padding:11pt 14pt}
+  .box h3{font-size:11.5pt;margin-bottom:5pt}
+  .box p{font-size:8.9pt;line-height:1.48;color:var(--text-2)}
+  .box p+p{margin-top:6pt}
+  .cite{font-size:8pt;color:var(--mute);line-height:1.45;margin-top:8pt}
+
+  /* roadmap */
+  .road{display:grid;grid-template-columns:repeat(4,1fr);gap:10pt;margin:14pt 0 0;padding:0;list-style:none}
+  .road li{background:#fff;border:1px solid var(--soft-2);border-radius:10pt;padding:10pt 11pt 10pt;position:relative}
+  .road li.now{background:var(--navy);border-color:var(--navy);color:#fff}
+  .road .n{display:inline-block;font:700 9pt var(--f-head);color:var(--navy);background:var(--soft);border-radius:999pt;padding:2pt 7pt;margin-bottom:7pt}
+  .road li.now .n{background:rgba(255,255,255,.14);color:#fff}
+  .road h3{font-size:11pt;margin-bottom:4pt}
+  .road p{font-size:8.4pt;line-height:1.42;color:var(--text-2)}
+  .road li.now p{color:#DCE6F5}
+  .road .status{display:block;margin-top:8pt;font:600 7.5pt var(--f-body);letter-spacing:.08em;text-transform:uppercase;color:var(--navy)}
+  .road li.now .status{color:var(--navy-pale)}
+
+  /* results */
+  .cases{display:grid;grid-template-columns:1fr 1fr;gap:12pt;margin-top:10pt}
+  .case{border:1px solid var(--soft-2);border-radius:10pt;padding:11pt 13pt}
+  .case .sec{font:600 8pt var(--f-body);color:var(--navy);letter-spacing:.04em;text-transform:uppercase;margin-bottom:5pt}
+  .case h3{font-size:11.5pt;line-height:1.25;margin-bottom:6pt}
+  .case p{font-size:8.5pt;line-height:1.42;color:var(--text-2)}
+  .case .kpis{display:grid;grid-template-columns:1fr 1fr;gap:6pt 10pt;margin-top:9pt;padding-top:9pt;border-top:1px solid var(--soft-2)}
+  .case .kpis b{display:block;font:700 13pt var(--f-head);color:var(--navy);line-height:1;letter-spacing:-.02em}
+  .case .kpis span{display:block;font-size:7.8pt;color:var(--mute);margin-top:3pt;line-height:1.3}
+  .note{font-size:7.8pt;color:var(--mute);line-height:1.45;margin-top:9pt}
+
+  /* tech strip */
+  .strip{background:var(--navy);color:#fff;border-radius:10pt;padding:11pt 14pt;margin-top:10pt;display:grid;grid-template-columns:1.1fr 1fr;gap:16pt;align-items:center}
+  .strip h3{font-size:12pt;margin-bottom:4pt}
+  .strip.one{display:block}
+  .strip p{font-size:8.6pt;line-height:1.45;color:#DCE6F5}
+  .strip ul li{font-size:8.6pt;line-height:1.4;color:#fff;padding-left:12pt;position:relative;margin-bottom:4pt}
+  .strip ul li::before{content:"";position:absolute;left:0;top:5.5pt;width:6pt;height:2pt;background:var(--navy-pale);border-radius:2pt}
+
+  /* leadership */
+  .people{display:grid;grid-template-columns:1fr 1fr;gap:14pt;margin-top:10pt}
+  .person{border:1px solid var(--soft-2);border-radius:10pt;padding:12pt 13pt}
+  .person .av{width:34pt;height:34pt;border-radius:999pt;background:var(--navy);color:#fff;font:700 12pt var(--f-head);display:flex;align-items:center;justify-content:center;margin-bottom:9pt}
+  .person h3{font-size:12.5pt;margin-bottom:2pt}
+  .person .role{font-size:9pt;color:var(--navy);font-weight:600;margin-bottom:7pt}
+  .person p{font-size:8.6pt;line-height:1.45;color:var(--text-2)}
+  .person p+p{margin-top:5pt}
+  .tags{display:flex;flex-wrap:wrap;gap:4pt;margin-top:8pt}
+  .tags span{font:500 7.6pt var(--f-body);color:var(--navy);background:var(--soft);border-radius:999pt;padding:2.5pt 7pt}
+  .person .contact{margin-top:8pt;font-size:8.6pt;color:var(--ink);font-weight:500}
+
+  /* contact panel */
+  .cta{background:var(--navy);color:#fff;border-radius:10pt;padding:12pt 16pt;margin-top:10pt;display:grid;grid-template-columns:1.25fr 1fr;gap:18pt;align-items:center}
+  .cta h3{font-size:15pt;line-height:1.15;margin-bottom:4pt}
+  .cta p{font-size:9.4pt;line-height:1.5;color:#DCE6F5}
+  .cta .lines{font-size:9.2pt;line-height:1.5}
+  .cta .lines b{display:block;font:600 7.5pt var(--f-body);letter-spacing:.08em;text-transform:uppercase;color:var(--navy-pale);margin-top:4pt}
+  .cta .lines b:first-child{margin-top:0}
+  .legal{font-size:7.1pt;color:var(--mute);line-height:1.4;margin-top:8pt}
+</style>
+</head>
+<body>
+
+<!-- ============ PAGE 1 · COVER ============ -->
+<section class="page cover dark">
+  <div class="lockup">
+    <svg width="62" height="36" viewBox="6 44 196 112" aria-hidden="true"><path d="M16 100 L84 100 L92 112 L102 58 L112 128 L120 100 L172 100" fill="none" stroke="#FFFFFF" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/><circle cx="189" cy="100" r="9" fill="#8DB4E8"/></svg>
+    <div><div class="wordmark">MAINSPRING</div><div class="wordsub">Healthcare Partners</div></div>
+  </div>
+
+  <div class="hero">
+    <p class="eyebrow">Capabilities statement · Temporary management, receivership and state-directed oversight</p>
+    <h1>When the state has to step in, we are the operators who step in.</h1>
+    <p class="lede">Licensed nursing home administrators and nurse leaders who take over a distressed nursing facility or assisted living residence on short notice, make it safe, correct what the survey found, put the finances under control, and hand it back — with reporting the Department can rely on from the first week.</p>
+  </div>
+
+  <div class="statband">
+    <div><b>Days</b><span>Licensed administrator and DON in the building</span></div>
+    <div><b>72 hrs</b><span>Resident-safety assessment and written stabilization plan</span></div>
+    <div><b>Weekly</b><span>Reporting in the Department's or the court's format</span></div>
+    <div><b>Fixed</b><span>Pre-agreed fees that fit a state contract or order</span></div>
+  </div>
+
+  <div class="prep">
+    <div><div class="k">Prepared for</div><div class="v">Colorado Department of Public Health and Environment<br>Health Facilities and Emergency Medical Services Division<br>Acute and Nursing Facilities Branch</div></div>
+    <div><div class="k">Prepared by</div><div class="v">Mainspring Healthcare Partners<br>Felix Strickland III, Managing Director, Operations and Compliance<br>November 2026 · mainspringhcp.com</div></div>
+  </div>
+</section>
+
+<!-- ============ PAGE 2 · WHAT WE DO FOR THE STATE ============ -->
+<section class="page">
+  <div class="rh"><span><b>Mainspring Healthcare Partners</b> · Capabilities for CDPHE</span><span>Where we are engaged</span></div>
+
+  <p class="eyebrow">For the Department, the Attorney General and the courts</p>
+  <h2>Every remedy Colorado can impose on a failing facility needs someone qualified to run the building while it is imposed.</h2>
+  <p class="intro">Colorado counts a receiver or temporary manager, a directed plan of correction, and intermediate conditions such as a required consultant or Department monitoring among its enforcement remedies. We are built to be that temporary manager, receiver, consultant or monitor — and operator of record when an order calls for one — for skilled nursing and nursing care facilities, assisted living residences including secured memory care, and continuing care communities.</p>
+
+  <div class="cols">
+    <div>
+      <p class="eyebrow">Where we are engaged</p>
+      <ul class="list">
+        <li><b>Temporary management</b> imposed as an enforcement remedy, state or federal, where the Department needs a qualified administrator in the building immediately and reporting it can rely on</li>
+        <li><b>Receivership</b> under C.R.S. 25-3-108 — court-appointed operation of a long-term care facility through to lease, sale or orderly closure, led by a licensed nursing home administrator as the statute requires</li>
+        <li><b>Independent monitoring and consultation</b> under a directed plan of correction, conditional licence, settlement or consent order, with verification the Department does not have to take on faith</li>
+        <li><b>Managed closure and resident relocation</b> when a licence is surrendered, suspended or revoked — safe transfers, family communication, records and resident trust funds accounted for</li>
+        <li><b>Rapid stabilization</b> after immediate-jeopardy findings or an abandonment event, where the priority is resident safety tonight</li>
+        <li><b>Forensic accounting</b> of a facility's funds, payroll and related-party transactions for the Department, the receiver or the Attorney General</li>
+      </ul>
+    </div>
+    <div>
+      <p class="eyebrow">What the Department gets</p>
+      <ul class="list">
+        <li>A licensed administrator and a director of nursing in the building within days, matched to Colorado licensure and the facility's survey history</li>
+        <li>A first-72-hour resident-safety assessment and a written stabilization plan</li>
+        <li>Weekly reporting in the format the Department or the court specifies: census, staffing, clinical risk, cash, vendor status, open deficiencies</li>
+        <li>Financial control from day one — cash, payroll, resident trust funds, accounts payable — with an independent accounting at the end</li>
+        <li>A defined exit: transfer to a qualified operator, a sale, or an orderly closure with every resident placed</li>
+        <li>Fixed, pre-agreed fees that fit a state contract, a court order or an enforcement remedy</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="box" style="margin-top:12pt">
+    <h3>How this fits Colorado's framework</h3>
+    <p><b>Enforcement activity</b> under C.R.S. 25-1.5-103 includes civil money penalties, conditional licensure, suspension or revocation, appointment of a receiver or temporary manager, a directed plan of correction, and intermediate conditions such as a required consultant, Department monitoring or additional training. <b>Receivership</b> under C.R.S. 25-3-108: when a licence is revoked, not renewed or summarily suspended, the Department, licensee or owner may ask the district court to appoint a receiver — who must be a licensed nursing home administrator, operates under Department standards, and serves up to 180 days unless extended — so residents are not moved before a lease, sale or closure is arranged. <b>Federal temporary management</b> under 42 C.F.R. 488.415 remains available for certified facilities as an alternative to termination.</p>
+    <p class="cite">Summarized for orientation only; the governing text is the current Colorado Revised Statutes, 6 CCR 1011-1 and 42 C.F.R. Part 488. We work within the specific order, contract or remedy that governs each engagement.</p>
+  </div>
+
+  <div class="rf"><span>mainspringhcp.com · info@mainspringhcp.com · 650-418-2280</span><span>2</span></div>
+</section>
+
+<!-- ============ PAGE 3 · HOW IT RUNS · RESULTS ============ -->
+<section class="page">
+  <div class="rh"><span><b>Mainspring Healthcare Partners</b> · Capabilities for CDPHE</span><span>How a mandated engagement runs</span></div>
+
+  <p class="eyebrow">Operators, not consultants</p>
+  <h2>A mandated engagement is only as good as the people in the building at 2 a.m.</h2>
+  <p class="intro">Our principals and network are working administrators and nurse leaders — people who hold the licence, have run buildings through survey, and have taken over failing operations before. That is the difference between a report that describes the problem and a building that is safe tonight.</p>
+
+  <ol class="road">
+    <li class="now"><span class="n">1</span><h3>Day 0–3</h3><p>Administrator and DON in the building. Resident-safety assessment. Financial controls taken over. First report to the Department.</p><span class="status">Stabilize</span></li>
+    <li><span class="n">2</span><h3>Weeks 1–6</h3><p>Deficiencies corrected with evidence. Staffing rebuilt. Vendors and payroll current. Weekly reporting begins and does not stop.</p><span class="status">Correct</span></li>
+    <li><span class="n">3</span><h3>Months 2–6</h3><p>Systems that hold without us. Census and cash stabilized. Options prepared for the Department: transfer, sale or closure.</p><span class="status">Rebuild</span></li>
+    <li><span class="n">4</span><h3>Exit</h3><p>Hand-off to a qualified operator, or an orderly closure with every resident placed and every dollar accounted for.</p><span class="status">Resolve</span></li>
+  </ol>
+
+  <p class="eyebrow" style="margin-top:18pt">Results from our leadership's operating record</p>
+  <div class="cases">
+    <div class="case">
+      <div class="sec">Continuing care retirement community · Michigan</div>
+      <h3>Back to budget, off agency staffing, through survey, and sold.</h3>
+      <p>Staffing recalibrated to budget, department heads managing paid hours per resident day daily, agency use eliminated — while completing the annual survey.</p>
+      <div class="kpis">
+        <div><b>$40k/mo</b><span>Labor savings, sustained eight months</span></div>
+        <div><b>$320k</b><span>Cumulative savings over the engagement</span></div>
+        <div><b>0</b><span>Agency staffing by the end</span></div>
+        <div><b>Sold</b><span>Owner completed the sale on a stable operation</span></div>
+      </div>
+    </div>
+    <div class="case">
+      <div class="sec">Skilled nursing &amp; rehabilitation · Tennessee</div>
+      <h3>Rehab census more than doubled. Survey deficiency-free.</h3>
+      <p>Regulatory gaps ranked and assigned to department leaders; short-term rehab rebuilt around Medicare Part A and managed care; survey readiness run daily.</p>
+      <div class="kpis">
+        <div><b>20–25 → 45–55</b><span>Short-term rehab average daily census</span></div>
+        <div><b>50+</b><span>Admissions a month</span></div>
+        <div><b>$250k/mo</b><span>Added revenue at the higher operating level</span></div>
+        <div><b>0</b><span>Deficiencies, October 2019 annual health survey</span></div>
+      </div>
+    </div>
+  </div>
+  <p class="note">These results reflect the individual operating experience of Mainspring's leadership before the firm was formed, not Mainspring corporate engagements. Figures are as reported by the leader responsible for the period; survey results as recorded by the state survey agency. Facilities are not named; references are available to the Department on request.</p>
+
+  <div class="strip one">
+    <h3>Tech-driven, by habit</h3>
+    <p>We run our own operating businesses on the latest AI computing, and every mandated engagement gets the same stack: a daily census, staffing and cash brief · payroll and related-party anomaly monitoring from day one · a deficiency tracker with evidence attached to every correction · a documentary record the Department or the court can audit.</p>
+  </div>
+
+  <div class="rf"><span>mainspringhcp.com · info@mainspringhcp.com · 650-418-2280</span><span>3</span></div>
+</section>
+
+<!-- ============ PAGE 4 · LEADERSHIP · PROCUREMENT · CONTACT ============ -->
+<section class="page">
+  <div class="rh"><span><b>Mainspring Healthcare Partners</b> · Capabilities for CDPHE</span><span>Leadership and contracting</span></div>
+
+  <p class="eyebrow">Leadership</p>
+  <h2>Who the Department would actually be working with.</h2>
+
+  <div class="people">
+    <div class="person">
+      <div class="av">FS</div>
+      <h3>Felix Strickland III</h3>
+      <div class="role">Managing Director, Operations and Compliance · Licensed Nursing Home Administrator</div>
+      <p>Healthcare executive with more than sixteen years of leadership across skilled nursing, assisted living, memory care and senior living — as Administrator, Executive Director, Chief Executive Officer, Director of Operations and consultant, with multi-state experience. His focus is operational performance, financial improvement, census growth, regulatory compliance and quality outcomes; hands-on, data-driven, and uncompromising on resident-centred care. Bachelor's degree in Management and Project Management.</p>
+      <div class="tags"><span>Licensed NHA</span><span>Multi-state</span><span>SNF · AL · memory care</span><span>Survey &amp; plan of correction</span><span>Turnaround</span></div>
+      <div class="contact">felix@mainspringhcp.com</div>
+    </div>
+    <div class="person">
+      <div class="av">DB</div>
+      <h3>David Bloch</h3>
+      <div class="role">Managing Partner</div>
+      <p>More than twenty years of executive experience with a focus on operational efficiency across technology, real estate and healthcare. Began with Fortune 500 companies and management consulting, including IBM and Verizon; moved into private equity and structured debt, then ownership of real estate portfolios; now applies that combined corporate, financial and ownership expertise to healthcare operations in a highly regulated industry. Known for rapidly assessing complex organizations and delivering lasting, measurable improvement.</p>
+      <div class="tags"><span>20+ years executive</span><span>IBM · Verizon</span><span>Private equity &amp; structured debt</span><span>Financial control</span><span>Asset management</span></div>
+      <div class="contact">db@mainspringhcp.com · 650-418-2280</div>
+    </div>
+  </div>
+
+  <div class="box" style="margin-top:12pt">
+    <h3>Contracting and the network behind the principals</h3>
+    <p>We contract directly with state agencies, courts and appointed receivers, and can serve as operator of record under a temporary-management or receivership order. Scope, deliverables, reporting cadence and fixed fees are set out in writing before work begins. Behind the principals is a vetted network of licensed administrators, directors of nursing and department leaders, so a Colorado engagement is staffed by people matched to Colorado's regulations. Statements of qualifications, references and certificates of insurance are available on request.</p>
+  </div>
+
+  <div class="cta">
+    <div>
+      <h3>Tell us about the facility.</h3>
+      <p>Same-day response. In one conversation we will say whether we can have leadership in the building this week, and what it would involve.</p>
+    </div>
+    <div class="lines">
+      <b>Engagement lead</b>Felix Strickland III · felix@mainspringhcp.com
+      <b>Firm</b>info@mainspringhcp.com · 650-418-2280
+      <b>Web</b>mainspringhcp.com/state-agencies
+      <b>Offices</b>New York · Tennessee
+    </div>
+  </div>
+
+  <p class="legal">Mainspring Healthcare Partners provides operational, financial and advisory services and is not a law firm, accounting firm or government agency. Regulatory outcomes depend on the facts of each facility and the decisions of the survey agency and the courts; no outcome is guaranteed. Mainspring is an equal opportunity employer and does not discriminate in employment, engagement or the delivery of services.</p>
+
+  <div class="rf"><span>mainspringhcp.com · info@mainspringhcp.com · 650-418-2280</span><span>4</span></div>
+</section>
+
+</body>
+</html>
