@@ -46,8 +46,7 @@ STICKY = f"""<div class="sticky-cta">
     <div class="txt">Under a survey or short an administrator?
       <small>Same-day response on survey and leadership situations.</small></div>
     <div class="sticky-actions" style="display:flex;gap:10px">
-      <a class="btn btn-on-dark" href="tel:{PHONE_TEL}">{PHONE_FMT}</a>
-      <a class="btn btn-primary" href="/contact/">Speak with a partner</a>
+      <a class="btn btn-primary" href="/contact/">Tell us what is happening</a>
     </div>
   </div>
 </div>"""
