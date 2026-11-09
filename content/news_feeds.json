@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-11-08T15:57:57Z",
+ "fetched_at": "2026-11-09T19:49:02Z",
  "sources": [
   {
    "name": "Skilled Nursing News",
@@ -29,7 +29,7 @@
    "name": "CMS Newsroom",
    "url": "https://www.cms.gov/newsroom/rss-feeds",
    "ok": true,
-   "count": 7,
+   "count": 5,
    "error": "",
    "group": "regulatory"
   },
@@ -44,11 +44,11 @@
  ],
  "items": [
   {
-   "title": "Amid $1.69B in New 3Q Investments, AHR Execs Laud Trilogy’s Nursing Home Occupancy and Expense Controls",
-   "link": "https://skillednursingnews.com/2026/11/amid-1-69b-in-new-3q-investments-ahr-execs-laud-trilogys-nursing-home-occupancy-and-expense-controls/",
+   "title": "Voices: Darcy Smith, Chief People Officer, MatrixCare",
+   "link": "https://skillednursingnews.com/2026/11/voices-darcy-smith-chief-people-officer-matrixcare/",
    "source": "Skilled Nursing News",
    "group": "industry",
-   "published": "2026-11-06T22:45:00Z"
+   "published": "2026-11-09T19:40:56Z"
   },
   {
    "title": "American Healthcare REIT Sets Bar Higher for SHOP to Fuel Next Growth Stage",
@@ -56,6 +56,27 @@
    "source": "Senior Housing News",
    "group": "industry",
    "published": "2026-11-06T21:40:05Z"
+  },
+  {
+   "title": "LiveWell Partners Acquires Assured Home Health and Hospice",
+   "link": "https://homehealthcarenews.com/2026/11/livewell-partners-acquires-assured-home-health-and-hospice/",
+   "source": "Home Health Care News",
+   "group": "industry",
+   "published": "2026-11-09T16:27:48Z"
+  },
+  {
+   "title": "Amid $1.69B in New 3Q Investments, AHR Execs Laud Trilogy’s Nursing Home Occupancy and Expense Controls",
+   "link": "https://skillednursingnews.com/2026/11/amid-1-69b-in-new-3q-investments-ahr-execs-laud-trilogys-nursing-home-occupancy-and-expense-controls/",
+   "source": "Skilled Nursing News",
+   "group": "industry",
+   "published": "2026-11-06T22:45:00Z"
+  },
+  {
+   "title": "Brookdale Senior Living Revamps Sales Strategy to Accelerate Slower-Than-Expected Occupancy Gains",
+   "link": "https://seniorhousingnews.com/2026/11/06/brookdale-senior-living-revamps-sales-strategy-to-accelerate-slower-than-expected-occupancy-gains/",
+   "source": "Senior Housing News",
+   "group": "industry",
+   "published": "2026-11-06T21:27:46Z"
   },
   {
    "title": "What The 2026 Midterms Mean For The Home-Based Care Industry",
@@ -72,11 +93,11 @@
    "published": "2026-11-06T22:39:09Z"
   },
   {
-   "title": "Brookdale Senior Living Revamps Sales Strategy to Accelerate Slower-Than-Expected Occupancy Gains",
-   "link": "https://seniorhousingnews.com/2026/11/06/brookdale-senior-living-revamps-sales-strategy-to-accelerate-slower-than-expected-occupancy-gains/",
+   "title": "Capital and Scale, Not Ideas, Are Biggest Barriers to Middle-Market Senior Living",
+   "link": "https://seniorhousingnews.com/2026/11/06/capital-and-scale-not-ideas-are-biggest-barriers-to-middle-market-senior-living/",
    "source": "Senior Housing News",
    "group": "industry",
-   "published": "2026-11-06T21:27:46Z"
+   "published": "2026-11-06T20:44:21Z"
   },
   {
    "title": "Caregiver Desires For 40-Hour Weeks Shape Addus’ Personal Care Census Strategy",
@@ -93,11 +114,11 @@
    "published": "2026-11-04T23:00:00Z"
   },
   {
-   "title": "Capital and Scale, Not Ideas, Are Biggest Barriers to Middle-Market Senior Living",
-   "link": "https://seniorhousingnews.com/2026/11/06/capital-and-scale-not-ideas-are-biggest-barriers-to-middle-market-senior-living/",
+   "title": "In the Pipeline: Erickson Hits Milestone in Florida; Harbert Management, Harrison Street Form Development Partnership",
+   "link": "https://seniorhousingnews.com/2026/11/05/in-the-pipeline-erickson-hits-milestone-in-florida-harbert-management-harrison-street-form-development-partnership/",
    "source": "Senior Housing News",
    "group": "industry",
-   "published": "2026-11-06T20:44:21Z"
+   "published": "2026-11-05T22:13:05Z"
   },
   {
    "title": "The State Of HCBS In 2026: Policy Upheaval, Staffing Shortages Squeeze Providers",
@@ -114,11 +135,11 @@
    "published": "2026-11-04T22:41:33Z"
   },
   {
-   "title": "In the Pipeline: Erickson Hits Milestone in Florida; Harbert Management, Harrison Street Form Development Partnership",
-   "link": "https://seniorhousingnews.com/2026/11/05/in-the-pipeline-erickson-hits-milestone-in-florida-harbert-management-harrison-street-form-development-partnership/",
+   "title": "National Healthcare Properties Continues to Trade Medical Facilities for Senior Housing",
+   "link": "https://seniorhousingnews.com/2026/11/05/national-healthcare-properties-continues-to-trade-medical-facilities-for-senior-housing/",
    "source": "Senior Housing News",
    "group": "industry",
-   "published": "2026-11-05T22:13:05Z"
+   "published": "2026-11-05T21:47:00Z"
   },
   {
    "title": "BrightSpring Home Health Revenue Jumps 50% As Company Sets Sights On Primary Care, New ACO Model",
@@ -135,11 +156,11 @@
    "published": "2026-11-03T23:00:00Z"
   },
   {
-   "title": "National Healthcare Properties Continues to Trade Medical Facilities for Senior Housing",
-   "link": "https://seniorhousingnews.com/2026/11/05/national-healthcare-properties-continues-to-trade-medical-facilities-for-senior-housing/",
+   "title": "Sonida Senior Living Keeps Eye On Customer Experiences With Tiered Service Framework",
+   "link": "https://seniorhousingnews.com/2026/11/05/sonida-senior-living-keeps-eye-on-customer-experiences-with-tiered-service-framework/",
    "source": "Senior Housing News",
    "group": "industry",
-   "published": "2026-11-05T21:47:00Z"
+   "published": "2026-11-05T21:39:44Z"
   },
   {
    "title": "Gold Cards, Geographic Limits: Potential Paths For The Home Health Enrollment Freeze",
@@ -156,11 +177,11 @@
    "published": "2026-11-03T22:38:28Z"
   },
   {
-   "title": "Sonida Senior Living Keeps Eye On Customer Experiences With Tiered Service Framework",
-   "link": "https://seniorhousingnews.com/2026/11/05/sonida-senior-living-keeps-eye-on-customer-experiences-with-tiered-service-framework/",
+   "title": "For Better or Worse, Midterm Political Sea Change Means More Eyes on Senior Living, Long-Term Care",
+   "link": "https://seniorhousingnews.com/2026/11/04/for-better-or-worse-midterm-political-sea-change-means-more-eyes-on-senior-living-long-term-care/",
    "source": "Senior Housing News",
    "group": "industry",
-   "published": "2026-11-05T21:39:44Z"
+   "published": "2026-11-04T22:26:32Z"
   },
   {
    "title": "Home-Based Care M&A Slumps In Q3, But Buyer Appetite Endures",
@@ -177,20 +198,6 @@
    "published": "2026-11-02T23:00:00Z"
   },
   {
-   "title": "For Better or Worse, Midterm Political Sea Change Means More Eyes on Senior Living, Long-Term Care",
-   "link": "https://seniorhousingnews.com/2026/11/04/for-better-or-worse-midterm-political-sea-change-means-more-eyes-on-senior-living-long-term-care/",
-   "source": "Senior Housing News",
-   "group": "industry",
-   "published": "2026-11-04T22:26:32Z"
-  },
-  {
-   "title": "Announcing the Winners of the Inaugural Product of the Year Awards",
-   "link": "https://skillednursingnews.com/2026/11/announcing-the-winners-of-the-inaugural-product-of-the-year-awards/",
-   "source": "Skilled Nursing News",
-   "group": "industry",
-   "published": "2026-11-02T19:01:20Z"
-  },
-  {
    "title": "LTC Properties ‘Buying Future Growth’ With Nearly $1B in Senior Housing Deals This Year",
    "link": "https://seniorhousingnews.com/2026/11/04/ltc-properties-buying-future-growth-with-nearly-1b-in-senior-housing-deals-this-year/",
    "source": "Senior Housing News",
@@ -198,18 +205,11 @@
    "published": "2026-11-04T21:36:06Z"
   },
   {
-   "title": "Nursing Home CMP Fund Balances Rise to $713.6M, Up Nearly $100M in One Year",
-   "link": "https://skillednursingnews.com/2026/10/nursing-home-cmp-fund-balances-rise-to-713-6m-up-nearly-100m-in-one-year/",
+   "title": "Announcing the Winners of the Inaugural Product of the Year Awards",
+   "link": "https://skillednursingnews.com/2026/11/announcing-the-winners-of-the-inaugural-product-of-the-year-awards/",
    "source": "Skilled Nursing News",
    "group": "industry",
-   "published": "2026-10-30T21:45:00Z"
-  },
-  {
-   "title": "Omega Healthcare Eyes ‘Strong’ Growth Pipeline With RIDEA Opportunities Ahead",
-   "link": "https://seniorhousingnews.com/2026/11/04/omega-healthcare-eyes-strong-growth-pipeline-with-ridea-opportunities-ahead/",
-   "source": "Senior Housing News",
-   "group": "industry",
-   "published": "2026-11-04T21:06:12Z"
+   "published": "2026-11-02T19:01:20Z"
   }
  ],
  "regulatory": [
@@ -270,11 +270,11 @@
    "published": "2026-11-05T22:02:38Z"
   },
   {
-   "title": "Calendar Year (CY) 2027 Medicare Physician Fee Schedule Final Rule (CMS-1848-F) — Medicare Shared Savings Program",
-   "link": "https://www.cms.gov/newsroom/fact-sheets/calendar-year-cy-2027-medicare-physician-fee-schedule-final-rule-cms-1848-f-medicare-shared-savings",
+   "title": "CMS Finalizes Broad Medicare Integrity Changes in Home Health Final Rule; Expected to Save Taxpayers Tens of Millions of Dollars",
+   "link": "https://www.cms.gov/newsroom/press-releases/cms-finalizes-broad-medicare-integrity-changes-home-health-final-rule-expected-save-taxpayers-tens",
    "source": "CMS Newsroom",
    "group": "regulatory",
-   "published": "2026-11-05T16:03:00Z"
+   "published": "2026-11-05T15:28:38Z"
   },
   {
    "title": "Nursing Home Giant Ensign Touts $1B for Future Investments, Census Momentum and New CMS Survey Performance in 3Q",
@@ -291,18 +291,11 @@
    "published": "2026-11-04T22:35:00Z"
   },
   {
-   "title": "CMS Finalizes Broad Medicare Integrity Changes in Home Health Final Rule; Expected to Save Taxpayers Tens of Millions of Dollars",
-   "link": "https://www.cms.gov/newsroom/press-releases/cms-finalizes-broad-medicare-integrity-changes-home-health-final-rule-expected-save-taxpayers-tens",
+   "title": "Medicare Outpatient Final Rule Expands Surgical Options, Lowers Out-of-Pocket Costs for 340B Drugs",
+   "link": "https://www.cms.gov/newsroom/press-releases/medicare-outpatient-final-rule-expands-surgical-options-lowers-out-pocket-costs-340b-drugs",
    "source": "CMS Newsroom",
    "group": "regulatory",
-   "published": "2026-11-05T15:28:38Z"
-  },
-  {
-   "title": "Lawmakers Sound Alarm on CMS’ New Risk-Based Survey",
-   "link": "https://skillednursingnews.com/2026/10/lawmakers-sound-alarm-on-cms-new-risk-based-survey/",
-   "source": "Skilled Nursing News",
-   "group": "industry",
-   "published": "2026-10-27T22:00:00Z"
+   "published": "2026-11-04T22:22:35Z"
   },
   {
    "title": "Home Health Agencies Face 13% More Paperwork For $60 Less Per Visit Under Medicare Advantage",
@@ -312,11 +305,11 @@
    "published": "2026-11-03T22:17:42Z"
   },
   {
-   "title": "Medicare Outpatient Final Rule Expands Surgical Options, Lowers Out-of-Pocket Costs for 340B Drugs",
-   "link": "https://www.cms.gov/newsroom/press-releases/medicare-outpatient-final-rule-expands-surgical-options-lowers-out-pocket-costs-340b-drugs",
+   "title": "Calendar Year (CY) 2027 Home Health Prospective Payment System Final Rule - CMS-1844-F",
+   "link": "https://www.cms.gov/newsroom/fact-sheets/calendar-year-cy-2027-home-health-prospective-payment-system-final-rule-cms-1844-f",
    "source": "CMS Newsroom",
    "group": "regulatory",
-   "published": "2026-11-04T22:22:35Z"
+   "published": "2026-11-04T22:10:28Z"
   },
   {
    "title": "Amid Fraud Crackdown, Home-Based Care Operators Look To Differentiate",
@@ -326,25 +319,11 @@
    "published": "2026-11-02T21:25:52Z"
   },
   {
-   "title": "Calendar Year (CY) 2027 Home Health Prospective Payment System Final Rule - CMS-1844-F",
-   "link": "https://www.cms.gov/newsroom/fact-sheets/calendar-year-cy-2027-home-health-prospective-payment-system-final-rule-cms-1844-f",
-   "source": "CMS Newsroom",
-   "group": "regulatory",
-   "published": "2026-11-04T22:10:28Z"
-  },
-  {
    "title": "CMS Moves To Expand Home Health Review Choice Demonstration To California",
    "link": "https://homehealthcarenews.com/2026/10/cms-moves-to-expand-home-health-review-choice-demonstration-to-california/",
    "source": "Home Health Care News",
    "group": "industry",
    "published": "2026-10-30T16:27:15Z"
-  },
-  {
-   "title": "Calendar Year (CY) 2027 Medicare Physician Fee Schedule Final Rule",
-   "link": "https://www.cms.gov/newsroom/fact-sheets/calendar-year-cy-2027-medicare-physician-fee-schedule-final-rule",
-   "source": "CMS Newsroom",
-   "group": "regulatory",
-   "published": "2026-11-04T22:06:26Z"
   },
   {
    "title": "CMS COO: Moratorium Has Blocked 250 Home Health Agencies From Medicare Enrollment",
@@ -359,13 +338,6 @@
    "source": "Home Health Care News",
    "group": "industry",
    "published": "2026-10-28T20:53:15Z"
-  },
-  {
-   "title": "Workforce Shortages And Medicaid Cuts Shift In-Home Care Burden To Families",
-   "link": "https://homehealthcarenews.com/2026/10/workforce-shortages-and-medicaid-cuts-shift-in-home-care-burden-to-families/",
-   "source": "Home Health Care News",
-   "group": "industry",
-   "published": "2026-10-28T19:39:23Z"
   }
  ]
 }
