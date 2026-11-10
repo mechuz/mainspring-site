@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-11-09T19:49:02Z",
+ "fetched_at": "2026-11-10T17:02:20Z",
  "sources": [
   {
    "name": "Skilled Nursing News",
@@ -44,6 +44,48 @@
  ],
  "items": [
   {
+   "title": "U.S. News Nursing Home Report: ‘Encouraging’ Staffing Gains, Troubling Depressive Symptoms on the Rise",
+   "link": "https://skillednursingnews.com/2026/11/u-s-news-nursing-home-report-encouraging-staffing-gains-troubling-depressive-symptoms-on-the-rise/",
+   "source": "Skilled Nursing News",
+   "group": "industry",
+   "published": "2026-11-10T06:03:00Z"
+  },
+  {
+   "title": "Senior Living Dealbook: Agemark Expands California Presence; Charter Grows with Ventas",
+   "link": "https://seniorhousingnews.com/2026/11/09/senior-living-dealbook-agemark-expands-california-presence-charter-grows-with-ventas/",
+   "source": "Senior Housing News",
+   "group": "industry",
+   "published": "2026-11-09T22:40:39Z"
+  },
+  {
+   "title": "At-Home Care Providers Face High-Stakes Learning Curves With Agentic AI",
+   "link": "https://homehealthcarenews.com/2026/11/at-home-care-providers-face-high-stakes-learning-curves-with-agentic-ai/",
+   "source": "Home Health Care News",
+   "group": "industry",
+   "published": "2026-11-09T20:38:39Z"
+  },
+  {
+   "title": "Nearly Half of Nursing Home Residents Face Visual Impairment, With Cataracts the Leading Preventable Cause of Vision Loss",
+   "link": "https://skillednursingnews.com/2026/11/nearly-half-of-nursing-home-residents-face-visual-impairment-with-cataracts-the-leading-preventable-cause-of-vision-loss/",
+   "source": "Skilled Nursing News",
+   "group": "industry",
+   "published": "2026-11-09T23:00:00Z"
+  },
+  {
+   "title": "Rising Pricing Shows More Competition for Senior Living Communities as Development Remains Slow",
+   "link": "https://seniorhousingnews.com/2026/11/09/rising-pricing-shows-more-competition-for-senior-living-communities-as-development-remains-slow/",
+   "source": "Senior Housing News",
+   "group": "industry",
+   "published": "2026-11-09T21:31:20Z"
+  },
+  {
+   "title": "LiveWell Partners Acquires Assured Home Health and Hospice",
+   "link": "https://homehealthcarenews.com/2026/11/livewell-partners-acquires-assured-home-health-and-hospice/",
+   "source": "Home Health Care News",
+   "group": "industry",
+   "published": "2026-11-09T16:27:48Z"
+  },
+  {
    "title": "Voices: Darcy Smith, Chief People Officer, MatrixCare",
    "link": "https://skillednursingnews.com/2026/11/voices-darcy-smith-chief-people-officer-matrixcare/",
    "source": "Skilled Nursing News",
@@ -58,11 +100,11 @@
    "published": "2026-11-06T21:40:05Z"
   },
   {
-   "title": "LiveWell Partners Acquires Assured Home Health and Hospice",
-   "link": "https://homehealthcarenews.com/2026/11/livewell-partners-acquires-assured-home-health-and-hospice/",
+   "title": "What The 2026 Midterms Mean For The Home-Based Care Industry",
+   "link": "https://homehealthcarenews.com/2026/11/what-the-2026-midterms-mean-for-the-home-based-care-industry/",
    "source": "Home Health Care News",
    "group": "industry",
-   "published": "2026-11-09T16:27:48Z"
+   "published": "2026-11-05T02:59:59Z"
   },
   {
    "title": "Amid $1.69B in New 3Q Investments, AHR Execs Laud Trilogy’s Nursing Home Occupancy and Expense Controls",
@@ -79,11 +121,11 @@
    "published": "2026-11-06T21:27:46Z"
   },
   {
-   "title": "What The 2026 Midterms Mean For The Home-Based Care Industry",
-   "link": "https://homehealthcarenews.com/2026/11/what-the-2026-midterms-mean-for-the-home-based-care-industry/",
+   "title": "Caregiver Desires For 40-Hour Weeks Shape Addus’ Personal Care Census Strategy",
+   "link": "https://homehealthcarenews.com/2026/11/caregiver-desires-for-40-hour-weeks-shape-addus-personal-care-census-strategy/",
    "source": "Home Health Care News",
    "group": "industry",
-   "published": "2026-11-05T02:59:59Z"
+   "published": "2026-11-04T21:51:45Z"
   },
   {
    "title": "CareTrust CEO On $740M in 3Q Investments, Nursing Home Rent Coverage and Growth Across Settings",
@@ -100,11 +142,11 @@
    "published": "2026-11-06T20:44:21Z"
   },
   {
-   "title": "Caregiver Desires For 40-Hour Weeks Shape Addus’ Personal Care Census Strategy",
-   "link": "https://homehealthcarenews.com/2026/11/caregiver-desires-for-40-hour-weeks-shape-addus-personal-care-census-strategy/",
+   "title": "The State Of HCBS In 2026: Policy Upheaval, Staffing Shortages Squeeze Providers",
+   "link": "https://homehealthcarenews.com/2026/11/the-state-of-hcbs-in-2026-policy-upheaval-staffing-shortages-squeeze-providers/",
    "source": "Home Health Care News",
    "group": "industry",
-   "published": "2026-11-04T21:51:45Z"
+   "published": "2026-11-03T21:48:46Z"
   },
   {
    "title": "Omega Healthcare Execs Tout $73M in Nursing Home Acquisitions, Expanded PACS and Saber JV Partnerships",
@@ -121,11 +163,11 @@
    "published": "2026-11-05T22:13:05Z"
   },
   {
-   "title": "The State Of HCBS In 2026: Policy Upheaval, Staffing Shortages Squeeze Providers",
-   "link": "https://homehealthcarenews.com/2026/11/the-state-of-hcbs-in-2026-policy-upheaval-staffing-shortages-squeeze-providers/",
+   "title": "BrightSpring Home Health Revenue Jumps 50% As Company Sets Sights On Primary Care, New ACO Model",
+   "link": "https://homehealthcarenews.com/2026/11/brightspring-home-health-revenue-jumps-50-as-company-sets-sights-on-primary-care-new-aco-model/",
    "source": "Home Health Care News",
    "group": "industry",
-   "published": "2026-11-03T21:48:46Z"
+   "published": "2026-11-02T21:04:20Z"
   },
   {
    "title": "PACS Accelerates Growth with New Nursing Home Acquisitions in Florida and Texas, and Strong 3Q Results",
@@ -142,11 +184,11 @@
    "published": "2026-11-05T21:47:00Z"
   },
   {
-   "title": "BrightSpring Home Health Revenue Jumps 50% As Company Sets Sights On Primary Care, New ACO Model",
-   "link": "https://homehealthcarenews.com/2026/11/brightspring-home-health-revenue-jumps-50-as-company-sets-sights-on-primary-care-new-aco-model/",
+   "title": "Gold Cards, Geographic Limits: Potential Paths For The Home Health Enrollment Freeze",
+   "link": "https://homehealthcarenews.com/2026/10/gold-cards-geographic-limits-potential-paths-for-the-home-health-enrollment-freeze/",
    "source": "Home Health Care News",
    "group": "industry",
-   "published": "2026-11-02T21:04:20Z"
+   "published": "2026-10-30T20:16:45Z"
   },
   {
    "title": "Skilled Nursing Dealbook: UW Health Adds Medical Center With Nursing Facility; 126-Bed Colorado Facility Sold",
@@ -163,53 +205,11 @@
    "published": "2026-11-05T21:39:44Z"
   },
   {
-   "title": "Gold Cards, Geographic Limits: Potential Paths For The Home Health Enrollment Freeze",
-   "link": "https://homehealthcarenews.com/2026/10/gold-cards-geographic-limits-potential-paths-for-the-home-health-enrollment-freeze/",
-   "source": "Home Health Care News",
-   "group": "industry",
-   "published": "2026-10-30T20:16:45Z"
-  },
-  {
-   "title": "Sabra CEO on Nursing Home Asset Optimization and Lease Negotiations Being ‘Where the Upside Is’",
-   "link": "https://skillednursingnews.com/2026/11/sabra-ceo-on-nursing-home-asset-optimization-and-lease-negotiations-being-where-the-upside-is/",
-   "source": "Skilled Nursing News",
-   "group": "industry",
-   "published": "2026-11-03T22:38:28Z"
-  },
-  {
-   "title": "For Better or Worse, Midterm Political Sea Change Means More Eyes on Senior Living, Long-Term Care",
-   "link": "https://seniorhousingnews.com/2026/11/04/for-better-or-worse-midterm-political-sea-change-means-more-eyes-on-senior-living-long-term-care/",
-   "source": "Senior Housing News",
-   "group": "industry",
-   "published": "2026-11-04T22:26:32Z"
-  },
-  {
    "title": "Home-Based Care M&A Slumps In Q3, But Buyer Appetite Endures",
    "link": "https://homehealthcarenews.com/2026/10/home-based-care-ma-slumps-in-q3-but-buyer-appetite-endures/",
    "source": "Home Health Care News",
    "group": "industry",
    "published": "2026-10-29T20:16:01Z"
-  },
-  {
-   "title": "The GLP-1 Wave Reaches Nursing Homes, Raising Questions About Cost and Care",
-   "link": "https://skillednursingnews.com/2026/11/the-glp-1-wave-reaches-nursing-homes-raising-questions-about-cost-and-care/",
-   "source": "Skilled Nursing News",
-   "group": "industry",
-   "published": "2026-11-02T23:00:00Z"
-  },
-  {
-   "title": "LTC Properties ‘Buying Future Growth’ With Nearly $1B in Senior Housing Deals This Year",
-   "link": "https://seniorhousingnews.com/2026/11/04/ltc-properties-buying-future-growth-with-nearly-1b-in-senior-housing-deals-this-year/",
-   "source": "Senior Housing News",
-   "group": "industry",
-   "published": "2026-11-04T21:36:06Z"
-  },
-  {
-   "title": "Announcing the Winners of the Inaugural Product of the Year Awards",
-   "link": "https://skillednursingnews.com/2026/11/announcing-the-winners-of-the-inaugural-product-of-the-year-awards/",
-   "source": "Skilled Nursing News",
-   "group": "industry",
-   "published": "2026-11-02T19:01:20Z"
   }
  ],
  "regulatory": [
@@ -331,13 +331,6 @@
    "source": "Home Health Care News",
    "group": "industry",
    "published": "2026-10-29T15:32:20Z"
-  },
-  {
-   "title": "Massachusetts Home Care Providers Brace For Added Costs Under New State Oversight",
-   "link": "https://homehealthcarenews.com/2026/10/massachusetts-home-care-providers-brace-for-added-costs-under-new-state-oversight/",
-   "source": "Home Health Care News",
-   "group": "industry",
-   "published": "2026-10-28T20:53:15Z"
   }
  ]
 }
