@@ -105,6 +105,7 @@
     var first30 = uniq([].concat.apply([], issues.map(function (i) { return i.first30; }))).slice(0, 6);
     var then = uniq([].concat.apply([], issues.map(function (i) { return i.then; }))).slice(0, 4);
     var advisors = matchAdvisors(tags, st); var lead = advisors[0], second = advisors[1];
+    if (second && !tags.some(function (t) { return (second.specialties || []).indexOf(t) !== -1; })) second = null;
     var where = [state.type, st ? st.toUpperCase() : '', beds ? beds + ' beds' : ''].filter(Boolean).join(' · ');
     var head = issues.length === 1 ? issues[0].title : 'One plan for ' + issues.length + ' problems, one team in the building.';
     var folderLink = '/#folder-' + issues[0].folder;
