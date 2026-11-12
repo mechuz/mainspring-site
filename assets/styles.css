@@ -983,3 +983,87 @@ header.nav,header.nav.nav-dark{background:rgba(251,250,246,.88)}
   .binder:hover,.binder:focus-visible{transform:translateX(8px)}
   .board{height:14px;margin:6px 0 0}
 }
+
+/* ==========================================================================
+   Nov 12 2026 (night): back to the folder cabinet. Tall file folders with a
+   tab on top, a big vertical label, overlapping, flat colours, lift on hover.
+   Cool light palette restored site-wide. Photos stay on the hero and tiles.
+   ========================================================================== */
+:root{--bg:#FFFFFF;--soft:#F3F5F8;--soft-2:#E6EAF0;--line:#DDE2EA;--line-2:#C5CCD6;
+  --f-navy:#14315C;--f-blue:#2F6FBF;--f-sky:#8DB4E8;--f-pale:#D7E6F7;--f-deep:#0C2342;--f-gold:#F2C14E}
+header.nav,header.nav.nav-dark{background:rgba(255,255,255,.86)}
+.sticky-cta{background:rgba(255,255,255,.94)}
+.svc-card .svc-ic{background:var(--navy);color:#fff}
+.svc-card-state .svc-ic{background:#fff;color:var(--navy)}
+.shelf-sec{background:#F7F9FC}
+.shelf-sec .eyebrow{color:var(--navy)}
+.shelf-sec .container{max-width:1400px}
+.cabinet{position:relative}
+/* the drawer of folders */
+.drawer{display:flex;align-items:flex-end;height:clamp(420px,62svh,640px);padding-top:64px;margin-top:clamp(1.2rem,3vw,2.2rem)}
+.folder{--tx:0%;--fc:var(--f-navy);--fi:#fff;position:relative;flex:1 1 0;min-width:0;height:100%;margin:0 0 0 -16px;border:0;
+  font:inherit;letter-spacing:inherit;text-align:start;border-radius:6px 18px 18px 18px;background:var(--fc);color:var(--fi);
+  box-shadow:-14px 0 30px -18px rgba(10,21,38,.55),inset 0 1px 0 rgba(255,255,255,.25);cursor:pointer;
+  display:flex;flex-direction:column;justify-content:space-between;padding:1.3rem 1.1rem 1.2rem;
+  transition:transform .4s cubic-bezier(.2,1.3,.4,1),box-shadow .4s;-webkit-tap-highlight-color:transparent}
+.folder:first-child{margin-left:0}
+.folder:nth-child(3n+2){--tx:20%}
+.folder:nth-child(3n){--tx:40%}
+.folder .ftab{position:absolute;bottom:calc(100% - 1px);left:var(--tx);width:56%;height:46px;background:var(--fc);color:var(--fi);
+  border-radius:14px 14px 0 0;display:flex;align-items:center;padding:0 .9rem;font:700 .95rem var(--f-display);letter-spacing:.04em}
+.folder .flabel{writing-mode:vertical-rl;transform:rotate(180deg);align-self:flex-start;
+  font:700 clamp(1.6rem,2.9vw,3.1rem)/1 var(--f-display);letter-spacing:-.03em;white-space:nowrap;color:inherit}
+.folder .ffoot{display:flex;align-items:flex-end;justify-content:space-between;gap:.6rem}
+.folder .fdesc{font:600 clamp(.8rem,.95vw,.95rem)/1.3 var(--f-body);opacity:.9}
+.folder .farrow{flex:0 0 auto;width:42px;height:42px;border-radius:50%;display:grid;place-items:center;background:var(--fi);color:var(--fc);transition:transform .3s}
+.folder .farrow svg{width:55%;height:55%}
+.folder:hover,.folder:focus-visible{transform:translateY(-28px);z-index:3;box-shadow:0 40px 60px -30px rgba(10,21,38,.6)}
+.folder:hover .farrow,.folder:focus-visible .farrow{transform:translateX(4px)}
+/* seven folders, seven flat colours */
+.f-survey{--fc:var(--f-navy);--fi:#fff}
+.f-lead{--fc:var(--f-blue);--fi:#fff}
+.f-consult{--fc:var(--f-sky);--fi:var(--f-deep)}
+.f-money{--fc:#fff;--fi:var(--f-deep);box-shadow:-14px 0 30px -18px rgba(10,21,38,.55),inset 0 0 0 2px #D3E8FB}
+.f-state{--fc:var(--f-deep);--fi:#fff}
+.f-results{--fc:var(--f-gold);--fi:var(--f-deep)}
+.f-who{--fc:var(--f-pale);--fi:var(--f-deep)}
+@media(max-width:760px){
+  .drawer{flex-direction:column;align-items:stretch;height:auto;padding-top:38px}
+  .folder{flex:0 0 auto;height:auto;min-height:150px;margin:-18px 0 0;padding:1rem 1.1rem 4.2rem;display:grid;grid-template-columns:1fr auto;
+    align-items:start;gap:.3rem 1rem;box-shadow:0 -12px 26px -16px rgba(10,21,38,.55);border-radius:6px 18px 18px 18px}
+  .folder:first-child{margin-top:0}
+  .folder .ftab{height:34px;width:46%}
+  .folder:last-child{padding-bottom:1.4rem}
+  .folder .flabel{writing-mode:horizontal-tb;transform:none;font-size:1.65rem;white-space:normal;grid-column:1/-1}
+  .folder .ffoot{grid-column:1/-1;align-items:center}
+  .folder:hover,.folder:focus-visible{transform:none;box-shadow:0 -12px 26px -16px rgba(10,21,38,.55)}
+}
+/* the open folder: clean white sheet, folder colour on the cover */
+.bopen.b-survey{--bc:var(--f-navy);--bi:#fff}
+.bopen.b-lead{--bc:var(--f-blue);--bi:#fff}
+.bopen.b-consult{--bc:var(--f-sky);--bi:var(--f-deep)}
+.bopen.b-money{--bc:var(--f-deep);--bi:#fff}
+.bopen.b-state{--bc:var(--f-deep);--bi:#fff}
+.bopen.b-results{--bc:var(--f-gold);--bi:var(--f-deep)}
+.bopen.b-who{--bc:var(--f-pale);--bi:var(--f-deep)}
+.bopen .bcover .num,.bopen .bcover .tabs a{background:rgba(255,255,255,.14)}
+.bopen .bcover .tabs a:hover{background:rgba(255,255,255,.24)}
+.bopen.b-consult .bcover .num,.bopen.b-results .bcover .num,.bopen.b-who .bcover .num,
+.bopen.b-consult .bcover .tabs a,.bopen.b-results .bcover .tabs a,.bopen.b-who .bcover .tabs a{background:rgba(12,35,66,.1)}
+.bopen.b-consult .bcover .tabs a:hover,.bopen.b-results .bcover .tabs a:hover,.bopen.b-who .bcover .tabs a:hover{background:rgba(12,35,66,.18)}
+.bopen.b-lead .bcover{box-shadow:none}
+.bcover .rings,.bpaper .holes{display:none}
+.bpages{background:#fff;padding-left:clamp(1.2rem,4vw,3.4rem)}
+.bpages::before{display:none}
+.bp-photo{transform:none;padding:0;background:none;box-shadow:none;max-width:760px}
+.bp-photo::before{display:none}
+.bp-photo img{border-radius:18px;aspect-ratio:21/9;max-height:280px}
+.bp-photo figcaption{text-align:start}
+/* tiles: tint in the folder colours */
+.caller.c-survey{--cc:rgba(20,49,92,.94)}
+.caller.c-lead{--cc:rgba(47,111,191,.94)}
+.caller.c-consult{--cc:rgba(28,69,120,.94)}
+.caller.c-money{--cc:rgba(12,35,66,.95)}
+.caller.c-state{--cc:rgba(12,35,66,.95)}
+.drawer{height:clamp(460px,64svh,660px)}
+.folder .flabel{font-size:clamp(1.35rem,2.35vw,2.7rem)}
