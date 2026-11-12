@@ -105,13 +105,16 @@
       else fail();
     }).catch(function () { clearTimeout(timer); fail(); });
   }
-  document.querySelectorAll('form[action*="formsubmit.co"]').forEach(function (form) {
+  function bind() { document.querySelectorAll('form[action*="formsubmit.co"]:not([data-bound])').forEach(function (form) {
+    form.setAttribute('data-bound', '1');
     form.addEventListener('submit', function (e) {
       e.preventDefault();
       if (!window.fetch || !window.FormData) { form.submit(); return; }
       send(form);
     });
-  });
+  }); }
+  window.msBindForms = bind;
+  bind();
 })();
 
 /* ---------------------------------------------------------------------------

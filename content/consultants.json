@@ -1,0 +1,32 @@
+[
+  {
+    "slug": "felix-strickland",
+    "name": "Felix Strickland III",
+    "title": "Managing Director, Operations and Compliance",
+    "role": "Administrator / Executive",
+    "credentials": ["Licensed Nursing Home Administrator", "Multi-state"],
+    "states": ["TN", "Multi-state"],
+    "specialties": ["Survey remediation", "Interim leadership", "Turnaround", "Census growth", "Temporary management", "Clinical operations"],
+    "settings": ["Skilled nursing", "Assisted living", "Memory care", "CCRC"],
+    "years": 16,
+    "modes": ["video", "phone", "in-person"],
+    "bio": "Sixteen years running skilled nursing, assisted living and memory care as administrator, executive director and CEO. Licensed NHA. Leads survey, leadership and state-mandated engagements.",
+    "featured": true,
+    "published": true
+  },
+  {
+    "slug": "david-bloch",
+    "name": "David Bloch",
+    "title": "Managing Partner",
+    "role": "Finance / Restructuring",
+    "credentials": ["20+ years operations and finance"],
+    "states": ["NY", "Multi-state"],
+    "specialties": ["Restructuring", "Budgeting & financial analysis", "Forensic & payroll analysis", "Due diligence & underwriting", "Capital projects"],
+    "settings": ["Skilled nursing", "Assisted living", "CCRC", "Portfolio"],
+    "years": 20,
+    "modes": ["video", "phone", "in-person"],
+    "bio": "Twenty years in operations and finance across IBM, Verizon, private equity and structured debt, and real estate ownership, now healthcare. Leads the money side: budgets, payroll, forensic work and underwriting for buyers and lenders.",
+    "featured": true,
+    "published": true
+  }
+]

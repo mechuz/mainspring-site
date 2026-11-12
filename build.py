@@ -37,6 +37,7 @@ BOOKING_URL = ""
 # nav label -> path; the meta block's `nav:` key marks the current one
 NAV = [  # ordered by how likely the click is to turn into a lead
     ("services", "/services/", "Services"),
+    ("consultants", "/consultants/", "Consultants"),
     ("state", "/state-agencies/", "State agencies"),
     ("about", "/about/", "About"),
 ]
@@ -46,13 +47,14 @@ STICKY = f"""<div class="sticky-cta">
     <div class="txt">Under a survey or short an administrator?
       <small>Same-day response on survey and leadership situations.</small></div>
     <div class="sticky-actions" style="display:flex;gap:10px">
-      <a class="btn btn-primary" href="/contact/">Tell us what is happening</a>
+      <a class="btn btn-primary" href="/book/">Book a consultation</a>
     </div>
   </div>
 </div>"""
 
 # Old .html URLs that existed before clean URLs, so nothing already indexed 404s.
 LEGACY = {
+    "checkout/index.html": "/book/",
     "overview.html": "/",
     "overview/index.html": "/",
     "services.html": "/services/",
@@ -118,7 +120,8 @@ def tabstrip(current):
         cur = ' aria-current="page"' if key == current else ""
         rows.append(f'    <a href="{href}"{cur}>{label}</a>')
         if i == 0:
-            rows.append('    <a href="/contact/" class="tab-cta">Contact</a>')
+            rows.append('    <a href="/book/" class="tab-cta">Book a consultation</a>')
+            rows.append('    <a href="/contact/">Contact</a>')
     rows.append('    <a href="/industry/">Industry news</a>')
     return "\n".join(rows)
 
@@ -221,6 +224,76 @@ def booking_block():
             'In the meantime tell us what is going on and we will send times the same day.</p>' + (form.group(0) if form else ""))
 
 
+def booking_block_inline():
+    if BOOKING_URL:
+        return ('<p class="fineprint" style="margin:0 0 .6rem">Pick a slot. Times are shown in your time zone.</p>'
+                f'<div style="border-radius:16px;overflow:hidden;background:#fff;border:1px solid var(--line)"><iframe src="{BOOKING_URL}" title="Pick a time with Mainspring" style="border:0;width:100%;height:640px;display:block" loading="lazy"></iframe></div>'
+                '<input type="hidden" name="time_picked_in_calendar" value="yes">')
+    return ('<p class="fineprint" style="margin:0 0 .4rem">Give us two or three times that work and we confirm one the same day, in your time zone.</p>'
+            '<div class="row"><div><label for="b-t1">First choice *</label><input id="b-t1" name="preferred_time_1" type="datetime-local" required></div>'
+            '<div><label for="b-t2">Second choice</label><input id="b-t2" name="preferred_time_2" type="datetime-local"></div></div>'
+            '<label for="b-tz">Your time zone</label><select id="b-tz" name="time_zone"><option>Eastern</option><option>Central</option><option>Mountain</option><option>Pacific</option><option>Other</option></select>')
+
+
+# ----------------------------------------------------------------- consultants + diagnosis tool
+def consultants():
+    f = CONTENT / "consultants.json"
+    if not f.exists():
+        return []
+    return [c for c in json.loads(f.read_text(encoding="utf-8")) if c.get("published")]
+
+def consultant_cards():
+    out = []
+    for c in consultants():
+        ini = "".join(w[0] for w in c["name"].split()[:2])
+        text = " ".join([c["name"], c.get("title", ""), " ".join(c.get("credentials", [])), " ".join(c.get("specialties", [])), " ".join(c.get("settings", []))])
+        modes = {"video": "Video", "phone": "Phone", "in-person": "In person"}
+        out.append(
+            f'<article class="ccard" data-text="{escape(text, quote=True)}" data-states="{"|".join(c.get("states", []))}" '
+            f'data-specs="{"|".join(c.get("specialties", []))}" data-settings="{"|".join(c.get("settings", []))}" data-modes="{"|".join(c.get("modes", []))}">'
+            f'<div class="ccard-top"><span class="mono">{escape(ini)}</span><div><h3>{escape(c["name"])}</h3><p class="ccard-t">{escape(c.get("title", ""))}</p></div></div>'
+            f'<p class="ccard-cred">{escape(" · ".join(c.get("credentials", [])))}{(" · " + str(c["years"]) + " years") if c.get("years") else ""}</p>'
+            f'<p class="ccard-bio">{escape(c.get("bio", ""))}</p>'
+            f'<div class="ccard-tags">{"".join(f"<span>{escape(t)}</span>" for t in c.get("specialties", [])[:5])}</div>'
+            f'<p class="ccard-meta">{escape(", ".join(c.get("states", [])))} · {escape(", ".join(c.get("settings", [])))}</p>'
+            f'<div class="ccard-modes">{"".join(f"<span>{modes[m]}</span>" for m in c.get("modes", []) if m in modes)}</div>'
+            f'<div class="ccard-actions"><a class="btn btn-primary" href="/book/?consultant={c["slug"]}&amp;mode=video">Book a video call <span class="arrow">&rarr;</span></a>'
+            f'<a class="btn btn-ghost" href="/book/?consultant={c["slug"]}&amp;mode=phone">Phone</a><a class="btn btn-ghost" href="/book/?consultant={c["slug"]}&amp;mode=in-person">In person</a></div>'
+            f'</article>')
+    return "\n".join(out) or '<p class="cf-empty">Profiles are being published. <a href="/book/">Book a consultation</a> and we match you by hand.</p>'
+
+def _opts(key):
+    vals = sorted({v for c in consultants() for v in c.get(key, [])})
+    return "".join(f'<option>{escape(v)}</option>' for v in vals)
+
+def consultant_options():
+    return "".join(f'<option value="{c["slug"]}">{escape(c["name"])} — {escape(c.get("title", ""))}</option>' for c in consultants())
+
+def consultants_json():
+    slim = [{k: c.get(k) for k in ("slug", "name", "title", "credentials", "states", "specialties", "settings", "modes", "featured")} for c in consultants()]
+    return '<script type="application/json" id="ms-consultants">' + json.dumps(slim).replace("</", "<\\/") + "</script>"
+
+def diagnose_tool():
+    f = CONTENT / "_diagnose.html"
+    return f.read_text(encoding="utf-8") if f.exists() else ""
+
+def dynamic(body):
+    if "{{booking_block}}" in body:
+        body = body.replace("{{booking_block}}", booking_block())
+    if "{{booking_block_inline}}" in body:
+        body = body.replace("{{booking_block_inline}}", booking_block_inline())
+    if "{{diagnose_tool}}" in body:
+        body = body.replace("{{diagnose_tool}}", diagnose_tool())
+    for tok, fn in (("consultant_cards", consultant_cards), ("consultant_states", lambda: _opts("states")),
+                    ("consultant_specialties", lambda: _opts("specialties")), ("consultant_settings", lambda: _opts("settings")),
+                    ("consultant_options", consultant_options)):
+        if "{{" + tok + "}}" in body:
+            body = body.replace("{{" + tok + "}}", fn())
+    if "ms-consultants" not in body and ("dx-sec" in body or 'class="ck"' in body):
+        body = consultants_json() + body
+    return body
+
+
 # ----------------------------------------------------------------- build
 def main():
     if PUBLIC.exists():
@@ -243,8 +316,7 @@ def main():
             continue
         head = CONTENT / f.name.replace(".html", ".head.html")
         meta["_head"] = tokens(head.read_text(encoding="utf-8")) if head.exists() else ""
-        if "{{booking_block}}" in body:
-            body = body.replace("{{booking_block}}", booking_block())
+        body = dynamic(body)
         if meta.get("feed") == "yes":
             cards, reg, label = news_html()
             body = (body.replace("{{feed_items}}", cards).replace("{{reg_items}}", reg)

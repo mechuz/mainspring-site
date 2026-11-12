@@ -14,13 +14,15 @@ changefreq: weekly
       <h1>Your building is under pressure.<span class="hl">We step in.</span></h1>
       <p class="sub">Survey, leadership, census, cash. Operators who run buildings today, with a fixed fee and a plan with dates inside 30 days.</p>
       <div class="cta2">
-        <button type="button" class="btn btn-primary btn-lg" data-scroll="#callers">For owners &amp; operators <span class="arrow">&rarr;</span></button>
-        <button type="button" class="btn btn-on-dark btn-lg" data-binder="state">For state agencies <span class="arrow">&rarr;</span></button>
+        <a class="btn btn-primary btn-xl" href="/book/">Book a consultation <span class="arrow">&rarr;</span></a>
+        <button type="button" class="btn btn-on-dark btn-lg" data-scroll="#diagnose">Tell us the issue, get a plan <span class="arrow">&rarr;</span></button>
       </div>
     </div>
     <button type="button" class="pullbar" data-scroll="#shelf"><span class="dot" aria-hidden="true"></span> Pull a folder to start</button>
   </div>
 </div>
+
+{{diagnose_tool}}
 
 <!-- ======================= WHO CALLS US ======================= -->
 <section id="callers" class="center">
@@ -133,7 +135,7 @@ changefreq: weekly
   <div class="bp-sec" id="bs-more" data-tab="Read more"><h3>Read more</h3>
     <div class="bp-links"><a href="/services/survey-remediation/">Survey remediation &rarr;</a><a href="/insights/plan-of-correction/">Writing a plan of correction that holds &rarr;</a><a href="/insights/immediate-jeopardy-first-72-hours/">Immediate jeopardy: the first 72 hours &rarr;</a></div>
   </div>
-  <div class="bp-cta"><button type="button" class="btn btn-primary" data-goto="#start">Tell us what is happening <span class="arrow">&rarr;</span></button></div>
+  <div class="bp-cta"><a class="btn btn-primary" href="/book/">Book a consultation <span class="arrow">&rarr;</span></a><button type="button" class="btn btn-ghost" data-goto="#start">Tell us what is happening <span class="arrow">&rarr;</span></button></div>
 </template>
 
 <template id="bin-lead" data-num="02" data-title="Leadership">
@@ -155,7 +157,7 @@ changefreq: weekly
   <div class="bp-sec" id="bl-more" data-tab="Read more"><h3>Read more</h3>
     <div class="bp-links"><a href="/services/interim-executive-leadership/">Interim leadership placement &rarr;</a><a href="/services/operating-systems-buildout/">Operating systems build-out &rarr;</a><a href="/consultant-network/">The network behind the principals &rarr;</a></div>
   </div>
-  <div class="bp-cta"><button type="button" class="btn btn-primary" data-goto="#start">Tell us which seat <span class="arrow">&rarr;</span></button></div>
+  <div class="bp-cta"><a class="btn btn-primary" href="/book/">Book a consultation <span class="arrow">&rarr;</span></a><button type="button" class="btn btn-ghost" data-goto="#start">Tell us which seat <span class="arrow">&rarr;</span></button></div>
 </template>
 
 <template id="bin-consult" data-num="03" data-title="Consulting">
@@ -163,8 +165,8 @@ changefreq: weekly
   <figure class="bp-photo"><img src="/assets/photos/consult.jpg" alt="" loading="lazy" width="1600" height="800"><figcaption>Photo: Unsplash</figcaption></figure>
   <div class="bp-sec" id="bc-work" data-tab="The work"><h3>The work</h3>
     <div class="bp-grid">
-      <div class="bp-card"><b>Operational assessment</b><p>Five days in the building with a senior operator. Findings in dollars and dates, and a plan you can act on with or without us.</p><a class="more" href="/how-we-work/">How we work &rarr;</a></div>
-      <div class="bp-card"><b>Mock survey</b><p>A full survey before the real one, by people who have sat on both sides of the table.</p><a class="more" href="/services/survey-remediation/">Read more &rarr;</a></div>
+      <div class="bp-card"><b>Operational assessment</b><p>Five days in the building with a senior operator. Findings in dollars and dates, and a plan you can act on with or without us.</p><button type="button" class="bp-add" data-add="operational-assessment">Add to cart</button></div>
+      <div class="bp-card"><b>Mock survey</b><p>A full survey before the real one, by people who have sat on both sides of the table.</p><button type="button" class="bp-add" data-add="mock-survey">Add to cart</button></div>
       <div class="bp-card"><b>Budget and staffing model</b><p>A budget by department and by PPD that department heads actually run.</p><a class="more" href="/services/budgeting-financial-analysis/">Read more &rarr;</a></div>
       <div class="bp-card"><b>Operating systems</b><p>The manuals, the meeting rhythm and the dashboards, written down so they hold when we leave.</p><a class="more" href="/services/operating-systems-buildout/">Read more &rarr;</a></div>
       <div class="bp-card"><b>Census and referral strategy</b><p>Where admissions come from, who answers in minutes, and what the funnel looks like each week.</p></div>
@@ -174,7 +176,7 @@ changefreq: weekly
   <div class="bp-sec" id="bc-get" data-tab="What you get"><h3>What you get</h3>
     <ul class="svc-out"><li>A written assessment with numbers and dates</li><li>Fixed fee per engagement, agreed first</li><li>Senior operators on site, not analysts</li><li>A monthly scorecard if we stay on</li><li>A clear answer on whether you need us at all</li></ul>
   </div>
-  <div class="bp-cta"><button type="button" class="btn btn-primary" data-goto="#start">Ask for an outside read <span class="arrow">&rarr;</span></button></div>
+  <div class="bp-cta"><a class="btn btn-primary" href="/book/">Book a consultation <span class="arrow">&rarr;</span></a><button type="button" class="btn btn-ghost" data-goto="#start">Ask for an outside read <span class="arrow">&rarr;</span></button></div>
 </template>
 
 <template id="bin-money" data-num="04" data-title="Money">
@@ -192,7 +194,7 @@ changefreq: weekly
   <div class="bp-sec" id="bm-get" data-tab="What you get"><h3>What you get</h3>
     <ul class="svc-out"><li>Labor, census and cash on one page, daily</li><li>Payroll checked against the schedule every pay period</li><li>A budget with an owner for every line</li><li>Monthly report to ownership or the lender</li><li>Fixed fee, agreed first</li></ul>
   </div>
-  <div class="bp-cta"><button type="button" class="btn btn-primary" data-goto="#start">Send us the numbers <span class="arrow">&rarr;</span></button></div>
+  <div class="bp-cta"><a class="btn btn-primary" href="/book/">Book a consultation <span class="arrow">&rarr;</span></a><button type="button" class="btn btn-ghost" data-goto="#start">Send us the numbers <span class="arrow">&rarr;</span></button></div>
 </template>
 
 <template id="bin-state" data-num="05" data-title="State agencies">
@@ -222,7 +224,7 @@ changefreq: weekly
     <p class="bp-note">We contract directly with state agencies, courts and appointed receivers, and can serve as operator of record under a temporary-management or receivership order. Statements of qualifications, references and insurance certificates on request.</p>
     <div class="bp-links"><a href="/state-agencies/">The full state agencies page &rarr;</a></div>
   </div>
-  <div class="bp-cta"><button type="button" class="btn btn-primary" data-goto="#start">Tell us about the facility <span class="arrow">&rarr;</span></button></div>
+  <div class="bp-cta"><a class="btn btn-primary" href="/book/">Book a consultation <span class="arrow">&rarr;</span></a><button type="button" class="btn btn-ghost" data-goto="#start">Tell us about the facility <span class="arrow">&rarr;</span></button></div>
 </template>
 
 <template id="bin-results" data-num="06" data-title="Results">
@@ -238,7 +240,7 @@ changefreq: weekly
     <div class="bp-kpis"><div><b>2&times;</b><span>short-term rehab census</span></div><div><b>50+</b><span>admissions a month</span></div><div><b>$250k</b><span>added monthly revenue</span></div><div><b>0</b><span>deficiencies, annual health survey</span></div></div>
     <div class="bp-links"><a href="/case-studies/snf-rehab-census-growth/">Read the case &rarr;</a><a href="/case-studies/">All case studies &rarr;</a></div>
   </div>
-  <div class="bp-cta"><button type="button" class="btn btn-primary" data-goto="#start">Tell us about your building <span class="arrow">&rarr;</span></button></div>
+  <div class="bp-cta"><a class="btn btn-primary" href="/book/">Book a consultation <span class="arrow">&rarr;</span></a><button type="button" class="btn btn-ghost" data-goto="#start">Tell us about your building <span class="arrow">&rarr;</span></button></div>
 </template>
 
 <template id="bin-who" data-num="07" data-title="Who we are">
@@ -254,7 +256,7 @@ changefreq: weekly
     <ul class="svc-out"><li>A vetted network of executive directors and nurse leaders, placed by state and by need</li><li>Our own operating businesses run on the latest AI: daily census, staffing and cash briefs, payroll anomaly monitoring, a documentary record you can audit</li><li>Scope, dates and fee in writing before any work begins</li><li>New York &middot; Tennessee &middot; multi-state licensure</li></ul>
     <div class="bp-links"><a href="/about/">About the firm &rarr;</a><a href="/how-we-work/">How we work &rarr;</a></div>
   </div>
-  <div class="bp-cta"><button type="button" class="btn btn-primary" data-goto="#start">Talk with a partner <span class="arrow">&rarr;</span></button></div>
+  <div class="bp-cta"><a class="btn btn-primary" href="/book/">Book a consultation <span class="arrow">&rarr;</span></a><button type="button" class="btn btn-ghost" data-goto="#start">Talk with a partner <span class="arrow">&rarr;</span></button></div>
 </template>
 
 <!-- the open binder -->

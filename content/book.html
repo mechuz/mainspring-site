@@ -1,16 +1,88 @@
 <!--meta
-title: Book a call | Mainspring Healthcare Partners
-description: Put 30 minutes on a partner's calendar. Pick a time that works and it lands straight on our Google Calendar with a video link.
+title: Book a consultation | Mainspring Healthcare Partners
+description: Thirty minutes with a partner, no charge. Add the services you want to talk about, pick a time, and it lands on our calendar with a video link.
 path: /book/
-priority: 0.8
+sticky: no
+priority: 0.9
 changefreq: monthly
 -->
-<div class="container"><p class="crumbs"><a href="/">Home</a> · Book a call</p></div>
+<div class="container"><p class="crumbs"><a href="/">Home</a> · Book a consultation</p></div>
 <div class="hero-sub"><div class="container">
-  <p class="eyebrow">Book a call</p>
-  <h1>Thirty minutes with a partner.</h1>
-  <p class="lede">Pick a time. It goes straight onto our calendar with a video link, and you get the invitation by email. For survey and leadership emergencies, do not wait for a slot &mdash; call <a href="tel:+16504182280" style="color:var(--accent);font-weight:600">650-418-2280</a>.</p>
+  <p class="eyebrow">Quick checkout</p>
+  <h1>Book a consultation.</h1>
+  <p class="lede">Thirty minutes with a partner, video or phone, no charge and no obligation. Tell us about the building, pick a time, and you get a calendar invitation by email.</p>
 </div></div>
-<section style="padding-top:6px"><div class="container">
-{{booking_block}}
+<section style="padding-top:6px"><div class="container ck">
+  <aside class="ck-cart reveal">
+    <p class="seclabel">Your cart</p>
+    <div id="ck-lines" class="ck-lines"></div>
+    <a class="ck-more" href="/services/">Add services to talk about &rarr;</a>
+    <div class="ck-steps">
+      <p class="seclabel">What happens next</p>
+      <ol>
+        <li><b>You confirm.</b> We get the booking and your notes the moment you press the button.</li>
+        <li><b>We confirm the time.</b> A calendar invitation with a video link, same day.</li>
+        <li><b>The call.</b> A partner, not a salesperson. If we can help, you get scope, dates and a fee in writing afterwards.</li>
+      </ol>
+    </div>
+  </aside>
+  <div class="reveal">
+    <form class="site-form ck-form" action="https://formsubmit.co/info@mainspringhcp.com" method="POST" style="max-width:none">
+      <input type="hidden" name="_cc" value="info@mainspringhcp.com">
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_subject" data-ck value="BOOKING — consultation — mainspringhcp.com">
+      <input type="hidden" name="_next" value="https://mainspringhcp.com/thank-you/">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_blacklist" value="seeking employment, job opportunity, my resume, backlinks, seo services, guest post, web design services, bitcoin, crypto, casino">
+      <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+      <input type="hidden" name="services_in_cart" value="Consultation only">
+      <h2 style="margin-bottom:.2rem">1. Pick a time</h2>
+      {{booking_block_inline}}
+      <h2 style="margin:1.6rem 0 .2rem">2. How and with whom</h2>
+      <fieldset><legend>Meeting type *</legend><div class="checks ck-modes">
+        <label><input type="radio" name="meeting_type" value="Video call" checked> Video call</label>
+        <label><input type="radio" name="meeting_type" value="Phone call"> Phone call</label>
+        <label><input type="radio" name="meeting_type" value="In person at the building"> In person at the building</label>
+      </div></fieldset>
+      <label for="b-who">Who would you like to meet?</label>
+      <select id="b-who" name="consultant"><option value="">Any partner, match me</option>{{consultant_options}}</select>
+      <p class="fineprint" style="margin:.4rem 0 0">Browse the <a href="/consultants/" style="color:var(--accent);font-weight:600">consultant directory</a>, or <a href="/#diagnose" style="color:var(--accent);font-weight:600">tell us the issue</a> and we pick for you.</p>
+      <h2 style="margin:1.6rem 0 .2rem">3. Who we are meeting</h2>
+      <div class="row">
+        <div><label for="b-name">Your name *</label><input id="b-name" name="name" required autocomplete="name"></div>
+        <div><label for="b-role">Your role *</label><input id="b-role" name="role" required placeholder="Owner, administrator, regional, lender…"></div>
+      </div>
+      <div class="row">
+        <div><label for="b-email">Email *</label><input id="b-email" name="email" type="email" required autocomplete="email"></div>
+        <div><label for="b-phone">Phone *</label><input id="b-phone" name="phone" type="tel" required autocomplete="tel"></div>
+      </div>
+      <div class="row">
+        <div><label for="b-org">Organization</label><input id="b-org" name="organization" autocomplete="organization"></div>
+        <div><label for="b-state">State *</label><input id="b-state" name="state" required placeholder="e.g., NY" maxlength="40"></div>
+      </div>
+      <div class="row">
+        <div><label for="b-type">Building type *</label>
+          <select id="b-type" name="building_type" required>
+            <option value="">Select…</option><option>Skilled nursing</option><option>Assisted living</option><option>Memory care</option>
+            <option>CCRC / life plan</option><option>Independent living</option><option>Multiple / portfolio</option><option>State agency / court</option><option>Other</option>
+          </select></div>
+        <div><label for="b-beds">Licensed beds / units</label><input id="b-beds" name="beds" inputmode="numeric"></div>
+      </div>
+      <label for="b-detail">What should we read before the call? <span style="font-weight:400;color:var(--mute-2)">(optional)</span></label>
+      <textarea id="b-detail" name="details" rows="4" placeholder="What is happening, since when, and the dates that matter."></textarea>
+      <button type="submit">Confirm booking</button>
+      <p class="form-status" role="status"></p>
+      <p class="fineprint">No charge for the consultation. Services in the cart are scoped, dated and priced in writing after the call; nothing is billed from this page. We reply from info@mainspringhcp.com. See our <a href="/privacy-policy/" style="color:var(--accent)">privacy policy</a>.</p>
+    </form>
+  </div>
 </div></section>
+<script>
+(function () {
+  var q = location.search, m;
+  if ((m = q.match(/[?&]consultant=([a-z0-9-]+)/))) { var sel = document.getElementById('b-who'); if (sel) { sel.value = m[1]; } }
+  if ((m = q.match(/[?&]mode=(video|phone|in-person)/))) {
+    var v = { video: 'Video call', phone: 'Phone call', 'in-person': 'In person at the building' }[m[1]];
+    document.querySelectorAll('input[name="meeting_type"]').forEach(function (r) { r.checked = r.value === v; });
+  }
+})();
+</script>

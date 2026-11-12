@@ -1,0 +1,83 @@
+<!--meta
+title: Book a consultant | Mainspring Healthcare Partners
+description: Find the right consultant by state, specialty and setting, then book a video call, a phone call or an in-person meeting. Licensed administrators, nurse leaders and finance operators for skilled nursing and senior living.
+path: /consultants/
+nav: consultants
+priority: 0.9
+changefreq: weekly
+-->
+<div class="container"><p class="crumbs"><a href="/">Home</a> · Consultants</p></div>
+<div class="hero-sub"><div class="container">
+  <p class="eyebrow">Our consultants</p>
+  <h1>Pick the person. Book the meeting.</h1>
+  <p class="lede">Licensed administrators, nurse leaders and finance operators who have run buildings. Filter by state, specialty and setting, then book a video call, a phone call or an in-person meeting at your community.</p>
+  <div class="hero-cta"><a class="btn btn-primary btn-lg" href="/#diagnose">Not sure who? Tell us the issue <span class="arrow">&rarr;</span></a><a class="btn btn-ghost btn-lg" href="/book/">Book a consultation</a></div>
+</div></div>
+
+<section style="padding-top:6px"><div class="container">
+  <div class="cfilters reveal" role="search">
+    <input type="search" id="cf-q" aria-label="Search consultants" placeholder="Search by name, specialty or credential">
+    <select id="cf-state" aria-label="State"><option value="">Any state</option>{{consultant_states}}</select>
+    <select id="cf-spec" aria-label="Specialty"><option value="">Any specialty</option>{{consultant_specialties}}</select>
+    <select id="cf-setting" aria-label="Setting"><option value="">Any setting</option>{{consultant_settings}}</select>
+    <div class="cf-modes" role="group" aria-label="Meeting type">
+      <button type="button" class="cf-mode on" data-mode="">All</button>
+      <button type="button" class="cf-mode" data-mode="video">Video</button>
+      <button type="button" class="cf-mode" data-mode="phone">Phone</button>
+      <button type="button" class="cf-mode" data-mode="in-person">In person</button>
+    </div>
+  </div>
+  <p class="cf-count reveal" id="cf-count"></p>
+  <div class="cgrid reveal" id="cgrid">
+{{consultant_cards}}
+  </div>
+  <p class="cf-empty" id="cf-empty" hidden>No one matches those filters yet. <a href="/book/">Book a consultation</a> and we match you by hand, usually the same day.</p>
+</div></section>
+
+<section style="padding-top:0"><div class="container">
+  <div class="diag reveal">
+    <div>
+      <p class="seclabel">The network</p>
+      <h2>Hundreds more behind the profiles you see here.</h2>
+      <p>We place executive directors, directors of nursing, business office managers and regional operators by state and by need. Profiles appear here as each consultant approves publication. If you do not see the right person, tell us the issue and we match you from the full network.</p>
+    </div>
+    <div class="diag-aside"><ul>
+      <li>Licensed and placed by state</li>
+      <li>Video, phone or in person at your building</li>
+      <li>Scope, dates and fee in writing before any work</li>
+      <li>Consultants: <a href="/consultant-network/" style="color:#fff;border-bottom:1px solid rgba(255,255,255,.4)">join the network &rarr;</a></li>
+    </ul></div>
+  </div>
+</div></section>
+
+<script>
+(function () {
+  var q = document.getElementById('cf-q'), st = document.getElementById('cf-state'), sp = document.getElementById('cf-spec'), se = document.getElementById('cf-setting');
+  var cards = Array.prototype.slice.call(document.querySelectorAll('#cgrid .ccard'));
+  var count = document.getElementById('cf-count'), empty = document.getElementById('cf-empty');
+  var mode = '';
+  function norm(s) { return (s || '').toLowerCase(); }
+  function apply() {
+    var text = norm(q.value), n = 0;
+    cards.forEach(function (c) {
+      var ok = true;
+      if (text && norm(c.getAttribute('data-text')).indexOf(text) === -1) ok = false;
+      if (st.value && (c.getAttribute('data-states') || '').split('|').indexOf(st.value) === -1) ok = false;
+      if (sp.value && (c.getAttribute('data-specs') || '').split('|').indexOf(sp.value) === -1) ok = false;
+      if (se.value && (c.getAttribute('data-settings') || '').split('|').indexOf(se.value) === -1) ok = false;
+      if (mode && (c.getAttribute('data-modes') || '').split('|').indexOf(mode) === -1) ok = false;
+      c.hidden = !ok; if (ok) n++;
+    });
+    count.textContent = n + (n === 1 ? ' consultant' : ' consultants') + (n < cards.length ? ' match' : ' listed');
+    empty.hidden = n > 0;
+  }
+  [q, st, sp, se].forEach(function (el) { el.addEventListener('input', apply); el.addEventListener('change', apply); });
+  document.querySelectorAll('.cf-mode').forEach(function (b) {
+    b.addEventListener('click', function () {
+      document.querySelectorAll('.cf-mode').forEach(function (x) { x.classList.remove('on'); });
+      b.classList.add('on'); mode = b.getAttribute('data-mode'); apply();
+    });
+  });
+  apply();
+})();
+</script>

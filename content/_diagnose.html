@@ -1,0 +1,57 @@
+<!-- The diagnosis tool. Included on the home page (and anywhere else) with {{diagnose_tool}}. -->
+<section id="diagnose" class="dx-sec">
+  <div class="container">
+    <div class="head reveal" style="margin-bottom:1.6rem">
+      <p class="eyebrow">Start here</p>
+      <h2 class="h2">Tell us what is happening. Get the plan now.</h2>
+      <p class="lead">Three questions. You get the first 30 days, what we would do, and the advisor who would do it. Then book them.</p>
+    </div>
+    <div class="dx reveal">
+      <ol class="dx-steps" aria-label="Progress"><li class="on">Building</li><li>The issue</li><li>Your plan</li></ol>
+
+      <div class="dx-pane" data-pane="1">
+        <p class="dx-q">What kind of building?</p>
+        <div class="dx-chips" data-field="type" data-single>
+          <button type="button" data-v="Skilled nursing">Skilled nursing</button>
+          <button type="button" data-v="Assisted living">Assisted living</button>
+          <button type="button" data-v="Memory care">Memory care</button>
+          <button type="button" data-v="CCRC">CCRC / life plan</button>
+          <button type="button" data-v="Independent living">Independent living</button>
+          <button type="button" data-v="Portfolio">Several buildings</button>
+        </div>
+        <div class="dx-row">
+          <label>State <input type="text" id="dx-state" maxlength="20" placeholder="e.g. NY" autocomplete="address-level1"></label>
+          <label>Beds or units <input type="text" id="dx-beds" inputmode="numeric" placeholder="e.g. 120"></label>
+        </div>
+        <div class="dx-nav"><button type="button" class="btn btn-primary" data-next>Next: the issue <span class="arrow">&rarr;</span></button></div>
+      </div>
+
+      <div class="dx-pane" data-pane="2" hidden>
+        <p class="dx-q">What is going on? Pick everything that applies.</p>
+        <div class="dx-chips" data-field="issues">
+          <button type="button" data-v="survey">Survey deficiencies / plan of correction</button>
+          <button type="button" data-v="ij">Immediate jeopardy</button>
+          <button type="button" data-v="hold">Admissions hold or denial of payment</button>
+          <button type="button" data-v="vacancy">A leadership seat is empty</button>
+          <button type="button" data-v="census">Census is falling</button>
+          <button type="button" data-v="cash">Cash, margin or budget pressure</button>
+          <button type="button" data-v="numbers">Numbers that do not reconcile</button>
+          <button type="button" data-v="capital">A renovation or capital project</button>
+          <button type="button" data-v="deal">Buying, refinancing or lending</button>
+          <button type="button" data-v="state">State agency, court or receiver</button>
+          <button type="button" data-v="unsure">Not sure, want an outside read</button>
+        </div>
+        <p class="dx-q" style="margin-top:1.2rem">How urgent?</p>
+        <div class="dx-chips" data-field="urgency" data-single>
+          <button type="button" data-v="today">Today</button>
+          <button type="button" data-v="week">This week</button>
+          <button type="button" data-v="month">This month</button>
+          <button type="button" data-v="planning">Planning ahead</button>
+        </div>
+        <div class="dx-nav"><button type="button" class="btn btn-ghost" data-back>&larr; Back</button><button type="button" class="btn btn-primary" data-plan>Show me the plan <span class="arrow">&rarr;</span></button></div>
+      </div>
+
+      <div class="dx-pane dx-result" data-pane="3" hidden id="dx-result"></div>
+    </div>
+  </div>
+</section>
