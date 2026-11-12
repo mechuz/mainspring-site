@@ -822,3 +822,70 @@ body.binder-open{overflow:hidden}
   .bopen,.bsheet.closing .bopen{transition:opacity .2s;transform:none!important}
   .binder,.caller,.hero-b .pull{transition:none}
 }
+
+/* ==========================================================================
+   Nov 12 2026 (later): colour and photography. Binders in real binder colours
+   (oxblood, forest, ochre, navy, teal, clay) on a paper-toned shelf section
+   with a walnut board. Photos on the hero, the four tiles, and the first page
+   of every open binder. Site chrome stays navy.
+   ========================================================================== */
+:root{--ox:#8B2635;--forest:#1F5F4A;--ochre:#C9972B;--teal:#1C6C7D;--clay:#B4552D;
+  --paper:#F4F1EA;--paper-2:#EAE4D8;--walnut:#5B4636;--walnut-2:#7A5E4A}
+.b-survey{--bc:var(--ox);--bi:#fff}
+.b-lead{--bc:var(--forest);--bi:#fff}
+.binder.b-lead{box-shadow:0 30px 40px -30px rgba(10,21,38,.75),inset 3px 0 0 rgba(255,255,255,.18)}
+.binder.b-lead::before{background:rgba(10,21,38,.14)}
+.b-money{--bc:var(--ochre);--bi:#1C1A14}
+.b-state{--bc:var(--navy);--bi:#fff}
+.b-results{--bc:var(--teal);--bi:#fff}
+.b-who{--bc:var(--clay);--bi:#fff}
+.binder .plate{color:#1C1A14;background:#FFFDF8}
+.binder .plate .num{color:var(--bc);background:#F1EDE4}
+.binder .pages{background:repeating-linear-gradient(to bottom,#FFFDF8 0 3px,#DED8CC 3px 4px)}
+.shelf-sec{background:var(--paper)}
+.shelf-sec .eyebrow{color:var(--walnut)}
+.board{background:var(--walnut);height:26px;border-radius:5px}
+.board::before{background:var(--walnut-2);height:6px}
+.board::after{content:"";position:absolute;left:2%;right:2%;top:100%;height:18px;border-radius:0 0 50% 50%;background:rgba(60,40,25,.28);filter:blur(6px)}
+@media(max-width:760px){
+  .binder.b-money .plate .num{background:rgba(0,0,0,.08)}
+  .binder .plate .num{background:rgba(255,255,255,.92)}
+  .board{height:14px}
+}
+/* open-binder covers in their colours */
+.bopen.b-money .bcover .num,.bopen.b-money .bcover .tabs a{background:rgba(0,0,0,.1)}
+.bopen.b-money .bcover .tabs a:hover{background:rgba(0,0,0,.18)}
+.bopen.b-lead .bcover{box-shadow:none}
+.bopen.b-lead .bcover .num,.bopen.b-lead .bcover .tabs a,.bopen.b-results .bcover .num,.bopen.b-results .bcover .tabs a{background:rgba(255,255,255,.14)}
+.bopen.b-lead .bcover .tabs a:hover,.bopen.b-results .bcover .tabs a:hover{background:rgba(255,255,255,.24)}
+.bpages{background-color:#FFFDF8}
+/* a photograph taped onto the first page */
+.bp-photo{position:relative;margin:.4rem 0 1.8rem;max-width:720px;background:#fff;padding:8px 8px 10px;border-radius:3px;
+  box-shadow:0 16px 30px -18px rgba(10,21,38,.55);transform:rotate(-1deg)}
+.bp-photo img{width:100%;aspect-ratio:2/1;object-fit:cover;border-radius:2px;display:block}
+.bp-photo::before{content:"";position:absolute;left:50%;top:-12px;width:110px;height:26px;transform:translateX(-50%) rotate(-2deg);
+  background:rgba(255,236,160,.8);box-shadow:0 1px 2px rgba(0,0,0,.18)}
+.bp-photo figcaption{font:500 .78rem var(--f-body);color:var(--mute-2);margin-top:.5rem;text-align:end}
+/* hero over a photograph */
+.hero-b .inner{background:var(--navy-deep) url(/assets/photos/hero.jpg) center 40%/cover no-repeat}
+.hero-b .inner::before{background:linear-gradient(180deg,rgba(12,35,66,.5) 0%,rgba(12,35,66,.68) 50%,rgba(12,35,66,.94) 100%);opacity:1}
+.hero-b .top{text-shadow:0 2px 24px rgba(0,0,0,.35)}
+/* who-calls-us tiles over photographs, tinted in their binder colour */
+.caller{position:relative;overflow:hidden;min-height:320px;color:#fff;background:var(--navy);padding:1.3rem;align-content:end;isolation:isolate}
+.caller img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2;transition:transform .8s var(--ease)}
+.caller::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(10,21,38,.08) 0%,rgba(10,21,38,.35) 45%,var(--cc) 100%)}
+.caller h3,.caller .open{color:#fff}
+.caller p{color:rgba(255,255,255,.84)}
+.caller .num{background:rgba(255,255,255,.94);color:var(--ink)}
+.caller:hover,.caller:focus-visible{background:var(--navy);transform:translateY(-6px)}
+.caller:hover img,.caller:focus-visible img{transform:scale(1.06)}
+.caller:hover .num,.caller:focus-visible .num{color:var(--ink)}
+.caller.c-survey{--cc:rgba(139,38,53,.94)}
+.caller.c-lead{--cc:rgba(31,95,74,.94)}
+.caller.c-money{--cc:rgba(130,92,18,.94)}
+.caller.c-state{--cc:rgba(20,49,92,.95)}
+@media(max-width:960px){.caller{min-height:260px}}
+@media(max-width:480px){.caller{min-height:200px}}
+.bp-photo{max-width:640px}
+.bp-photo img{aspect-ratio:21/9;max-height:250px}
+@media(max-width:760px){.bp-photo{margin:.2rem 0 1.4rem}.bp-photo img{aspect-ratio:16/9;max-height:200px}}
