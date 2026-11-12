@@ -659,17 +659,17 @@ html.no-js .reveal{opacity:1;transform:none}
 .hero-b .cta2{display:flex;flex-wrap:wrap;gap:.7rem;justify-content:center;margin-top:.5rem}
 .hero-b .cta2 .btn-primary{background:#fff;color:var(--navy)}
 .hero-b .cta2 .btn-primary:hover{background:#EAF0F8}
-.hero-b .pull{width:100%;border:0;cursor:pointer;border-radius:999px;background:var(--navy-pale);color:var(--navy-deep);
+.hero-b .pullbar{width:100%;border:0;cursor:pointer;border-radius:999px;background:var(--navy-pale);color:var(--navy-deep);
   min-height:66px;display:flex;align-items:center;justify-content:center;gap:.8rem;
   font:700 clamp(1rem,2vw,1.3rem) var(--f-display);letter-spacing:.04em;text-transform:uppercase;
   transition:transform .3s var(--spring),background .2s;-webkit-tap-highlight-color:transparent}
-.hero-b .pull:hover{transform:scale(1.01);background:#fff}
-.hero-b .pull .dot{width:28px;height:28px;border-radius:50%;background:var(--navy-deep);display:grid;place-items:center;flex:none}
-.hero-b .pull .dot::after{content:"";width:10px;height:10px;border-radius:50%;background:var(--navy-pale);animation:pulse 1.4s infinite}
+.hero-b .pullbar:hover{transform:scale(1.01);background:#fff}
+.hero-b .pullbar .dot{width:28px;height:28px;border-radius:50%;background:var(--navy-deep);display:grid;place-items:center;flex:none}
+.hero-b .pullbar .dot::after{content:"";width:10px;height:10px;border-radius:50%;background:var(--navy-pale);animation:pulse 1.4s infinite}
 @media(max-width:860px){
   .hero-b .inner{min-height:calc(100svh - var(--hdr) - 50px - env(safe-area-inset-top,0px) - 20px);border-radius:24px}
   .hero-b .cta2 .btn{width:100%}
-  .hero-b .pull{min-height:60px;font-size:.98rem}
+  .hero-b .pullbar{min-height:60px;font-size:.98rem}
 }
 
 /* ---------- who calls us ---------- */
@@ -820,7 +820,7 @@ body.binder-open{overflow:hidden}
 }
 @media(prefers-reduced-motion:reduce){
   .bopen,.bsheet.closing .bopen{transition:opacity .2s;transform:none!important}
-  .binder,.caller,.hero-b .pull{transition:none}
+  .binder,.caller,.hero-b .pullbar{transition:none}
 }
 
 /* ==========================================================================
@@ -889,3 +889,97 @@ body.binder-open{overflow:hidden}
 .bp-photo{max-width:640px}
 .bp-photo img{aspect-ratio:21/9;max-height:250px}
 @media(max-width:760px){.bp-photo{margin:.2rem 0 1.4rem}.bp-photo img{aspect-ratio:16/9;max-height:200px}}
+
+/* ==========================================================================
+   Nov 12 2026 (evening): fixes from Max's Chrome review.
+   1) Hero fits short windows. 2) Binders redrawn as archive binders with
+   horizontal labels. 3) Five tiles incl. Consulting; seven binders.
+   4) Warm paper palette site-wide so inner pages match the home.
+   ========================================================================== */
+/* ---- 4) palette, site-wide ---- */
+:root{--bg:#FBFAF6;--soft:#F4F1EA;--soft-2:#E9E4D9;--line:#E3DDD1;--line-2:#CFC7B9}
+header.nav,header.nav.nav-dark{background:rgba(251,250,246,.88)}
+.sticky-cta{background:rgba(251,250,246,.94)}
+.svc-card,form.site-form input,form.site-form select,form.site-form textarea,.stops{background:#fff}
+/* service icons take the binder colour of their family */
+#survey-remediation .svc-ic{background:var(--ox)}
+#interim-executive-leadership .svc-ic{background:var(--forest)}
+#operating-systems-buildout .svc-ic,#capital-projects-redesign .svc-ic{background:var(--teal)}
+#operational-financial-restructuring .svc-ic,#budgeting-financial-analysis .svc-ic,#forensic-analysis .svc-ic,#due-diligence-underwriting .svc-ic{background:var(--ochre);color:#1C1A14}
+.svc-card-state .svc-ic{background:#fff;color:var(--navy)}
+
+/* ---- 1) hero: always fits the first screen ---- */
+.hero-b .inner{height:calc(100svh - var(--hdr) - env(safe-area-inset-top,0px) - 20px);min-height:520px;max-height:900px;
+  grid-template-rows:minmax(0,1fr) auto;gap:clamp(.6rem,1.5svh,1.4rem);padding:clamp(1rem,3svh,3rem) clamp(1.2rem,4vw,3rem)}
+.hero-b .top{gap:clamp(.5rem,1.4svh,1.1rem);padding-top:0;min-height:0}
+.hero-b .eyebrow{font-size:clamp(.82rem,1.6svh,1rem)}
+.hero-b h1{font-size:clamp(2.1rem,min(8.2vw,12.5svh),6.6rem)}
+.hero-b .sub{font-size:clamp(.98rem,min(2vw,2.7svh),1.42rem);max-width:50ch}
+.hero-b .cta2 .btn{min-height:clamp(50px,9svh,68px);font-size:clamp(1rem,2.2svh,1.25rem)}
+.hero-b .pullbar{justify-self:stretch;width:auto;min-height:clamp(52px,9svh,66px);font-size:clamp(.92rem,1.9svh,1.25rem)}
+@media(max-width:860px){.hero-b .inner{height:auto;min-height:calc(100svh - var(--hdr) - 50px - env(safe-area-inset-top,0px) - 20px);max-height:none}}
+
+/* ---- 3) five tiles ---- */
+.callers{grid-template-columns:repeat(5,minmax(0,1fr))}
+.caller{min-height:300px}
+.caller.c-consult{--cc:rgba(28,108,125,.94)}
+@media(max-width:1100px){.callers{grid-template-columns:repeat(3,minmax(0,1fr))}.caller{min-height:260px}}
+@media(max-width:760px){.callers{grid-template-columns:repeat(2,minmax(0,1fr))}.caller:last-child{grid-column:1/-1}.caller{min-height:220px}}
+@media(max-width:480px){.callers{grid-template-columns:1fr}.caller{min-height:190px}}
+.b-consult{--bc:var(--teal);--bi:#fff}
+.b-results{--bc:#2F3640;--bi:#fff}
+.caller.c-consult{--cc:rgba(28,108,125,.94)}
+
+/* ---- 2) the binders, redrawn ---- */
+.binders{height:clamp(400px,56svh,540px);gap:clamp(.35rem,.9vw,.8rem);padding:34px .5rem 0;perspective:none}
+.binder{border-radius:7px 13px 13px 7px;grid-template-rows:auto minmax(0,1fr) auto;transform-origin:50% 100%;
+  background:
+    linear-gradient(90deg,rgba(255,255,255,.16) 0,rgba(255,255,255,0) 22%,rgba(0,0,0,0) 68%,rgba(0,0,0,.24) 100%),
+    repeating-linear-gradient(0deg,rgba(255,255,255,.04) 0 1px,transparent 1px 3px),
+    var(--bc);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.28),0 0 0 1px rgba(10,21,38,.14),0 28px 36px -26px rgba(10,21,38,.8);
+  transition:transform .45s var(--ease),box-shadow .45s}
+.binder::before{display:none}
+.binder::after{content:"";position:absolute;top:0;bottom:0;left:11px;width:2px;border-radius:2px;background:rgba(0,0,0,.26);box-shadow:1px 0 0 rgba(255,255,255,.14);pointer-events:none}
+.binder .pages{display:none}
+.binder .rings{left:50%;transform:translateX(-50%);right:auto;width:12px;top:11px;bottom:12px;justify-content:space-between;align-items:center;z-index:0}
+.binder .rings i{width:11px;height:11px;border:0;border-radius:50%;
+  background:radial-gradient(circle at 35% 32%,#fff 0,#D8DDE4 32%,#8A94A2 68%,#4E5866 100%);
+  box-shadow:0 1px 1px rgba(0,0,0,.55),0 0 0 1px rgba(0,0,0,.18)}
+.binder .rings i:nth-child(2){display:none}
+.binder .plate{position:relative;z-index:1;margin:1.9rem auto 0;width:min(76%,140px);min-height:62%;height:auto;
+  background:#FFFDF8;color:var(--ink);border-radius:4px;padding:.75rem .65rem .7rem;
+  display:grid;grid-template-rows:auto auto 1fr auto;gap:.4rem;justify-items:start;align-items:start;text-align:start;
+  box-shadow:0 0 0 1px rgba(0,0,0,.18),inset 0 0 0 3px rgba(255,255,255,.7),0 3px 6px rgba(0,0,0,.28)}
+.binder .plate::after{content:"";position:absolute;inset:0;border-radius:4px;pointer-events:none;
+  background:linear-gradient(165deg,rgba(255,255,255,.6) 0,rgba(255,255,255,0) 38%)}
+.binder .plate .num{font:600 .72rem/1 var(--f-body);letter-spacing:.16em;color:var(--bc);background:none;padding:0;border-radius:0}
+.b-money .plate .num{color:#8A6514}
+.binder .plate .title{writing-mode:horizontal-tb;transform:none;white-space:normal;align-self:start;
+  font:600 clamp(1.02rem,1.3vw,1.28rem)/1.12 var(--f-display);letter-spacing:-.02em;color:var(--ink);text-wrap:balance}
+.binder .plate .sub{font:500 .74rem/1.35 var(--f-body);color:var(--mute);align-self:start}
+.binder .plate .brand{font:600 .58rem/1 var(--f-display);letter-spacing:.2em;color:var(--mute-2);align-self:end}
+.binder .bfoot{justify-content:center;padding:0 0 1.1rem;margin:0}
+.binder .bdesc{display:none}
+.binder .barrow{width:38px;height:38px;background:rgba(255,255,255,.92);color:#1C1A14;box-shadow:0 2px 4px rgba(0,0,0,.25)}
+.binder.b-money .barrow{background:#1C1A14;color:#fff}
+.binder:hover,.binder:focus-visible{transform:translateY(-22px);box-shadow:inset 0 1px 0 rgba(255,255,255,.28),0 0 0 1px rgba(10,21,38,.14),0 46px 60px -34px rgba(10,21,38,.85)}
+.binder:hover .barrow,.binder:focus-visible .barrow{transform:translateX(3px)}
+.board{height:26px;border-radius:4px;margin:0 -6px;background:linear-gradient(#6E5541,#4A3728)}
+.board::before{height:6px;background:rgba(255,255,255,.18)}
+@media(max-width:760px){
+  .binders{height:auto;padding:0 .2rem;gap:0}
+  .binder{min-height:92px;grid-template-rows:none;grid-template-columns:minmax(0,1fr) auto;align-items:center;margin-top:-8px;
+    border-radius:12px;padding:.9rem 1rem .9rem 1.4rem;background:var(--bc);box-shadow:0 -14px 26px -18px rgba(10,21,38,.65),0 0 0 1px rgba(10,21,38,.12)}
+  .binder:first-child{margin-top:0}
+  .binder::after{left:9px}
+  .binder .rings{display:none}
+  .binder .plate{margin:0;width:auto;min-height:0;padding:.55rem .75rem;grid-template-rows:none;grid-template-columns:auto minmax(0,1fr);gap:.1rem .7rem;align-items:center}
+  .binder .plate .num{grid-row:1/3;font-size:.8rem}
+  .binder .plate .title{font-size:1.15rem}
+  .binder .plate .sub{font-size:.72rem}
+  .binder .plate .brand{display:none}
+  .binder .bfoot{padding:0}
+  .binder:hover,.binder:focus-visible{transform:translateX(8px)}
+  .board{height:14px;margin:6px 0 0}
+}
