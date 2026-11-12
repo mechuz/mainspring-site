@@ -1,11 +1,11 @@
 {
- "fetched_at": "2026-11-11T17:06:56Z",
+ "fetched_at": "2026-11-12T17:35:35Z",
  "sources": [
   {
    "name": "Skilled Nursing News",
    "url": "https://skillednursingnews.com/feed/",
    "ok": true,
-   "count": 16,
+   "count": 10,
    "error": "",
    "group": "industry"
   },
@@ -13,7 +13,7 @@
    "name": "Senior Housing News",
    "url": "https://seniorhousingnews.com/feed/",
    "ok": true,
-   "count": 16,
+   "count": 10,
    "error": "",
    "group": "industry"
   },
@@ -21,7 +21,7 @@
    "name": "Home Health Care News",
    "url": "https://homehealthcarenews.com/feed/",
    "ok": true,
-   "count": 16,
+   "count": 10,
    "error": "",
    "group": "industry"
   },
@@ -44,6 +44,27 @@
  ],
  "items": [
   {
+   "title": "Nursing Homes Turn to Slow and Steady — but Some Unexpected — Ways to Bolster the Workforce",
+   "link": "https://skillednursingnews.com/2026/11/nursing-homes-turn-to-slow-and-steady-but-some-unexpected-ways-to-bolster-the-workforce/",
+   "source": "Skilled Nursing News",
+   "group": "industry",
+   "published": "2026-11-11T23:00:00Z"
+  },
+  {
+   "title": "Ebenzer to Enter South Dakota With Acquisition of HME Care, Management of 8 Communities",
+   "link": "https://seniorhousingnews.com/2026/11/11/ebenzer-to-enter-south-dakota-with-acquisition-of-hme-care-management-of-8-communities/",
+   "source": "Senior Housing News",
+   "group": "industry",
+   "published": "2026-11-11T22:05:36Z"
+  },
+  {
+   "title": "Davian To Acquire Healthcare Stat For $13.5M; Renovus Partners With Aspire Home Health Care",
+   "link": "https://homehealthcarenews.com/2026/11/davian-to-acquire-healthcare-stat-for-13-5m-renovus-partners-with-aspire-home-health-care/",
+   "source": "Home Health Care News",
+   "group": "industry",
+   "published": "2026-11-11T21:43:10Z"
+  },
+  {
    "title": "‘A Low-Margin Game’: Nursing Home Operators Cascadia, CarDon Turn to Internal AI Systems for M&A, Clinical Efficiencies",
    "link": "https://skillednursingnews.com/2026/11/a-low-margin-game-nursing-home-operators-cascadia-cardon-turn-to-internal-ai-systems-for-ma-clinical-efficiencies/",
    "source": "Skilled Nursing News",
@@ -51,18 +72,18 @@
    "published": "2026-11-10T22:46:45Z"
   },
   {
-   "title": "NHI Operating Partners Grapple With Community Transitions, Muted Summer Selling Season",
-   "link": "https://seniorhousingnews.com/2026/11/10/nhi-operating-partners-grapple-with-community-transitions-muted-summer-selling-season/",
+   "title": "Movers and Shakers: President, CEO Confirmed at UMC; Miami Jewish Health Names President",
+   "link": "https://seniorhousingnews.com/2026/11/11/movers-and-shakers-president-ceo-confirmed-at-umc-miami-jewish-health-names-president/",
    "source": "Senior Housing News",
    "group": "industry",
-   "published": "2026-11-10T22:20:10Z"
+   "published": "2026-11-11T21:55:37Z"
   },
   {
-   "title": "‘Unlimited Opportunity’: How LifeCare Is Navigating Rapidly Rising Clinical Acuity",
-   "link": "https://homehealthcarenews.com/2026/11/unlimited-opportunity-how-lifecare-is-navigating-rapidly-rising-clinical-acuity/",
+   "title": "6 Home-Based Care Leaders Share Time-Saving Strategies For Frontline Teams",
+   "link": "https://homehealthcarenews.com/2026/11/6-home-based-care-leaders-share-time-saving-strategies-for-frontline-teams/",
    "source": "Home Health Care News",
    "group": "industry",
-   "published": "2026-11-10T21:53:25Z"
+   "published": "2026-11-11T21:06:42Z"
   },
   {
    "title": "U.S. News Nursing Home Report: ‘Encouraging’ Staffing Gains, Troubling Depressive Symptoms on the Rise",
@@ -72,18 +93,18 @@
    "published": "2026-11-10T06:03:00Z"
   },
   {
-   "title": "Senior Living Dealbook: Agemark Expands California Presence; Charter Grows with Ventas",
-   "link": "https://seniorhousingnews.com/2026/11/09/senior-living-dealbook-agemark-expands-california-presence-charter-grows-with-ventas/",
+   "title": "‘Managing Belonging, Not Buildings’: How Priority Life Care Is Laying the Groundwork for 2027 and Beyond",
+   "link": "https://seniorhousingnews.com/2026/11/11/managing-belonging-not-buildings-how-priority-life-care-is-laying-the-groundwork-for-2027-and-beyond/",
    "source": "Senior Housing News",
    "group": "industry",
-   "published": "2026-11-09T22:40:39Z"
+   "published": "2026-11-11T20:09:14Z"
   },
   {
-   "title": "In-Home Care Demand Clashes With Affordability Realities",
-   "link": "https://homehealthcarenews.com/2026/11/in-home-care-demand-clashes-with-affordability-realities/",
+   "title": "‘Unlimited Opportunity’: How LifeCare Is Navigating Rapidly Rising Clinical Acuity",
+   "link": "https://homehealthcarenews.com/2026/11/unlimited-opportunity-how-lifecare-is-navigating-rapidly-rising-clinical-acuity/",
    "source": "Home Health Care News",
    "group": "industry",
-   "published": "2026-11-10T20:15:04Z"
+   "published": "2026-11-10T21:53:25Z"
   },
   {
    "title": "Nearly Half of Nursing Home Residents Face Visual Impairment, With Cataracts the Leading Preventable Cause of Vision Loss",
@@ -93,18 +114,18 @@
    "published": "2026-11-09T23:00:00Z"
   },
   {
-   "title": "Rising Pricing Shows More Competition for Senior Living Communities as Development Remains Slow",
-   "link": "https://seniorhousingnews.com/2026/11/09/rising-pricing-shows-more-competition-for-senior-living-communities-as-development-remains-slow/",
+   "title": "NHI Operating Partners Grapple With Community Transitions, Muted Summer Selling Season",
+   "link": "https://seniorhousingnews.com/2026/11/10/nhi-operating-partners-grapple-with-community-transitions-muted-summer-selling-season/",
    "source": "Senior Housing News",
    "group": "industry",
-   "published": "2026-11-09T21:31:20Z"
+   "published": "2026-11-10T22:20:10Z"
   },
   {
-   "title": "At-Home Care Providers Face High-Stakes Learning Curves With Agentic AI",
-   "link": "https://homehealthcarenews.com/2026/11/at-home-care-providers-face-high-stakes-learning-curves-with-agentic-ai/",
+   "title": "In-Home Care Demand Clashes With Affordability Realities",
+   "link": "https://homehealthcarenews.com/2026/11/in-home-care-demand-clashes-with-affordability-realities/",
    "source": "Home Health Care News",
    "group": "industry",
-   "published": "2026-11-09T20:38:39Z"
+   "published": "2026-11-10T20:15:04Z"
   },
   {
    "title": "Voices: Darcy Smith, Chief People Officer, MatrixCare",
@@ -114,18 +135,18 @@
    "published": "2026-11-09T19:40:56Z"
   },
   {
-   "title": "American Healthcare REIT Sets Bar Higher for SHOP to Fuel Next Growth Stage",
-   "link": "https://seniorhousingnews.com/2026/11/06/american-healthcare-reit-sets-bar-higher-for-shop-to-fuel-next-growth-stage/",
+   "title": "Senior Living Dealbook: Agemark Expands California Presence; Charter Grows with Ventas",
+   "link": "https://seniorhousingnews.com/2026/11/09/senior-living-dealbook-agemark-expands-california-presence-charter-grows-with-ventas/",
    "source": "Senior Housing News",
    "group": "industry",
-   "published": "2026-11-06T21:40:05Z"
+   "published": "2026-11-09T22:40:39Z"
   },
   {
-   "title": "LiveWell Partners Acquires Assured Home Health and Hospice",
-   "link": "https://homehealthcarenews.com/2026/11/livewell-partners-acquires-assured-home-health-and-hospice/",
+   "title": "At-Home Care Providers Face High-Stakes Learning Curves With Agentic AI",
+   "link": "https://homehealthcarenews.com/2026/11/at-home-care-providers-face-high-stakes-learning-curves-with-agentic-ai/",
    "source": "Home Health Care News",
    "group": "industry",
-   "published": "2026-11-09T16:27:48Z"
+   "published": "2026-11-09T20:38:39Z"
   },
   {
    "title": "Amid $1.69B in New 3Q Investments, AHR Execs Laud Trilogy’s Nursing Home Occupancy and Expense Controls",
@@ -135,18 +156,18 @@
    "published": "2026-11-06T22:45:00Z"
   },
   {
-   "title": "Brookdale Senior Living Revamps Sales Strategy to Accelerate Slower-Than-Expected Occupancy Gains",
-   "link": "https://seniorhousingnews.com/2026/11/06/brookdale-senior-living-revamps-sales-strategy-to-accelerate-slower-than-expected-occupancy-gains/",
+   "title": "Rising Pricing Shows More Competition for Senior Living Communities as Development Remains Slow",
+   "link": "https://seniorhousingnews.com/2026/11/09/rising-pricing-shows-more-competition-for-senior-living-communities-as-development-remains-slow/",
    "source": "Senior Housing News",
    "group": "industry",
-   "published": "2026-11-06T21:27:46Z"
+   "published": "2026-11-09T21:31:20Z"
   },
   {
-   "title": "What The 2026 Midterms Mean For The Home-Based Care Industry",
-   "link": "https://homehealthcarenews.com/2026/11/what-the-2026-midterms-mean-for-the-home-based-care-industry/",
+   "title": "LiveWell Partners Acquires Assured Home Health and Hospice",
+   "link": "https://homehealthcarenews.com/2026/11/livewell-partners-acquires-assured-home-health-and-hospice/",
    "source": "Home Health Care News",
    "group": "industry",
-   "published": "2026-11-05T02:59:59Z"
+   "published": "2026-11-09T16:27:48Z"
   },
   {
    "title": "CareTrust CEO On $740M in 3Q Investments, Nursing Home Rent Coverage and Growth Across Settings",
@@ -156,69 +177,41 @@
    "published": "2026-11-06T22:39:09Z"
   },
   {
+   "title": "American Healthcare REIT Sets Bar Higher for SHOP to Fuel Next Growth Stage",
+   "link": "https://seniorhousingnews.com/2026/11/06/american-healthcare-reit-sets-bar-higher-for-shop-to-fuel-next-growth-stage/",
+   "source": "Senior Housing News",
+   "group": "industry",
+   "published": "2026-11-06T21:40:05Z"
+  },
+  {
+   "title": "What The 2026 Midterms Mean For The Home-Based Care Industry",
+   "link": "https://homehealthcarenews.com/2026/11/what-the-2026-midterms-mean-for-the-home-based-care-industry/",
+   "source": "Home Health Care News",
+   "group": "industry",
+   "published": "2026-11-05T02:59:59Z"
+  },
+  {
+   "title": "Brookdale Senior Living Revamps Sales Strategy to Accelerate Slower-Than-Expected Occupancy Gains",
+   "link": "https://seniorhousingnews.com/2026/11/06/brookdale-senior-living-revamps-sales-strategy-to-accelerate-slower-than-expected-occupancy-gains/",
+   "source": "Senior Housing News",
+   "group": "industry",
+   "published": "2026-11-06T21:27:46Z"
+  },
+  {
    "title": "Capital and Scale, Not Ideas, Are Biggest Barriers to Middle-Market Senior Living",
    "link": "https://seniorhousingnews.com/2026/11/06/capital-and-scale-not-ideas-are-biggest-barriers-to-middle-market-senior-living/",
    "source": "Senior Housing News",
    "group": "industry",
    "published": "2026-11-06T20:44:21Z"
-  },
-  {
-   "title": "Caregiver Desires For 40-Hour Weeks Shape Addus’ Personal Care Census Strategy",
-   "link": "https://homehealthcarenews.com/2026/11/caregiver-desires-for-40-hour-weeks-shape-addus-personal-care-census-strategy/",
-   "source": "Home Health Care News",
-   "group": "industry",
-   "published": "2026-11-04T21:51:45Z"
-  },
-  {
-   "title": "Omega Healthcare Execs Tout $73M in Nursing Home Acquisitions, Expanded PACS and Saber JV Partnerships",
-   "link": "https://skillednursingnews.com/2026/11/omega-healthcare-execs-tout-73m-in-nursing-home-acquisitions-expanded-pacs-and-saber-jv-partnerships/",
-   "source": "Skilled Nursing News",
-   "group": "industry",
-   "published": "2026-11-04T23:00:00Z"
-  },
-  {
-   "title": "In the Pipeline: Erickson Hits Milestone in Florida; Harbert Management, Harrison Street Form Development Partnership",
-   "link": "https://seniorhousingnews.com/2026/11/05/in-the-pipeline-erickson-hits-milestone-in-florida-harbert-management-harrison-street-form-development-partnership/",
-   "source": "Senior Housing News",
-   "group": "industry",
-   "published": "2026-11-05T22:13:05Z"
-  },
-  {
-   "title": "The State Of HCBS In 2026: Policy Upheaval, Staffing Shortages Squeeze Providers",
-   "link": "https://homehealthcarenews.com/2026/11/the-state-of-hcbs-in-2026-policy-upheaval-staffing-shortages-squeeze-providers/",
-   "source": "Home Health Care News",
-   "group": "industry",
-   "published": "2026-11-03T21:48:46Z"
-  },
-  {
-   "title": "PACS Accelerates Growth with New Nursing Home Acquisitions in Florida and Texas, and Strong 3Q Results",
-   "link": "https://skillednursingnews.com/2026/11/pacs-accelerates-growth-with-new-acquisitions-in-florida-and-texas-and-strong-3q-results/",
-   "source": "Skilled Nursing News",
-   "group": "industry",
-   "published": "2026-11-04T22:41:33Z"
-  },
-  {
-   "title": "National Healthcare Properties Continues to Trade Medical Facilities for Senior Housing",
-   "link": "https://seniorhousingnews.com/2026/11/05/national-healthcare-properties-continues-to-trade-medical-facilities-for-senior-housing/",
-   "source": "Senior Housing News",
-   "group": "industry",
-   "published": "2026-11-05T21:47:00Z"
-  },
-  {
-   "title": "BrightSpring Home Health Revenue Jumps 50% As Company Sets Sights On Primary Care, New ACO Model",
-   "link": "https://homehealthcarenews.com/2026/11/brightspring-home-health-revenue-jumps-50-as-company-sets-sights-on-primary-care-new-aco-model/",
-   "source": "Home Health Care News",
-   "group": "industry",
-   "published": "2026-11-02T21:04:20Z"
   }
  ],
  "regulatory": [
   {
-   "title": "OIG: County Hospitals Recouped $205M in Medicaid Supplemental Funds Intended for Nursing Homes, Raising Transparency Concerns",
-   "link": "https://skillednursingnews.com/2026/11/oig-county-hospitals-recouped-205m-in-medicaid-supplemental-funds-intended-for-nursing-homes-raising-transparency-concerns/",
+   "title": "Federal Fines, One-Star Ratings Spike, as Closures Affect Access for In-State Nursing Home Residents",
+   "link": "https://skillednursingnews.com/2026/11/federal-fines-one-star-ratings-spike-as-closures-affect-access-for-nursing-home-residents-in-state/",
    "source": "Skilled Nursing News",
    "group": "industry",
-   "published": "2026-11-10T23:00:00Z"
+   "published": "2026-11-11T23:00:00Z"
   },
   {
    "title": "New Congress Brings Senior Living Ownership, Staffing Scrutiny, More Opportunities to Address Affordability",
@@ -242,18 +235,18 @@
    "published": "2026-11-06T16:14:17Z"
   },
   {
-   "title": "New York Man Sentenced to Over 10 Years in Prison for Laundering Proceeds for Elder Fraud Scam Network",
-   "link": "https://www.justice.gov/usao-az/pr/new-york-man-sentenced-over-10-years-prison-laundering-proceeds-elder-fraud-scam-network",
+   "title": "New York Doctor Charged in $6.8M Medicare Fraud Scheme",
+   "link": "https://www.justice.gov/opa/pr/new-york-doctor-charged-68m-medicare-fraud-scheme",
    "source": "U.S. Department of Justice",
    "group": "regulatory",
-   "published": "2026-11-10T12:00:00Z"
+   "published": "2026-11-12T12:00:00Z"
   },
   {
-   "title": "[UPDATED] CMS Proposes Rule to Reduce Nursing Home and Health Care Burdens, Save $320M",
-   "link": "https://skillednursingnews.com/2026/11/cms-proposes-rule-to-reduce-nursing-home-and-health-care-burdens-save-320m/",
+   "title": "OIG: County Hospitals Recouped $205M in Medicaid Supplemental Funds Intended for Nursing Homes, Raising Transparency Concerns",
+   "link": "https://skillednursingnews.com/2026/11/oig-county-hospitals-recouped-205m-in-medicaid-supplemental-funds-intended-for-nursing-homes-raising-transparency-concerns/",
    "source": "Skilled Nursing News",
    "group": "industry",
-   "published": "2026-11-06T15:53:08Z"
+   "published": "2026-11-10T23:00:00Z"
   },
   {
    "title": "Pennant Welcomes Home Health Payment Increase, Warns of Fraud Rule Burdens",
@@ -270,11 +263,11 @@
    "published": "2026-11-05T21:28:33Z"
   },
   {
-   "title": "Medicare Advantage Patients Less Likely to Receive Care at Top-Rated Nursing Homes",
-   "link": "https://skillednursingnews.com/2026/11/medicare-advantage-patients-less-likely-to-receive-care-at-top-rated-nursing-homes/",
+   "title": "[UPDATED] CMS Proposes Rule to Reduce Nursing Home and Health Care Burdens, Save $320M",
+   "link": "https://skillednursingnews.com/2026/11/cms-proposes-rule-to-reduce-nursing-home-and-health-care-burdens-save-320m/",
    "source": "Skilled Nursing News",
    "group": "industry",
-   "published": "2026-11-02T23:00:00Z"
+   "published": "2026-11-06T15:53:08Z"
   },
   {
    "title": "Higher Rates, Heavier Scrutiny: Providers Break Down 2027 Medicare Home Health Rule",
@@ -291,20 +284,6 @@
    "published": "2026-11-05T15:28:38Z"
   },
   {
-   "title": "War on Fraud or ‘Rewards’ for Allies: Report Calls for Nursing Home Transparency Amid Industry Divisions Over Reform",
-   "link": "https://skillednursingnews.com/2026/10/war-on-fraud-or-rewards-for-allies-report-calls-for-nursing-home-transparency-amid-industry-divisions-over-reform/",
-   "source": "Skilled Nursing News",
-   "group": "industry",
-   "published": "2026-10-30T22:00:00Z"
-  },
-  {
-   "title": "[Updated] CMS Finalizes 2027 Home Health Medicare Payment Rule With 2.4% Rate Increase",
-   "link": "https://homehealthcarenews.com/2026/11/cms-finalizes-2027-home-health-medicare-payment-rule-with-2-4-rate-increase/",
-   "source": "Home Health Care News",
-   "group": "industry",
-   "published": "2026-11-04T22:35:00Z"
-  },
-  {
    "title": "Medicare Outpatient Final Rule Expands Surgical Options, Lowers Out-of-Pocket Costs for 340B Drugs",
    "link": "https://www.cms.gov/newsroom/press-releases/medicare-outpatient-final-rule-expands-surgical-options-lowers-out-pocket-costs-340b-drugs",
    "source": "CMS Newsroom",
@@ -312,32 +291,11 @@
    "published": "2026-11-04T22:22:35Z"
   },
   {
-   "title": "Home Health Agencies Face 13% More Paperwork For $60 Less Per Visit Under Medicare Advantage",
-   "link": "https://homehealthcarenews.com/2026/11/home-health-agencies-face-13-more-paperwork-for-60-less-per-visit-under-medicare-advantage/",
-   "source": "Home Health Care News",
-   "group": "industry",
-   "published": "2026-11-03T22:17:42Z"
-  },
-  {
    "title": "Calendar Year (CY) 2027 Home Health Prospective Payment System Final Rule - CMS-1844-F",
    "link": "https://www.cms.gov/newsroom/fact-sheets/calendar-year-cy-2027-home-health-prospective-payment-system-final-rule-cms-1844-f",
    "source": "CMS Newsroom",
    "group": "regulatory",
    "published": "2026-11-04T22:10:28Z"
-  },
-  {
-   "title": "Amid Fraud Crackdown, Home-Based Care Operators Look To Differentiate",
-   "link": "https://homehealthcarenews.com/2026/11/amid-fraud-crackdown-home-based-care-operators-look-to-differentiate/",
-   "source": "Home Health Care News",
-   "group": "industry",
-   "published": "2026-11-02T21:25:52Z"
-  },
-  {
-   "title": "CMS Moves To Expand Home Health Review Choice Demonstration To California",
-   "link": "https://homehealthcarenews.com/2026/10/cms-moves-to-expand-home-health-review-choice-demonstration-to-california/",
-   "source": "Home Health Care News",
-   "group": "industry",
-   "published": "2026-10-30T16:27:15Z"
   }
  ]
 }
