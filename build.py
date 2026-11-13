@@ -40,7 +40,7 @@ BOOKING_URL = ""
 NAV = [  # ordered by how likely the click is to turn into a lead
     ("services", "/services/", "Services"),
     ("consultants", "/consultants/", "Consultants"),
-    ("state", "/state-agencies/", "State agencies"),
+    ("how-we-work", "/how-we-work/", "How we work"),
     ("about", "/about/", "About"),
 ]
 
@@ -119,13 +119,12 @@ def tokens(s, extra=None):
 def tabstrip(current):
     home_cur = ' aria-current="page"' if current == "" else ""
     rows = [f'    <a href="/"{home_cur}>Home</a>']
-    for i, (key, href, label) in enumerate(NAV):
+    rows.append('    <a href="/book/" class="tab-cta">Book a consultation</a>')
+    for key, href, label in NAV:
         cur = ' aria-current="page"' if key == current else ""
         rows.append(f'    <a href="{href}"{cur}>{label}</a>')
-        if i == 0:
-            rows.append('    <a href="/book/" class="tab-cta">Book a consultation</a>')
-            rows.append('    <a href="/contact/">Contact</a>')
-    rows.append('    <a href="/industry/">Industry news</a>')
+    cur = ' aria-current="page"' if current == "contact" else ""
+    rows.append(f'    <a href="/contact/"{cur}>Contact</a>')
     return "\n".join(rows)
 
 
