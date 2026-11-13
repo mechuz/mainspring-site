@@ -1,11 +1,11 @@
 {
- "fetched_at": "2026-11-12T17:35:35Z",
+ "fetched_at": "2026-11-13T17:12:11Z",
  "sources": [
   {
    "name": "Skilled Nursing News",
    "url": "https://skillednursingnews.com/feed/",
    "ok": true,
-   "count": 10,
+   "count": 16,
    "error": "",
    "group": "industry"
   },
@@ -13,7 +13,7 @@
    "name": "Senior Housing News",
    "url": "https://seniorhousingnews.com/feed/",
    "ok": true,
-   "count": 10,
+   "count": 16,
    "error": "",
    "group": "industry"
   },
@@ -21,7 +21,7 @@
    "name": "Home Health Care News",
    "url": "https://homehealthcarenews.com/feed/",
    "ok": true,
-   "count": 10,
+   "count": 16,
    "error": "",
    "group": "industry"
   },
@@ -29,7 +29,7 @@
    "name": "CMS Newsroom",
    "url": "https://www.cms.gov/newsroom/rss-feeds",
    "ok": true,
-   "count": 5,
+   "count": 6,
    "error": "",
    "group": "regulatory"
   },
@@ -51,18 +51,18 @@
    "published": "2026-11-11T23:00:00Z"
   },
   {
-   "title": "Ebenzer to Enter South Dakota With Acquisition of HME Care, Management of 8 Communities",
-   "link": "https://seniorhousingnews.com/2026/11/11/ebenzer-to-enter-south-dakota-with-acquisition-of-hme-care-management-of-8-communities/",
+   "title": "Kaplan Senior Living Targets ‘Doubles and Triples’ Over Home-Run Acquisitions",
+   "link": "https://seniorhousingnews.com/2026/11/12/kaplan-senior-living-targets-doubles-and-triples-over-home-run-acquisitions/",
    "source": "Senior Housing News",
    "group": "industry",
-   "published": "2026-11-11T22:05:36Z"
+   "published": "2026-11-12T21:30:29Z"
   },
   {
-   "title": "Davian To Acquire Healthcare Stat For $13.5M; Renovus Partners With Aspire Home Health Care",
-   "link": "https://homehealthcarenews.com/2026/11/davian-to-acquire-healthcare-stat-for-13-5m-renovus-partners-with-aspire-home-health-care/",
+   "title": "Aveanna Freezes California Nurse Base Wage Hike Amid Rate Uncertainty",
+   "link": "https://homehealthcarenews.com/2026/11/aveanna-freezes-california-nurse-base-wage-hike-amid-rate-uncertainty/",
    "source": "Home Health Care News",
    "group": "industry",
-   "published": "2026-11-11T21:43:10Z"
+   "published": "2026-11-12T21:48:53Z"
   },
   {
    "title": "‘A Low-Margin Game’: Nursing Home Operators Cascadia, CarDon Turn to Internal AI Systems for M&A, Clinical Efficiencies",
@@ -72,18 +72,18 @@
    "published": "2026-11-10T22:46:45Z"
   },
   {
-   "title": "Movers and Shakers: President, CEO Confirmed at UMC; Miami Jewish Health Names President",
-   "link": "https://seniorhousingnews.com/2026/11/11/movers-and-shakers-president-ceo-confirmed-at-umc-miami-jewish-health-names-president/",
+   "title": "Odyssey Debacle Parallels How Cruise Ship-Style Senior Living Has Run Aground",
+   "link": "https://seniorhousingnews.com/2026/11/12/odyssey-debacle-parallels-how-cruise-ship-style-senior-living-has-run-aground/",
    "source": "Senior Housing News",
    "group": "industry",
-   "published": "2026-11-11T21:55:37Z"
+   "published": "2026-11-12T20:35:30Z"
   },
   {
-   "title": "6 Home-Based Care Leaders Share Time-Saving Strategies For Frontline Teams",
-   "link": "https://homehealthcarenews.com/2026/11/6-home-based-care-leaders-share-time-saving-strategies-for-frontline-teams/",
+   "title": "Davian To Acquire Healthcare Stat For $13.5M; Renovus Partners With Aspire Home Health Care",
+   "link": "https://homehealthcarenews.com/2026/11/davian-to-acquire-healthcare-stat-for-13-5m-renovus-partners-with-aspire-home-health-care/",
    "source": "Home Health Care News",
    "group": "industry",
-   "published": "2026-11-11T21:06:42Z"
+   "published": "2026-11-11T21:43:10Z"
   },
   {
    "title": "U.S. News Nursing Home Report: ‘Encouraging’ Staffing Gains, Troubling Depressive Symptoms on the Rise",
@@ -93,18 +93,18 @@
    "published": "2026-11-10T06:03:00Z"
   },
   {
-   "title": "‘Managing Belonging, Not Buildings’: How Priority Life Care Is Laying the Groundwork for 2027 and Beyond",
-   "link": "https://seniorhousingnews.com/2026/11/11/managing-belonging-not-buildings-how-priority-life-care-is-laying-the-groundwork-for-2027-and-beyond/",
+   "title": "Ebenzer to Enter South Dakota With Acquisition of HME Care, Management of 8 Communities",
+   "link": "https://seniorhousingnews.com/2026/11/11/ebenzer-to-enter-south-dakota-with-acquisition-of-hme-care-management-of-8-communities/",
    "source": "Senior Housing News",
    "group": "industry",
-   "published": "2026-11-11T20:09:14Z"
+   "published": "2026-11-11T22:05:36Z"
   },
   {
-   "title": "‘Unlimited Opportunity’: How LifeCare Is Navigating Rapidly Rising Clinical Acuity",
-   "link": "https://homehealthcarenews.com/2026/11/unlimited-opportunity-how-lifecare-is-navigating-rapidly-rising-clinical-acuity/",
+   "title": "6 Home-Based Care Leaders Share Time-Saving Strategies For Frontline Teams",
+   "link": "https://homehealthcarenews.com/2026/11/6-home-based-care-leaders-share-time-saving-strategies-for-frontline-teams/",
    "source": "Home Health Care News",
    "group": "industry",
-   "published": "2026-11-10T21:53:25Z"
+   "published": "2026-11-11T21:06:42Z"
   },
   {
    "title": "Nearly Half of Nursing Home Residents Face Visual Impairment, With Cataracts the Leading Preventable Cause of Vision Loss",
@@ -114,18 +114,18 @@
    "published": "2026-11-09T23:00:00Z"
   },
   {
-   "title": "NHI Operating Partners Grapple With Community Transitions, Muted Summer Selling Season",
-   "link": "https://seniorhousingnews.com/2026/11/10/nhi-operating-partners-grapple-with-community-transitions-muted-summer-selling-season/",
+   "title": "Movers and Shakers: President, CEO Confirmed at UMC; Miami Jewish Health Names President",
+   "link": "https://seniorhousingnews.com/2026/11/11/movers-and-shakers-president-ceo-confirmed-at-umc-miami-jewish-health-names-president/",
    "source": "Senior Housing News",
    "group": "industry",
-   "published": "2026-11-10T22:20:10Z"
+   "published": "2026-11-11T21:55:37Z"
   },
   {
-   "title": "In-Home Care Demand Clashes With Affordability Realities",
-   "link": "https://homehealthcarenews.com/2026/11/in-home-care-demand-clashes-with-affordability-realities/",
+   "title": "‘Unlimited Opportunity’: How LifeCare Is Navigating Rapidly Rising Clinical Acuity",
+   "link": "https://homehealthcarenews.com/2026/11/unlimited-opportunity-how-lifecare-is-navigating-rapidly-rising-clinical-acuity/",
    "source": "Home Health Care News",
    "group": "industry",
-   "published": "2026-11-10T20:15:04Z"
+   "published": "2026-11-10T21:53:25Z"
   },
   {
    "title": "Voices: Darcy Smith, Chief People Officer, MatrixCare",
@@ -135,18 +135,18 @@
    "published": "2026-11-09T19:40:56Z"
   },
   {
-   "title": "Senior Living Dealbook: Agemark Expands California Presence; Charter Grows with Ventas",
-   "link": "https://seniorhousingnews.com/2026/11/09/senior-living-dealbook-agemark-expands-california-presence-charter-grows-with-ventas/",
+   "title": "‘Managing Belonging, Not Buildings’: How Priority Life Care Is Laying the Groundwork for 2027 and Beyond",
+   "link": "https://seniorhousingnews.com/2026/11/11/managing-belonging-not-buildings-how-priority-life-care-is-laying-the-groundwork-for-2027-and-beyond/",
    "source": "Senior Housing News",
    "group": "industry",
-   "published": "2026-11-09T22:40:39Z"
+   "published": "2026-11-11T20:09:14Z"
   },
   {
-   "title": "At-Home Care Providers Face High-Stakes Learning Curves With Agentic AI",
-   "link": "https://homehealthcarenews.com/2026/11/at-home-care-providers-face-high-stakes-learning-curves-with-agentic-ai/",
+   "title": "In-Home Care Demand Clashes With Affordability Realities",
+   "link": "https://homehealthcarenews.com/2026/11/in-home-care-demand-clashes-with-affordability-realities/",
    "source": "Home Health Care News",
    "group": "industry",
-   "published": "2026-11-09T20:38:39Z"
+   "published": "2026-11-10T20:15:04Z"
   },
   {
    "title": "Amid $1.69B in New 3Q Investments, AHR Execs Laud Trilogy’s Nursing Home Occupancy and Expense Controls",
@@ -156,18 +156,18 @@
    "published": "2026-11-06T22:45:00Z"
   },
   {
-   "title": "Rising Pricing Shows More Competition for Senior Living Communities as Development Remains Slow",
-   "link": "https://seniorhousingnews.com/2026/11/09/rising-pricing-shows-more-competition-for-senior-living-communities-as-development-remains-slow/",
+   "title": "NHI Operating Partners Grapple With Community Transitions, Muted Summer Selling Season",
+   "link": "https://seniorhousingnews.com/2026/11/10/nhi-operating-partners-grapple-with-community-transitions-muted-summer-selling-season/",
    "source": "Senior Housing News",
    "group": "industry",
-   "published": "2026-11-09T21:31:20Z"
+   "published": "2026-11-10T22:20:10Z"
   },
   {
-   "title": "LiveWell Partners Acquires Assured Home Health and Hospice",
-   "link": "https://homehealthcarenews.com/2026/11/livewell-partners-acquires-assured-home-health-and-hospice/",
+   "title": "At-Home Care Providers Face High-Stakes Learning Curves With Agentic AI",
+   "link": "https://homehealthcarenews.com/2026/11/at-home-care-providers-face-high-stakes-learning-curves-with-agentic-ai/",
    "source": "Home Health Care News",
    "group": "industry",
-   "published": "2026-11-09T16:27:48Z"
+   "published": "2026-11-09T20:38:39Z"
   },
   {
    "title": "CareTrust CEO On $740M in 3Q Investments, Nursing Home Rent Coverage and Growth Across Settings",
@@ -177,11 +177,32 @@
    "published": "2026-11-06T22:39:09Z"
   },
   {
-   "title": "American Healthcare REIT Sets Bar Higher for SHOP to Fuel Next Growth Stage",
-   "link": "https://seniorhousingnews.com/2026/11/06/american-healthcare-reit-sets-bar-higher-for-shop-to-fuel-next-growth-stage/",
+   "title": "Senior Living Dealbook: Agemark Expands California Presence; Charter Grows with Ventas",
+   "link": "https://seniorhousingnews.com/2026/11/09/senior-living-dealbook-agemark-expands-california-presence-charter-grows-with-ventas/",
    "source": "Senior Housing News",
    "group": "industry",
-   "published": "2026-11-06T21:40:05Z"
+   "published": "2026-11-09T22:40:39Z"
+  },
+  {
+   "title": "LiveWell Partners Acquires Assured Home Health and Hospice",
+   "link": "https://homehealthcarenews.com/2026/11/livewell-partners-acquires-assured-home-health-and-hospice/",
+   "source": "Home Health Care News",
+   "group": "industry",
+   "published": "2026-11-09T16:27:48Z"
+  },
+  {
+   "title": "Omega Healthcare Execs Tout $73M in Nursing Home Acquisitions, Expanded PACS and Saber JV Partnerships",
+   "link": "https://skillednursingnews.com/2026/11/omega-healthcare-execs-tout-73m-in-nursing-home-acquisitions-expanded-pacs-and-saber-jv-partnerships/",
+   "source": "Skilled Nursing News",
+   "group": "industry",
+   "published": "2026-11-04T23:00:00Z"
+  },
+  {
+   "title": "Rising Pricing Shows More Competition for Senior Living Communities as Development Remains Slow",
+   "link": "https://seniorhousingnews.com/2026/11/09/rising-pricing-shows-more-competition-for-senior-living-communities-as-development-remains-slow/",
+   "source": "Senior Housing News",
+   "group": "industry",
+   "published": "2026-11-09T21:31:20Z"
   },
   {
    "title": "What The 2026 Midterms Mean For The Home-Based Care Industry",
@@ -189,20 +210,6 @@
    "source": "Home Health Care News",
    "group": "industry",
    "published": "2026-11-05T02:59:59Z"
-  },
-  {
-   "title": "Brookdale Senior Living Revamps Sales Strategy to Accelerate Slower-Than-Expected Occupancy Gains",
-   "link": "https://seniorhousingnews.com/2026/11/06/brookdale-senior-living-revamps-sales-strategy-to-accelerate-slower-than-expected-occupancy-gains/",
-   "source": "Senior Housing News",
-   "group": "industry",
-   "published": "2026-11-06T21:27:46Z"
-  },
-  {
-   "title": "Capital and Scale, Not Ideas, Are Biggest Barriers to Middle-Market Senior Living",
-   "link": "https://seniorhousingnews.com/2026/11/06/capital-and-scale-not-ideas-are-biggest-barriers-to-middle-market-senior-living/",
-   "source": "Senior Housing News",
-   "group": "industry",
-   "published": "2026-11-06T20:44:21Z"
   }
  ],
  "regulatory": [
@@ -221,25 +228,25 @@
    "published": "2026-11-10T22:31:58Z"
   },
   {
-   "title": "Scrutinizing The Bundled Enforcement Risks In CMS’ 2027 Home Health Payment Rule",
-   "link": "https://homehealthcarenews.com/2026/11/scrutinizing-the-bundled-enforcement-risks-in-cms-2027-home-health-payment-rule/",
+   "title": "CMS Extends Medicare Home Health, Hospice Moratorium",
+   "link": "https://homehealthcarenews.com/2026/11/cms-extends-medicare-home-health-hospice-moratorium/",
    "source": "Home Health Care News",
    "group": "industry",
-   "published": "2026-11-06T21:04:15Z"
+   "published": "2026-11-13T00:00:43Z"
   },
   {
-   "title": "Medicare and Medicaid Programs; Cutting Administrative Requirements for Excellence in Patient Care (CARE) (CMS-3484-P)",
-   "link": "https://www.cms.gov/newsroom/fact-sheets/medicare-medicaid-programs-cutting-administrative-requirements-excellence-patient-care-care-cms-3484",
+   "title": "CMS Extends and Modifies Nationwide Freeze on New Medicare Hospice and Home Health Enrollment for Six Months to Combat Fraud",
+   "link": "https://www.cms.gov/newsroom/press-releases/cms-extends-modifies-nationwide-freeze-new-medicare-hospice-home-health-enrollment-six-months-combat",
    "source": "CMS Newsroom",
    "group": "regulatory",
-   "published": "2026-11-06T16:14:17Z"
+   "published": "2026-11-12T21:28:02Z"
   },
   {
-   "title": "New York Doctor Charged in $6.8M Medicare Fraud Scheme",
-   "link": "https://www.justice.gov/opa/pr/new-york-doctor-charged-68m-medicare-fraud-scheme",
+   "title": "Florida Man Pleads Guilty to $42M Durable Medical Equipment and Cancer Genetic Testing Fraud on Medicare",
+   "link": "https://www.justice.gov/opa/pr/florida-man-pleads-guilty-42m-durable-medical-equipment-and-cancer-genetic-testing-fraud",
    "source": "U.S. Department of Justice",
    "group": "regulatory",
-   "published": "2026-11-12T12:00:00Z"
+   "published": "2026-11-13T12:00:00Z"
   },
   {
    "title": "OIG: County Hospitals Recouped $205M in Medicaid Supplemental Funds Intended for Nursing Homes, Raising Transparency Concerns",
@@ -249,18 +256,18 @@
    "published": "2026-11-10T23:00:00Z"
   },
   {
-   "title": "Pennant Welcomes Home Health Payment Increase, Warns of Fraud Rule Burdens",
-   "link": "https://homehealthcarenews.com/2026/11/pennant-welcomes-home-health-payment-increase-warns-of-fraud-rule-burdens/",
+   "title": "New Bill Would Create Medicare Skilled Nursing At-Home Pilot",
+   "link": "https://homehealthcarenews.com/2026/11/new-bill-would-create-medicare-skilled-nursing-at-home-pilot/",
    "source": "Home Health Care News",
    "group": "industry",
-   "published": "2026-11-05T22:24:34Z"
+   "published": "2026-11-12T21:23:19Z"
   },
   {
-   "title": "Medicare Drug Price Negotiation Program and Medicare Prescription Drug Benefit Program Final Rule (CMS-4215-F)",
-   "link": "https://www.cms.gov/newsroom/fact-sheets/medicare-drug-price-negotiation-program-medicare-prescription-drug-benefit-program-final-rule-cms",
+   "title": "Medicare and Medicaid Programs; Cutting Administrative Requirements for Excellence in Patient Care (CARE) (CMS-3484-P)",
+   "link": "https://www.cms.gov/newsroom/fact-sheets/medicare-medicaid-programs-cutting-administrative-requirements-excellence-patient-care-care-cms-3484",
    "source": "CMS Newsroom",
    "group": "regulatory",
-   "published": "2026-11-05T21:28:33Z"
+   "published": "2026-11-06T16:14:17Z"
   },
   {
    "title": "[UPDATED] CMS Proposes Rule to Reduce Nursing Home and Health Care Burdens, Save $320M",
@@ -270,11 +277,32 @@
    "published": "2026-11-06T15:53:08Z"
   },
   {
-   "title": "Higher Rates, Heavier Scrutiny: Providers Break Down 2027 Medicare Home Health Rule",
-   "link": "https://homehealthcarenews.com/2026/11/higher-rates-heavier-scrutiny-providers-break-down-2027-medicare-home-health-rule/",
+   "title": "Scrutinizing The Bundled Enforcement Risks In CMS’ 2027 Home Health Payment Rule",
+   "link": "https://homehealthcarenews.com/2026/11/scrutinizing-the-bundled-enforcement-risks-in-cms-2027-home-health-payment-rule/",
    "source": "Home Health Care News",
    "group": "industry",
-   "published": "2026-11-05T22:02:38Z"
+   "published": "2026-11-06T21:04:15Z"
+  },
+  {
+   "title": "Medicare Drug Price Negotiation Program and Medicare Prescription Drug Benefit Program Final Rule (CMS-4215-F)",
+   "link": "https://www.cms.gov/newsroom/fact-sheets/medicare-drug-price-negotiation-program-medicare-prescription-drug-benefit-program-final-rule-cms",
+   "source": "CMS Newsroom",
+   "group": "regulatory",
+   "published": "2026-11-05T21:28:33Z"
+  },
+  {
+   "title": "Medicare Advantage Patients Less Likely to Receive Care at Top-Rated Nursing Homes",
+   "link": "https://skillednursingnews.com/2026/11/medicare-advantage-patients-less-likely-to-receive-care-at-top-rated-nursing-homes/",
+   "source": "Skilled Nursing News",
+   "group": "industry",
+   "published": "2026-11-02T23:00:00Z"
+  },
+  {
+   "title": "Pennant Welcomes Home Health Payment Increase, Warns of Fraud Rule Burdens",
+   "link": "https://homehealthcarenews.com/2026/11/pennant-welcomes-home-health-payment-increase-warns-of-fraud-rule-burdens/",
+   "source": "Home Health Care News",
+   "group": "industry",
+   "published": "2026-11-05T22:24:34Z"
   },
   {
    "title": "CMS Finalizes Broad Medicare Integrity Changes in Home Health Final Rule; Expected to Save Taxpayers Tens of Millions of Dollars",
@@ -284,6 +312,13 @@
    "published": "2026-11-05T15:28:38Z"
   },
   {
+   "title": "Higher Rates, Heavier Scrutiny: Providers Break Down 2027 Medicare Home Health Rule",
+   "link": "https://homehealthcarenews.com/2026/11/higher-rates-heavier-scrutiny-providers-break-down-2027-medicare-home-health-rule/",
+   "source": "Home Health Care News",
+   "group": "industry",
+   "published": "2026-11-05T22:02:38Z"
+  },
+  {
    "title": "Medicare Outpatient Final Rule Expands Surgical Options, Lowers Out-of-Pocket Costs for 340B Drugs",
    "link": "https://www.cms.gov/newsroom/press-releases/medicare-outpatient-final-rule-expands-surgical-options-lowers-out-pocket-costs-340b-drugs",
    "source": "CMS Newsroom",
@@ -291,11 +326,25 @@
    "published": "2026-11-04T22:22:35Z"
   },
   {
+   "title": "[Updated] CMS Finalizes 2027 Home Health Medicare Payment Rule With 2.4% Rate Increase",
+   "link": "https://homehealthcarenews.com/2026/11/cms-finalizes-2027-home-health-medicare-payment-rule-with-2-4-rate-increase/",
+   "source": "Home Health Care News",
+   "group": "industry",
+   "published": "2026-11-04T22:35:00Z"
+  },
+  {
    "title": "Calendar Year (CY) 2027 Home Health Prospective Payment System Final Rule - CMS-1844-F",
    "link": "https://www.cms.gov/newsroom/fact-sheets/calendar-year-cy-2027-home-health-prospective-payment-system-final-rule-cms-1844-f",
    "source": "CMS Newsroom",
    "group": "regulatory",
    "published": "2026-11-04T22:10:28Z"
+  },
+  {
+   "title": "Home Health Agencies Face 13% More Paperwork For $60 Less Per Visit Under Medicare Advantage",
+   "link": "https://homehealthcarenews.com/2026/11/home-health-agencies-face-13-more-paperwork-for-60-less-per-visit-under-medicare-advantage/",
+   "source": "Home Health Care News",
+   "group": "industry",
+   "published": "2026-11-03T22:17:42Z"
   }
  ]
 }
