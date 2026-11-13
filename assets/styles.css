@@ -1207,3 +1207,73 @@ header.nav .btn-ghost.nav-cta{color:var(--text);border-color:var(--line-2)}
 .cf-empty{color:var(--mute);margin-top:1rem}
 .cf-empty a{color:var(--navy);font-weight:600}
 .ck-modes{grid-template-columns:repeat(auto-fit,minmax(150px,1fr))}
+
+/* ============================================================
+   Advisor marketplace: practice-area tiles, profile pages
+   ============================================================ */
+.catgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:.8rem}
+.catgrid.compact{grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:.6rem}
+.cattile{position:relative;display:grid;gap:.45rem;align-content:start;background:#fff;border:1px solid var(--line);border-radius:20px;padding:1.2rem 1.2rem 1.1rem;color:var(--text);text-decoration:none;
+  transition:transform .25s ease,box-shadow .25s ease,border-color .25s ease;border-bottom:none}
+.cattile:hover{transform:translateY(-4px);box-shadow:0 26px 50px -34px rgba(10,21,38,.45);border-color:var(--navy-pale)}
+.cattile[aria-current="page"]{outline:2px solid var(--navy);outline-offset:-2px}
+.cattile b{font:600 1.08rem/1.25 var(--f-display);color:var(--ink);letter-spacing:-.01em}
+.catgrid.compact .cattile{padding:1rem 1rem .9rem;border-radius:16px}
+.catgrid.compact .cattile b{font-size:.98rem}
+.cat-desc{font-size:.9rem;color:var(--mute);line-height:1.45}
+.cat-meta{font:600 .76rem var(--f-body);color:var(--navy);text-transform:uppercase;letter-spacing:.06em;margin-top:.2rem}
+.cat-ico{width:34px;height:10px;border-radius:999px;background:var(--navy);display:block;margin-bottom:.2rem}
+.c-administration .cat-ico{background:#14315C}.c-clinical .cat-ico{background:#1F5F4A}.c-compliance .cat-ico{background:#8A3B1F}
+.c-finance .cat-ico{background:#2B6CB0}.c-marketing .cat-ico{background:#B8860B}.c-workforce .cat-ico{background:#5B3E96}
+.c-capital .cat-ico{background:#4A5568}.c-technology .cat-ico{background:#0C7C8C}
+.adv-sec{background:#fff;padding-top:0}
+.ccard h3 a{color:inherit;border:0;text-decoration:none}.ccard h3 a:hover{color:var(--navy)}
+.ccard-cat{font:600 .74rem var(--f-body);color:var(--mute-2);text-transform:uppercase;letter-spacing:.06em;margin:.2rem 0 0}
+.ccard-more{font:600 .9rem var(--f-body);color:var(--navy);border-bottom:1px solid var(--navy-pale);width:max-content;margin-top:.2rem}
+.ccard-tags.big span{font-size:.9rem;padding:.5rem .85rem}
+
+.prof-sec{padding-top:.4rem}
+.prof{display:grid;grid-template-columns:minmax(0,1fr) 320px;gap:1.4rem 2.4rem;align-items:start}
+.prof-head{grid-column:1;display:flex;gap:1.4rem;align-items:flex-start}
+.prof-avatar{flex:none;width:96px;height:96px;border-radius:28px;background:var(--navy);color:#fff;display:grid;place-items:center;font:600 2rem var(--f-display)}
+.prof-head h1{font-size:clamp(2rem,4.6vw,3.4rem);margin:.1rem 0 .3rem;letter-spacing:-.025em}
+.prof-head .eyebrow a{color:var(--navy);border:0}
+.prof-title{font:600 1.1rem var(--f-body);color:var(--navy);margin:0}
+.prof-cred{color:var(--text-2);margin:.4rem 0 0}
+.prof-facts{display:flex;flex-wrap:wrap;gap:.6rem 1.6rem;margin-top:1rem}
+.prof-facts span{font-size:.95rem;color:var(--text)}
+.prof-facts b{display:block;font:600 .72rem var(--f-body);text-transform:uppercase;letter-spacing:.08em;color:var(--mute-2);margin-bottom:.1rem}
+.prof-book{grid-column:2;grid-row:1/span 2;position:sticky;top:calc(var(--hdr) + 16px);background:var(--soft);border-radius:24px;padding:1.4rem;display:grid;gap:.6rem}
+.prof-book .eyebrow{margin:0 0 .2rem}
+.prof-book .btn.block{width:100%;justify-content:center}
+.prof-book .fineprint{margin:.4rem 0 0;line-height:1.45}
+.prof-intro-link{font:600 .9rem var(--f-body);color:var(--navy);border-bottom:1px solid var(--navy-pale);width:max-content}
+.prof-body{grid-column:1;display:grid;gap:2.2rem}
+.prof-block h2{font-size:clamp(1.35rem,2.4vw,1.8rem);margin:0 0 .8rem;letter-spacing:-.02em}
+.prof-block .lead{font-size:1.15rem;color:var(--text);max-width:60ch}
+.prof-block p{max-width:62ch}
+.prof-list{margin:0;padding:0;list-style:none;display:grid;gap:.55rem}
+.prof-list li{position:relative;padding-left:1.6rem;line-height:1.5}
+.prof-list li::before{content:"";position:absolute;left:0;top:.5em;width:12px;height:12px;border-radius:50%;background:var(--navy-pale)}
+.prof-list.plain li::before{background:var(--navy)}
+.prof-exp{margin:0;padding:0;list-style:none;display:grid;gap:1rem;border-left:2px solid var(--line-2);padding-left:1.4rem}
+.prof-exp li{position:relative;display:grid;grid-template-columns:120px 1fr;gap:1rem}
+.prof-exp li::before{content:"";position:absolute;left:calc(-1.4rem - 7px);top:.45em;width:12px;height:12px;border-radius:50%;background:var(--navy);border:2px solid #fff}
+.prof-exp .when{font:600 .82rem var(--f-body);color:var(--mute-2);text-transform:uppercase;letter-spacing:.06em;padding-top:.2em}
+.prof-exp b{display:block;font-size:1.05rem;color:var(--ink)}
+.prof-exp span:not(.when){display:block;color:var(--navy);font-weight:600;font-size:.95rem;margin-top:.15rem}
+.prof-exp p{margin:.3rem 0 0;color:var(--mute);font-size:.95rem}
+.prof-steps{margin:0;padding:0;list-style:none;counter-reset:ps;display:grid;gap:.9rem}
+.prof-steps li{counter-increment:ps;position:relative;padding-left:3rem;line-height:1.5;color:var(--text-2)}
+.prof-steps li b{color:var(--ink)}
+.prof-steps li::before{content:counter(ps,decimal-leading-zero);position:absolute;left:0;top:.05em;font:600 .95rem var(--f-display);color:var(--navy);background:var(--soft);border-radius:10px;width:2.2rem;height:2.2rem;display:grid;place-items:center}
+.prof-empty{background:var(--soft);border-radius:24px;padding:clamp(1.6rem,4vw,2.6rem);max-width:760px}
+.prof-empty h2{margin:0 0 .6rem}
+.dx-prof{font:600 .9rem var(--f-body);color:var(--navy);border-bottom:1px solid var(--navy-pale);align-self:center}
+@media(max-width:900px){
+  .prof{grid-template-columns:1fr}
+  .prof-head,.prof-body,.prof-book{grid-column:1}
+  .prof-book{grid-row:auto;position:static}
+  .prof-avatar{width:72px;height:72px;border-radius:20px;font-size:1.5rem}
+  .prof-exp li{grid-template-columns:1fr;gap:.2rem}
+}

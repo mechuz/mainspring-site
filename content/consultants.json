@@ -3,7 +3,9 @@
     "slug": "felix-strickland",
     "name": "Felix Strickland III",
     "title": "Managing Director, Operations and Compliance",
+    "category": "administration",
     "role": "Administrator / Executive",
+    "headline": "Licensed administrator who has run skilled nursing, assisted living and memory care as administrator, executive director and CEO.",
     "credentials": ["Licensed Nursing Home Administrator", "Multi-state"],
     "states": ["TN", "Multi-state"],
     "specialties": ["Survey remediation", "Interim leadership", "Turnaround", "Census growth", "Temporary management", "Clinical operations"],
@@ -11,14 +13,23 @@
     "years": 16,
     "modes": ["video", "phone", "in-person"],
     "bio": "Sixteen years running skilled nursing, assisted living and memory care as administrator, executive director and CEO. Licensed NHA. Leads survey, leadership and state-mandated engagements.",
+    "experience": [
+      {"role": "Managing Director, Operations and Compliance", "org": "Mainspring Healthcare Partners", "when": "Current"},
+      {"role": "CEO, executive director and licensed administrator", "org": "Skilled nursing, assisted living and memory care communities", "when": "16 years"}
+    ],
+    "good_for": ["A survey that went badly and a plan of correction due", "An administrator or executive director seat that is empty", "A state agency or court that needs a temporary manager", "Census and operations that have slipped at the same time"],
+    "education": [],
     "featured": true,
+    "consent_to_publish": true,
     "published": true
   },
   {
     "slug": "david-bloch",
     "name": "David Bloch",
     "title": "Managing Partner",
+    "category": "finance",
     "role": "Finance / Restructuring",
+    "headline": "Twenty years in operations and finance, now focused on the money side of senior care: budgets, payroll, forensic work and underwriting.",
     "credentials": ["20+ years operations and finance"],
     "states": ["NY", "Multi-state"],
     "specialties": ["Restructuring", "Budgeting & financial analysis", "Forensic & payroll analysis", "Due diligence & underwriting", "Capital projects"],
@@ -26,7 +37,15 @@
     "years": 20,
     "modes": ["video", "phone", "in-person"],
     "bio": "Twenty years in operations and finance across IBM, Verizon, private equity and structured debt, and real estate ownership, now healthcare. Leads the money side: budgets, payroll, forensic work and underwriting for buyers and lenders.",
+    "experience": [
+      {"role": "Managing Partner", "org": "Mainspring Healthcare Partners", "when": "Current"},
+      {"role": "Private equity, structured debt and real estate ownership", "org": "", "when": ""},
+      {"role": "Operations and finance leadership", "org": "IBM and Verizon", "when": "Earlier career"}
+    ],
+    "good_for": ["A budget that does not hold and nobody can say why", "Payroll, agency or vendor numbers that do not reconcile", "A buyer or lender who needs the operations underwritten", "A renovation or capital project that needs a real budget"],
+    "education": [],
     "featured": true,
+    "consent_to_publish": true,
     "published": true
   }
 ]

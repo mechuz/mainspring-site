@@ -6,7 +6,7 @@ Usage:
 
 Reads every .pdf, .docx and .txt in the folder, extracts the text, and writes one
 DRAFT profile per file with "published": false. Drafts are reviewed by hand (name,
-title, states, specialties, bio, consent) and then moved into content/consultants.json.
+title, category, states, specialties, experience, bio, consent) and then moved into content/consultants.json.
 Nothing from the résumés themselves is published: the public site only ever shows the
 reviewed fields in consultants.json. Keep the résumé folder OUTSIDE this public repo.
 """
@@ -30,6 +30,16 @@ SETTING_WORDS = {
     "Memory care": ["memory care", "dementia"],
     "CCRC": ["ccrc", "life plan", "continuing care"],
     "Independent living": ["independent living"],
+}
+CATEGORY_WORDS = {  # first match wins; order matters
+    "clinical": ["director of nursing", "rn,", "rn ", "nurse", "infection prevention", "mds coordinator"],
+    "finance": ["cfo", "controller", "accountant", "cpa", "revenue cycle", "business office", "financial analyst"],
+    "marketing": ["marketing", "admissions", "sales director", "business development", "census development"],
+    "workforce": ["human resources", "hr director", "recruiter", "talent", "staffing coordinator"],
+    "capital": ["construction", "facilities director", "plant operations", "maintenance director", "life safety"],
+    "technology": ["information technology", "ehr", "pointclickcare", "systems analyst", "it director"],
+    "compliance": ["compliance officer", "regulatory", "quality assurance", "qapi"],
+    "administration": ["administrator", "executive director", "regional director", "vice president of operations", "ceo", "coo"],
 }
 STATE_RE = re.compile(r"\b(AL|AK|AZ|AR|CA|CO|CT|DE|FL|GA|HI|ID|IL|IN|IA|KS|KY|LA|ME|MD|MA|MI|MN|MS|MO|MT|NE|NV|NH|NJ|NM|NY|NC|ND|OH|OK|OR|PA|RI|SC|SD|TN|TX|UT|VT|VA|WA|WV|WI|WY)\b")
 
@@ -73,6 +83,11 @@ def draft(path: Path) -> dict:
         "specialties": [k for k, ws in SPECIALTY_WORDS.items() if any(w in low for w in ws)],
         "settings": [k for k, ws in SETTING_WORDS.items() if any(w in low for w in ws)],
         "years": int(years[0]) if years else None,
+        "category": next((k for k, ws in CATEGORY_WORDS.items() if any(w in low for w in ws)), "administration"),
+        "headline": "",
+        "experience": [],
+        "good_for": [],
+        "education": [],
         "modes": ["video", "phone", "in-person"],
         "bio": "",
         "source_file": path.name,

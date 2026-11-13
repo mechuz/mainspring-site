@@ -9,14 +9,21 @@ changefreq: weekly
 <div class="container"><p class="crumbs"><a href="/">Home</a> · Consultants</p></div>
 <div class="hero-sub"><div class="container">
   <p class="eyebrow">Our consultants</p>
-  <h1>Pick the person. Book the meeting.</h1>
-  <p class="lede">Licensed administrators, nurse leaders and finance operators who have run buildings. Filter by state, specialty and setting, then book a video call, a phone call or an in-person meeting at your community.</p>
+  <h1>Pick the advisor. See the résumé. Book the meeting.</h1>
+  <p class="lede">Senior care advisors by practice area: administration, clinical, compliance, finance, marketing and census, workforce, capital and technology. Every profile shows the résumé, the states and the settings. Book a video call, a phone call or an in-person meeting at your community.</p>
   <div class="hero-cta"><a class="btn btn-primary btn-lg" href="/#diagnose">Not sure who? Tell us the issue <span class="arrow">&rarr;</span></a><a class="btn btn-ghost btn-lg" href="/book/">Book a consultation</a></div>
 </div></div>
 
 <section style="padding-top:6px"><div class="container">
+  <div class="head reveal" style="margin-bottom:1rem"><p class="eyebrow">Practice areas</p><h2 class="h2">Start with what the building needs.</h2></div>
+  <div class="reveal" id="cats">{{consultant_categories}}</div>
+</div></section>
+
+<section id="directory" style="padding-top:0"><div class="container">
+  <div class="head reveal" style="margin-bottom:1rem"><p class="eyebrow">All consultants</p><h2 class="h2">Or search the whole directory.</h2></div>
   <div class="cfilters reveal" role="search">
     <input type="search" id="cf-q" aria-label="Search consultants" placeholder="Search by name, specialty or credential">
+    <select id="cf-cat" aria-label="Practice area"><option value="">Any practice area</option>{{consultant_category_options}}</select>
     <select id="cf-state" aria-label="State"><option value="">Any state</option>{{consultant_states}}</select>
     <select id="cf-spec" aria-label="Specialty"><option value="">Any specialty</option>{{consultant_specialties}}</select>
     <select id="cf-setting" aria-label="Setting"><option value="">Any setting</option>{{consultant_settings}}</select>
@@ -52,7 +59,7 @@ changefreq: weekly
 
 <script>
 (function () {
-  var q = document.getElementById('cf-q'), st = document.getElementById('cf-state'), sp = document.getElementById('cf-spec'), se = document.getElementById('cf-setting');
+  var q = document.getElementById('cf-q'), cat = document.getElementById('cf-cat'), st = document.getElementById('cf-state'), sp = document.getElementById('cf-spec'), se = document.getElementById('cf-setting');
   var cards = Array.prototype.slice.call(document.querySelectorAll('#cgrid .ccard'));
   var count = document.getElementById('cf-count'), empty = document.getElementById('cf-empty');
   var mode = '';
@@ -62,6 +69,7 @@ changefreq: weekly
     cards.forEach(function (c) {
       var ok = true;
       if (text && norm(c.getAttribute('data-text')).indexOf(text) === -1) ok = false;
+      if (cat.value && c.getAttribute('data-cat') !== cat.value) ok = false;
       if (st.value && (c.getAttribute('data-states') || '').split('|').indexOf(st.value) === -1) ok = false;
       if (sp.value && (c.getAttribute('data-specs') || '').split('|').indexOf(sp.value) === -1) ok = false;
       if (se.value && (c.getAttribute('data-settings') || '').split('|').indexOf(se.value) === -1) ok = false;
@@ -71,7 +79,8 @@ changefreq: weekly
     count.textContent = n + (n === 1 ? ' consultant' : ' consultants') + (n < cards.length ? ' match' : ' listed');
     empty.hidden = n > 0;
   }
-  [q, st, sp, se].forEach(function (el) { el.addEventListener('input', apply); el.addEventListener('change', apply); });
+  var qm = location.search.match(/[?&]cat=([a-z]+)/); if (qm && cat.querySelector('option[value="' + qm[1] + '"]')) cat.value = qm[1];
+  [q, cat, st, sp, se].forEach(function (el) { el.addEventListener('input', apply); el.addEventListener('change', apply); });
   document.querySelectorAll('.cf-mode').forEach(function (b) {
     b.addEventListener('click', function () {
       document.querySelectorAll('.cf-mode').forEach(function (x) { x.classList.remove('on'); });
