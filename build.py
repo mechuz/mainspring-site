@@ -26,6 +26,8 @@ PUBLIC = ROOT / "public"
 SITE = "https://mainspringhcp.com"
 DOMAIN = "mainspringhcp.com"
 EMAIL = "info@mainspringhcp.com"
+# Phrases FormSubmit drops server-side. Keep in one place; forms use {{blacklist}}.
+BLACKLIST = "seeking employment, job opportunity, my resume, backlinks, seo services, guest post, web design, website design, website redesign, redesign your website, found several errors, errors on your site, pending web, rank on google, first page of google, seo audit, mobile app development, app development, my last email, reminder email, tuesday reminder, follow up on my, bitcoin, crypto, casino, lead generation services, video editing, logo design, virtual assistant services"
 PHONE_FMT = "650-418-2280"
 PHONE_TEL = "+16504182280"
 
@@ -107,7 +109,8 @@ def tokens(s, extra=None):
             .replace("{{phone_tel}}", PHONE_TEL)
             .replace("{{email}}", EMAIL)
             .replace("{{site}}", SITE)
-            .replace("{{domain}}", DOMAIN))
+            .replace("{{domain}}", DOMAIN)
+            .replace("{{blacklist}}", BLACKLIST))
     for k, v in (extra or {}).items():
         out = out.replace("{{" + k + "}}", v)
     return out
@@ -139,6 +142,27 @@ def write(path, text):
     path.write_text(text, encoding="utf-8")
 
 
+_EML = re.compile(r"\b([a-z][a-z0-9.]*)@mainspringhcp\.com\b")
+
+def shield(html):
+    """Keep addresses out of the HTML that scrapers read. Humans see the address again once
+    site.js runs (it also rewrites the links and points forms at the mail relay)."""
+    parts = re.split(r"(<script\b.*?</script>|<style\b.*?</style>|<[^>]+>)", html, flags=re.S | re.I)
+    out = []
+    for i, seg in enumerate(parts):
+        if i % 2 == 0:                                  # text between tags
+            seg = _EML.sub(lambda m: f'<span data-eml="{m.group(1)}">{m.group(1)}&#8203;[at]&#8203;mainspringhcp&#8203;[dot]&#8203;com</span>', seg)
+        elif seg.lower().startswith("<script") or seg.lower().startswith("<style"):
+            pass
+        else:                                           # a tag
+            seg = re.sub(r'href="mailto:([a-z][a-z0-9.]*)@mainspringhcp\.com([^"]*)"', r'href="#" data-eml-href="\1" data-eml-q="\2"', seg)
+            seg = re.sub(r'action="https://formsubmit\.co/(?:ajax/)?([a-z][a-z0-9.]*)@mainspringhcp\.com"', r'action="/thank-you/" data-fs="\1"', seg)
+            if 'name="_cc"' in seg:
+                seg = ""                                 # cc to the same inbox is redundant and leaks the address
+        out.append(seg)
+    return "".join(out)
+
+
 def render(meta, body, template, assetv):
     page_path = meta["path"]
     html = tokens(template, {
@@ -147,7 +171,7 @@ def render(meta, body, template, assetv):
         "path": page_path,
         "og_type": meta.get("og_type", "website"),
         "head": meta.get("_head", ""),
-        "body": tokens(body),
+        "body": shield(tokens(body)),
         "navlinks": navlinks(meta.get("nav", "")),
         "tabstrip": tabstrip(meta.get("nav", "") if meta["path"] != "/" else ""),
         "nav_dark": " nav-dark" if meta.get("nav_dark") == "yes" else "",
@@ -380,7 +404,7 @@ def _intro_form(c, first):
             f'<input type="hidden" name="_subject" value="INTRODUCTION — {escape(c["name"], quote=True)} — mainspringhcp.com">'
             f'<input type="hidden" name="_next" value="{SITE}/thank-you/"><input type="hidden" name="_captcha" value="false">'
             f'<input type="hidden" name="consultant" value="{c["slug"]}"><input type="hidden" name="consultant_name" value="{escape(c["name"], quote=True)}">'
-            '<input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">'
+            '<input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off"><input type="hidden" name="_blacklist" value="{{blacklist}}">'
             '<div class="row"><div><label for="i-name">Your name *</label><input id="i-name" name="name" required autocomplete="name"></div>'
             '<div><label for="i-email">Email *</label><input id="i-email" name="email" type="email" required autocomplete="email"></div></div>'
             '<div class="row"><div><label for="i-org">Organization</label><input id="i-org" name="organization" autocomplete="organization"></div>'

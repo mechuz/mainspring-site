@@ -60,7 +60,12 @@
    pre-filled email to the partner inbox, so no enquiry is ever lost.
    --------------------------------------------------------------------------- */
 (function () {
-  var TO = 'info@mainspringhcp.com';
+  var DOMAIN = ['mainspringhcp', 'com'].join('.');
+  var TO = 'info' + '@' + DOMAIN;
+  var RELAY = 'https://formsubmit.co/';
+  /* addresses are shielded in the HTML; put them back for people */
+  document.querySelectorAll('[data-eml]').forEach(function (el) { el.textContent = el.getAttribute('data-eml') + '@' + DOMAIN; });
+  document.querySelectorAll('[data-eml-href]').forEach(function (a) { a.setAttribute('href', 'mailto:' + a.getAttribute('data-eml-href') + '@' + DOMAIN + (a.getAttribute('data-eml-q') || '')); });
   function lines(form) {
     var seen = {}, out = [];
     new FormData(form).forEach(function (v, k) {
@@ -96,7 +101,7 @@
       mailtoFallback(form);
     };
     var timer = setTimeout(fail, 12000);
-    fetch(form.action.replace('formsubmit.co/', 'formsubmit.co/ajax/'), {
+    fetch(form.action.replace(RELAY, RELAY + 'ajax/'), {
       method: 'POST', body: new FormData(form), headers: { Accept: 'application/json' }
     }).then(function (r) { return r.json(); }).then(function (j) {
       clearTimeout(timer);
@@ -105,10 +110,22 @@
       else fail();
     }).catch(function () { clearTimeout(timer); fail(); });
   }
-  function bind() { document.querySelectorAll('form[action*="formsubmit.co"]:not([data-bound])').forEach(function (form) {
+  function looksLikeBot(form) {
+    var hp = form.querySelector('[name="_honey"]');
+    if (hp && hp.value) return true;                                   /* honeypot filled */
+    if (Date.now() - Number(form.getAttribute('data-t') || 0) < 2500) return true;   /* submitted faster than a person can type */
+    return false;
+  }
+  function bind() { document.querySelectorAll('form[data-fs]:not([data-bound])').forEach(function (form) {
     form.setAttribute('data-bound', '1');
+    form.setAttribute('data-t', String(Date.now()));
+    form.action = RELAY + form.getAttribute('data-fs') + '@' + DOMAIN;
+    if (!form.querySelector('[name="_honey"]')) {
+      var hp = document.createElement('input'); hp.type = 'text'; hp.name = '_honey'; hp.tabIndex = -1; hp.autocomplete = 'off'; hp.style.display = 'none'; form.appendChild(hp);
+    }
     form.addEventListener('submit', function (e) {
       e.preventDefault();
+      if (looksLikeBot(form)) { window.location.href = (form.querySelector('[name="_next"]') || {}).value || '/thank-you/'; return; }
       if (!window.fetch || !window.FormData) { form.submit(); return; }
       send(form);
     });
