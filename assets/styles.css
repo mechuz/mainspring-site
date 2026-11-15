@@ -1277,3 +1277,11 @@ header.nav .btn-ghost.nav-cta{color:var(--text);border-color:var(--line-2)}
   .prof-avatar{width:72px;height:72px;border-radius:20px;font-size:1.5rem}
   .prof-exp li{grid-template-columns:1fr;gap:.2rem}
 }
+
+/* Hero: the seven things we do, visible on the first screen; each opens its folder */
+.hero-b .what{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:.4rem .5rem;max-width:1000px;margin:clamp(.4rem,1.6svh,1.2rem) auto 0}
+.hero-b .what-l{font:600 .72rem var(--f-body);letter-spacing:.12em;text-transform:uppercase;color:var(--navy-pale);margin-right:.4rem}
+.hero-b .what button{border:1px solid rgba(255,255,255,.28);background:rgba(10,21,38,.35);color:#fff;border-radius:999px;padding:.5rem .85rem .5rem .6rem;font:600 clamp(.82rem,1.7svh,.95rem)/1 var(--f-body);cursor:pointer;display:inline-flex;align-items:center;gap:.45rem;backdrop-filter:blur(6px);transition:background .2s,transform .2s}
+.hero-b .what button b{font:600 .68rem var(--f-display);color:var(--navy-deep);background:var(--navy-pale);border-radius:999px;min-width:1.5rem;height:1.5rem;display:grid;place-items:center}
+.hero-b .what button:hover{background:#fff;color:var(--navy-deep);transform:translateY(-2px)}
+@media(max-width:860px){.hero-b .what{justify-content:flex-start}.hero-b .what-l{width:100%;margin:0 0 .1rem}}
