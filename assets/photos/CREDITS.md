@@ -6,7 +6,7 @@ Source: https://unsplash.com/photos/<id>
 
 | File | Unsplash photo id |
 |---|---|
-| hero.jpg | photo-1586773860418-d37222d8fce3 |
+| hero.jpg | photo-1790518928014-3f39eeae47ce |
 | survey.jpg | photo-1612087509947-550775160771 |
 | lead.jpg | photo-1431540015161-0bf868a2d407 |
 | consult.jpg | photo-1573167507387-6b4b98cb7c13 |
