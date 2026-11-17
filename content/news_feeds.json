@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-11-16T19:35:57Z",
+ "fetched_at": "2026-11-17T18:33:49Z",
  "sources": [
   {
    "name": "Skilled Nursing News",
@@ -29,7 +29,7 @@
    "name": "CMS Newsroom",
    "url": "https://www.cms.gov/newsroom/rss-feeds",
    "ok": true,
-   "count": 6,
+   "count": 5,
    "error": "",
    "group": "regulatory"
   },
@@ -37,25 +37,46 @@
    "name": "U.S. Department of Justice",
    "url": "https://www.justice.gov/news/rss?type=press_release",
    "ok": true,
-   "count": 0,
+   "count": 2,
    "error": "",
    "group": "regulatory"
   }
  ],
  "items": [
   {
-   "title": "Skilled Nursing Dealbook: Welltower Acquires 9 Nursing Homes for $386M; 15 Maine Facilities Up for Sale",
-   "link": "https://skillednursingnews.com/2026/11/skilled-nursing-dealbook-welltower-acquires-9-nursing-homes-for-386m-15-maine-facilities-up-for-sale/",
+   "title": "Nursing Home Attorneys Hope Litigation Triggered by Recent Closures Brings Much-Needed Attention to Employer Obligations – and Planning",
+   "link": "https://skillednursingnews.com/2026/11/nursing-home-attorneys-hope-litigation-triggered-by-recent-closures-brings-much-needed-attention-to-employer-obligations-and-planning/",
    "source": "Skilled Nursing News",
    "group": "industry",
-   "published": "2026-11-13T23:00:00Z"
+   "published": "2026-11-16T23:40:00Z"
   },
   {
-   "title": "3 Steps to Take in Q4 2026 For AI Success in 2027",
-   "link": "https://seniorhousingnews.com/2026/11/16/3-steps-to-take-in-q4-2026-for-ai-success-in-2027/",
+   "title": "Alzheimer’s Researcher Calls for Earlier Diagnosis to Better Manage Dementia as Care Needs Grow",
+   "link": "https://seniorhousingnews.com/2026/11/16/alzheimers-researcher-calls-for-earlier-diagnosis-to-better-manage-dementia-as-care-needs-grow/",
    "source": "Senior Housing News",
    "group": "industry",
-   "published": "2026-11-16T17:30:45Z"
+   "published": "2026-11-16T22:17:46Z"
+  },
+  {
+   "title": "Davion Healthcare To Acquire Independence Care For $10M, Anchoring Multi-State Home Care Platform",
+   "link": "https://homehealthcarenews.com/2026/11/davion-healthcare-acquires-independence-care-for-10m-to-anchor-multi-state-home-care-platform/",
+   "source": "Home Health Care News",
+   "group": "industry",
+   "published": "2026-11-16T21:34:40Z"
+  },
+  {
+   "title": "Scrutiny of Nursing Home Admission Refusals for Patients With Prescribed Opioids Heats Up",
+   "link": "https://skillednursingnews.com/2026/11/scrutiny-of-nursing-home-admission-refusals-for-patients-with-prescribed-opioids-heats-up/",
+   "source": "Skilled Nursing News",
+   "group": "industry",
+   "published": "2026-11-16T23:00:00Z"
+  },
+  {
+   "title": "Dial Senior Living Grows to 39 Communities in 8 States as it Merges with The Waters Senior Living",
+   "link": "https://seniorhousingnews.com/2026/11/16/dial-senior-living-grows-to-39-communities-in-8-states-as-it-merges-with-the-waters-senior-living/",
+   "source": "Senior Housing News",
+   "group": "industry",
+   "published": "2026-11-16T22:02:10Z"
   },
   {
    "title": "Aveanna Freezes California Nurse Base Wage Hike Amid Rate Uncertainty",
@@ -65,18 +86,18 @@
    "published": "2026-11-12T21:48:53Z"
   },
   {
-   "title": "Nursing Homes Turn to Slow and Steady — but Some Unexpected — Ways to Bolster the Workforce",
-   "link": "https://skillednursingnews.com/2026/11/nursing-homes-turn-to-slow-and-steady-but-some-unexpected-ways-to-bolster-the-workforce/",
+   "title": "Skilled Nursing Dealbook: Welltower Acquires 9 Nursing Homes for $386M; 15 Maine Facilities Up for Sale",
+   "link": "https://skillednursingnews.com/2026/11/skilled-nursing-dealbook-welltower-acquires-9-nursing-homes-for-386m-15-maine-facilities-up-for-sale/",
    "source": "Skilled Nursing News",
    "group": "industry",
-   "published": "2026-11-11T23:00:00Z"
+   "published": "2026-11-13T23:00:00Z"
   },
   {
-   "title": "In the Pipeline: Vi Plans Luxury Redevelopment in Florida; MorningStar, Edgemark Growing in California",
-   "link": "https://seniorhousingnews.com/2026/11/13/in-the-pipeline-vi-plans-luxury-redevelopment-in-florida-morningstar-edgemark-growing-in-california/",
+   "title": "How 2Life, Lifespark and Maplewood Are Changing Resident Engagement With Personalized Programming That Fosters Belonging",
+   "link": "https://seniorhousingnews.com/2026/11/16/how-2life-lifespark-and-maplewood-are-changing-resident-engagement-with-personalized-programming-that-fosters-belonging/",
    "source": "Senior Housing News",
    "group": "industry",
-   "published": "2026-11-13T21:44:14Z"
+   "published": "2026-11-16T21:11:53Z"
   },
   {
    "title": "Davian To Acquire Healthcare Stat For $13.5M; Renovus Partners With Aspire Home Health Care",
@@ -86,18 +107,18 @@
    "published": "2026-11-11T21:43:10Z"
   },
   {
-   "title": "‘A Low-Margin Game’: Nursing Home Operators Cascadia, CarDon Turn to Internal AI Systems for M&A, Clinical Efficiencies",
-   "link": "https://skillednursingnews.com/2026/11/a-low-margin-game-nursing-home-operators-cascadia-cardon-turn-to-internal-ai-systems-for-ma-clinical-efficiencies/",
+   "title": "Nursing Homes Turn to Slow and Steady — but Some Unexpected — Ways to Bolster the Workforce",
+   "link": "https://skillednursingnews.com/2026/11/nursing-homes-turn-to-slow-and-steady-but-some-unexpected-ways-to-bolster-the-workforce/",
    "source": "Skilled Nursing News",
    "group": "industry",
-   "published": "2026-11-10T22:46:45Z"
+   "published": "2026-11-11T23:00:00Z"
   },
   {
-   "title": "Senior Living Operators Deploy New Models Aimed at Middle-Income Residents",
-   "link": "https://seniorhousingnews.com/2026/11/13/senior-living-operators-deploy-new-models-aimed-at-middle-income-residents/",
+   "title": "3 Steps to Take in Q4 2026 For AI Success in 2027",
+   "link": "https://seniorhousingnews.com/2026/11/16/3-steps-to-take-in-q4-2026-for-ai-success-in-2027/",
    "source": "Senior Housing News",
    "group": "industry",
-   "published": "2026-11-13T21:27:35Z"
+   "published": "2026-11-16T17:30:45Z"
   },
   {
    "title": "6 Home-Based Care Leaders Share Time-Saving Strategies For Frontline Teams",
@@ -107,18 +128,18 @@
    "published": "2026-11-11T21:06:42Z"
   },
   {
-   "title": "U.S. News Nursing Home Report: ‘Encouraging’ Staffing Gains, Troubling Depressive Symptoms on the Rise",
-   "link": "https://skillednursingnews.com/2026/11/u-s-news-nursing-home-report-encouraging-staffing-gains-troubling-depressive-symptoms-on-the-rise/",
+   "title": "‘A Low-Margin Game’: Nursing Home Operators Cascadia, CarDon Turn to Internal AI Systems for M&A, Clinical Efficiencies",
+   "link": "https://skillednursingnews.com/2026/11/a-low-margin-game-nursing-home-operators-cascadia-cardon-turn-to-internal-ai-systems-for-ma-clinical-efficiencies/",
    "source": "Skilled Nursing News",
    "group": "industry",
-   "published": "2026-11-10T06:03:00Z"
+   "published": "2026-11-10T22:46:45Z"
   },
   {
-   "title": "Kaplan Senior Living Targets ‘Doubles and Triples’ Over Home-Run Acquisitions",
-   "link": "https://seniorhousingnews.com/2026/11/12/kaplan-senior-living-targets-doubles-and-triples-over-home-run-acquisitions/",
+   "title": "In the Pipeline: Vi Plans Luxury Redevelopment in Florida; MorningStar, Edgemark Growing in California",
+   "link": "https://seniorhousingnews.com/2026/11/13/in-the-pipeline-vi-plans-luxury-redevelopment-in-florida-morningstar-edgemark-growing-in-california/",
    "source": "Senior Housing News",
    "group": "industry",
-   "published": "2026-11-12T21:30:29Z"
+   "published": "2026-11-13T21:44:14Z"
   },
   {
    "title": "‘Unlimited Opportunity’: How LifeCare Is Navigating Rapidly Rising Clinical Acuity",
@@ -128,18 +149,18 @@
    "published": "2026-11-10T21:53:25Z"
   },
   {
-   "title": "Nearly Half of Nursing Home Residents Face Visual Impairment, With Cataracts the Leading Preventable Cause of Vision Loss",
-   "link": "https://skillednursingnews.com/2026/11/nearly-half-of-nursing-home-residents-face-visual-impairment-with-cataracts-the-leading-preventable-cause-of-vision-loss/",
+   "title": "U.S. News Nursing Home Report: ‘Encouraging’ Staffing Gains, Troubling Depressive Symptoms on the Rise",
+   "link": "https://skillednursingnews.com/2026/11/u-s-news-nursing-home-report-encouraging-staffing-gains-troubling-depressive-symptoms-on-the-rise/",
    "source": "Skilled Nursing News",
    "group": "industry",
-   "published": "2026-11-09T23:00:00Z"
+   "published": "2026-11-10T06:03:00Z"
   },
   {
-   "title": "Odyssey Debacle Parallels How Cruise Ship-Style Senior Living Has Run Aground",
-   "link": "https://seniorhousingnews.com/2026/11/12/odyssey-debacle-parallels-how-cruise-ship-style-senior-living-has-run-aground/",
+   "title": "Senior Living Operators Deploy New Models Aimed at Middle-Income Residents",
+   "link": "https://seniorhousingnews.com/2026/11/13/senior-living-operators-deploy-new-models-aimed-at-middle-income-residents/",
    "source": "Senior Housing News",
    "group": "industry",
-   "published": "2026-11-12T20:35:30Z"
+   "published": "2026-11-13T21:27:35Z"
   },
   {
    "title": "In-Home Care Demand Clashes With Affordability Realities",
@@ -149,18 +170,18 @@
    "published": "2026-11-10T20:15:04Z"
   },
   {
-   "title": "Voices: Darcy Smith, Chief People Officer, MatrixCare",
-   "link": "https://skillednursingnews.com/2026/11/voices-darcy-smith-chief-people-officer-matrixcare/",
+   "title": "Nearly Half of Nursing Home Residents Face Visual Impairment, With Cataracts the Leading Preventable Cause of Vision Loss",
+   "link": "https://skillednursingnews.com/2026/11/nearly-half-of-nursing-home-residents-face-visual-impairment-with-cataracts-the-leading-preventable-cause-of-vision-loss/",
    "source": "Skilled Nursing News",
    "group": "industry",
-   "published": "2026-11-09T19:40:56Z"
+   "published": "2026-11-09T23:00:00Z"
   },
   {
-   "title": "Ebenzer to Enter South Dakota With Acquisition of HME Care, Management of 8 Communities",
-   "link": "https://seniorhousingnews.com/2026/11/11/ebenzer-to-enter-south-dakota-with-acquisition-of-hme-care-management-of-8-communities/",
+   "title": "Kaplan Senior Living Targets ‘Doubles and Triples’ Over Home-Run Acquisitions",
+   "link": "https://seniorhousingnews.com/2026/11/12/kaplan-senior-living-targets-doubles-and-triples-over-home-run-acquisitions/",
    "source": "Senior Housing News",
    "group": "industry",
-   "published": "2026-11-11T22:05:36Z"
+   "published": "2026-11-12T21:30:29Z"
   },
   {
    "title": "At-Home Care Providers Face High-Stakes Learning Curves With Agentic AI",
@@ -170,18 +191,18 @@
    "published": "2026-11-09T20:38:39Z"
   },
   {
-   "title": "Amid $1.69B in New 3Q Investments, AHR Execs Laud Trilogy’s Nursing Home Occupancy and Expense Controls",
-   "link": "https://skillednursingnews.com/2026/11/amid-1-69b-in-new-3q-investments-ahr-execs-laud-trilogys-nursing-home-occupancy-and-expense-controls/",
+   "title": "Voices: Darcy Smith, Chief People Officer, MatrixCare",
+   "link": "https://skillednursingnews.com/2026/11/voices-darcy-smith-chief-people-officer-matrixcare/",
    "source": "Skilled Nursing News",
    "group": "industry",
-   "published": "2026-11-06T22:45:00Z"
+   "published": "2026-11-09T19:40:56Z"
   },
   {
-   "title": "Movers and Shakers: President, CEO Confirmed at UMC; Miami Jewish Health Names President",
-   "link": "https://seniorhousingnews.com/2026/11/11/movers-and-shakers-president-ceo-confirmed-at-umc-miami-jewish-health-names-president/",
+   "title": "Odyssey Debacle Parallels How Cruise Ship-Style Senior Living Has Run Aground",
+   "link": "https://seniorhousingnews.com/2026/11/12/odyssey-debacle-parallels-how-cruise-ship-style-senior-living-has-run-aground/",
    "source": "Senior Housing News",
    "group": "industry",
-   "published": "2026-11-11T21:55:37Z"
+   "published": "2026-11-12T20:35:30Z"
   },
   {
    "title": "LiveWell Partners Acquires Assured Home Health and Hospice",
@@ -189,27 +210,6 @@
    "source": "Home Health Care News",
    "group": "industry",
    "published": "2026-11-09T16:27:48Z"
-  },
-  {
-   "title": "CareTrust CEO On $740M in 3Q Investments, Nursing Home Rent Coverage and Growth Across Settings",
-   "link": "https://skillednursingnews.com/2026/11/caretrust-ceo-on-740m-in-3q-investments-nursing-home-rent-coverage-and-growth-across-settings/",
-   "source": "Skilled Nursing News",
-   "group": "industry",
-   "published": "2026-11-06T22:39:09Z"
-  },
-  {
-   "title": "‘Managing Belonging, Not Buildings’: How Priority Life Care Is Laying the Groundwork for 2027 and Beyond",
-   "link": "https://seniorhousingnews.com/2026/11/11/managing-belonging-not-buildings-how-priority-life-care-is-laying-the-groundwork-for-2027-and-beyond/",
-   "source": "Senior Housing News",
-   "group": "industry",
-   "published": "2026-11-11T20:09:14Z"
-  },
-  {
-   "title": "What The 2026 Midterms Mean For The Home-Based Care Industry",
-   "link": "https://homehealthcarenews.com/2026/11/what-the-2026-midterms-mean-for-the-home-based-care-industry/",
-   "source": "Home Health Care News",
-   "group": "industry",
-   "published": "2026-11-05T02:59:59Z"
   }
  ],
  "regulatory": [
@@ -228,18 +228,25 @@
    "published": "2026-11-10T22:31:58Z"
   },
   {
-   "title": "A Narrower Freeze: What Changed In CMS’ Medicare Home Health Moratorium",
-   "link": "https://homehealthcarenews.com/2026/11/a-narrower-freeze-what-changed-in-cms-medicare-home-health-moratorium/",
+   "title": "CMS Offers Option To Delay Medicaid Work Requirements For 6 Months",
+   "link": "https://homehealthcarenews.com/2026/11/cms-offers-option-to-delay-medicaid-work-requirements-for-6-months/",
    "source": "Home Health Care News",
    "group": "industry",
-   "published": "2026-11-13T21:25:50Z"
+   "published": "2026-11-16T21:55:53Z"
   },
   {
-   "title": "CMS Announces a Hold Harmless Period to Strengthen Medicaid Work Requirement Systems and Improve Beneficiary Experience",
-   "link": "https://www.cms.gov/newsroom/press-releases/cms-announces-hold-harmless-period-strengthen-medicaid-work-requirement-systems-improve-beneficiary",
+   "title": "CMS CRUSH Proposed Rule Aims to Reap Nearly $90 Billion for Taxpayers in Savings by Targeting Fraud Across Medicare, Medicaid/CHIP, and the Marketplace",
+   "link": "https://www.cms.gov/newsroom/press-releases/cms-crush-proposed-rule-aims-reap-nearly-90-billion-taxpayers-savings-targeting-fraud-across",
    "source": "CMS Newsroom",
    "group": "regulatory",
-   "published": "2026-11-13T21:02:39Z"
+   "published": "2026-11-16T21:41:45Z"
+  },
+  {
+   "title": "Mississippi Businessman Sentenced to 10 Years in Prison for $19M Medicare Fraud",
+   "link": "https://www.justice.gov/opa/pr/mississippi-businessman-sentenced-10-years-prison-19m-medicare-fraud",
+   "source": "U.S. Department of Justice",
+   "group": "regulatory",
+   "published": "2026-11-17T12:00:00Z"
   },
   {
    "title": "Federal Fines, One-Star Ratings Spike, as Closures Affect Access for In-State Nursing Home Residents",
@@ -249,18 +256,25 @@
    "published": "2026-11-11T23:00:00Z"
   },
   {
-   "title": "CMS Extends Medicare Home Health, Hospice Moratorium",
-   "link": "https://homehealthcarenews.com/2026/11/cms-extends-medicare-home-health-hospice-moratorium/",
+   "title": "Medicare Home Health Payment Rule’s Anti-Fraud Measures Could Chill Investment In Care",
+   "link": "https://homehealthcarenews.com/2026/11/medicare-home-health-payment-rules-anti-fraud-measures-could-chill-investment-in-care/",
    "source": "Home Health Care News",
    "group": "industry",
-   "published": "2026-11-13T00:00:43Z"
+   "published": "2026-11-16T20:48:49Z"
   },
   {
-   "title": "CMS Extends and Modifies Nationwide Freeze on New Medicare Hospice and Home Health Enrollment for Six Months to Combat Fraud",
-   "link": "https://www.cms.gov/newsroom/press-releases/cms-extends-modifies-nationwide-freeze-new-medicare-hospice-home-health-enrollment-six-months-combat",
+   "title": "CMS Announces a Hold Harmless Period to Strengthen Medicaid Work Requirement Systems and Improve Beneficiary Experience",
+   "link": "https://www.cms.gov/newsroom/press-releases/cms-announces-hold-harmless-period-strengthen-medicaid-work-requirement-systems-improve-beneficiary",
    "source": "CMS Newsroom",
    "group": "regulatory",
-   "published": "2026-11-12T21:28:02Z"
+   "published": "2026-11-13T21:02:39Z"
+  },
+  {
+   "title": "D.C. Restauranteur Charged in Elder Financial Exploitation Scheme Against His Neighbor, a 78-Year-Old Disabled Veteran",
+   "link": "https://www.justice.gov/usao-dc/pr/dc-restauranteur-charged-elder-financial-exploitation-scheme-against-his-neighbor-78",
+   "source": "U.S. Department of Justice",
+   "group": "regulatory",
+   "published": "2026-11-17T12:00:00Z"
   },
   {
    "title": "OIG: County Hospitals Recouped $205M in Medicaid Supplemental Funds Intended for Nursing Homes, Raising Transparency Concerns",
@@ -270,18 +284,18 @@
    "published": "2026-11-10T23:00:00Z"
   },
   {
-   "title": "New Bill Would Create Medicare Skilled Nursing At-Home Pilot",
-   "link": "https://homehealthcarenews.com/2026/11/new-bill-would-create-medicare-skilled-nursing-at-home-pilot/",
+   "title": "A Narrower Freeze: What Changed In CMS’ Medicare Home Health Moratorium",
+   "link": "https://homehealthcarenews.com/2026/11/a-narrower-freeze-what-changed-in-cms-medicare-home-health-moratorium/",
    "source": "Home Health Care News",
    "group": "industry",
-   "published": "2026-11-12T21:23:19Z"
+   "published": "2026-11-13T21:25:50Z"
   },
   {
-   "title": "Medicare and Medicaid Programs; Cutting Administrative Requirements for Excellence in Patient Care (CARE) (CMS-3484-P)",
-   "link": "https://www.cms.gov/newsroom/fact-sheets/medicare-medicaid-programs-cutting-administrative-requirements-excellence-patient-care-care-cms-3484",
+   "title": "CMS Extends and Modifies Nationwide Freeze on New Medicare Hospice and Home Health Enrollment for Six Months to Combat Fraud",
+   "link": "https://www.cms.gov/newsroom/press-releases/cms-extends-modifies-nationwide-freeze-new-medicare-hospice-home-health-enrollment-six-months-combat",
    "source": "CMS Newsroom",
    "group": "regulatory",
-   "published": "2026-11-06T16:14:17Z"
+   "published": "2026-11-12T21:28:02Z"
   },
   {
    "title": "[UPDATED] CMS Proposes Rule to Reduce Nursing Home and Health Care Burdens, Save $320M",
@@ -291,11 +305,25 @@
    "published": "2026-11-06T15:53:08Z"
   },
   {
-   "title": "Scrutinizing The Bundled Enforcement Risks In CMS’ 2027 Home Health Payment Rule",
-   "link": "https://homehealthcarenews.com/2026/11/scrutinizing-the-bundled-enforcement-risks-in-cms-2027-home-health-payment-rule/",
+   "title": "CMS Extends Medicare Home Health, Hospice Moratorium",
+   "link": "https://homehealthcarenews.com/2026/11/cms-extends-medicare-home-health-hospice-moratorium/",
    "source": "Home Health Care News",
    "group": "industry",
-   "published": "2026-11-06T21:04:15Z"
+   "published": "2026-11-13T00:00:43Z"
+  },
+  {
+   "title": "Medicare and Medicaid Programs; Cutting Administrative Requirements for Excellence in Patient Care (CARE) (CMS-3484-P)",
+   "link": "https://www.cms.gov/newsroom/fact-sheets/medicare-medicaid-programs-cutting-administrative-requirements-excellence-patient-care-care-cms-3484",
+   "source": "CMS Newsroom",
+   "group": "regulatory",
+   "published": "2026-11-06T16:14:17Z"
+  },
+  {
+   "title": "New Bill Would Create Medicare Skilled Nursing At-Home Pilot",
+   "link": "https://homehealthcarenews.com/2026/11/new-bill-would-create-medicare-skilled-nursing-at-home-pilot/",
+   "source": "Home Health Care News",
+   "group": "industry",
+   "published": "2026-11-12T21:23:19Z"
   },
   {
    "title": "Medicare Drug Price Negotiation Program and Medicare Prescription Drug Benefit Program Final Rule (CMS-4215-F)",
@@ -305,6 +333,13 @@
    "published": "2026-11-05T21:28:33Z"
   },
   {
+   "title": "Scrutinizing The Bundled Enforcement Risks In CMS’ 2027 Home Health Payment Rule",
+   "link": "https://homehealthcarenews.com/2026/11/scrutinizing-the-bundled-enforcement-risks-in-cms-2027-home-health-payment-rule/",
+   "source": "Home Health Care News",
+   "group": "industry",
+   "published": "2026-11-06T21:04:15Z"
+  },
+  {
    "title": "Pennant Welcomes Home Health Payment Increase, Warns of Fraud Rule Burdens",
    "link": "https://homehealthcarenews.com/2026/11/pennant-welcomes-home-health-payment-increase-warns-of-fraud-rule-burdens/",
    "source": "Home Health Care News",
@@ -312,32 +347,11 @@
    "published": "2026-11-05T22:24:34Z"
   },
   {
-   "title": "CMS Finalizes Broad Medicare Integrity Changes in Home Health Final Rule; Expected to Save Taxpayers Tens of Millions of Dollars",
-   "link": "https://www.cms.gov/newsroom/press-releases/cms-finalizes-broad-medicare-integrity-changes-home-health-final-rule-expected-save-taxpayers-tens",
-   "source": "CMS Newsroom",
-   "group": "regulatory",
-   "published": "2026-11-05T15:28:38Z"
-  },
-  {
    "title": "Higher Rates, Heavier Scrutiny: Providers Break Down 2027 Medicare Home Health Rule",
    "link": "https://homehealthcarenews.com/2026/11/higher-rates-heavier-scrutiny-providers-break-down-2027-medicare-home-health-rule/",
    "source": "Home Health Care News",
    "group": "industry",
    "published": "2026-11-05T22:02:38Z"
-  },
-  {
-   "title": "Calendar Year (CY) 2027 Home Health Prospective Payment System Final Rule - CMS-1844-F",
-   "link": "https://www.cms.gov/newsroom/fact-sheets/calendar-year-cy-2027-home-health-prospective-payment-system-final-rule-cms-1844-f",
-   "source": "CMS Newsroom",
-   "group": "regulatory",
-   "published": "2026-11-04T22:10:28Z"
-  },
-  {
-   "title": "[Updated] CMS Finalizes 2027 Home Health Medicare Payment Rule With 2.4% Rate Increase",
-   "link": "https://homehealthcarenews.com/2026/11/cms-finalizes-2027-home-health-medicare-payment-rule-with-2-4-rate-increase/",
-   "source": "Home Health Care News",
-   "group": "industry",
-   "published": "2026-11-04T22:35:00Z"
   }
  ]
 }
