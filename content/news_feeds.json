@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-11-19T18:16:19Z",
+ "fetched_at": "2026-11-20T17:47:24Z",
  "sources": [
   {
    "name": "Skilled Nursing News",
@@ -29,7 +29,7 @@
    "name": "CMS Newsroom",
    "url": "https://www.cms.gov/newsroom/rss-feeds",
    "ok": true,
-   "count": 6,
+   "count": 7,
    "error": "",
    "group": "regulatory"
   },
@@ -37,7 +37,7 @@
    "name": "U.S. Department of Justice",
    "url": "https://www.justice.gov/news/rss?type=press_release",
    "ok": true,
-   "count": 1,
+   "count": 0,
    "error": "",
    "group": "regulatory"
   }
@@ -49,6 +49,69 @@
    "source": "Skilled Nursing News",
    "group": "industry",
    "published": "2026-11-18T23:00:00Z"
+  },
+  {
+   "title": "In the Pipeline: Cedarhurst Plans Latest Nebraska Development; Covenant Starts on Expansions",
+   "link": "https://seniorhousingnews.com/2026/11/19/in-the-pipeline-cedarhurst-plans-latest-nebraska-development-covenant-starts-on-expansions/",
+   "source": "Senior Housing News",
+   "group": "industry",
+   "published": "2026-11-19T22:13:14Z"
+  },
+  {
+   "title": "Home Care Aide Turnover Hits 34% Amid Modest Pay Bumps, Smaller Bonuses",
+   "link": "https://homehealthcarenews.com/2026/11/home-care-aide-turnover-hits-34-amid-modest-pay-bumps-smaller-bonuses/",
+   "source": "Home Health Care News",
+   "group": "industry",
+   "published": "2026-11-19T21:48:08Z"
+  },
+  {
+   "title": "Introducing the Winners of the 2026 SHN Architecture & Design Awards",
+   "link": "https://skillednursingnews.com/2026/11/introducing-the-winners-of-the-2026-shn-architecture-design-awards/",
+   "source": "Skilled Nursing News",
+   "group": "industry",
+   "published": "2026-11-18T21:29:56Z"
+  },
+  {
+   "title": "Activist Investor Carronade Capital Seeks Changes at Brookdale Senior Living After Upping Holdings",
+   "link": "https://seniorhousingnews.com/2026/11/19/activist-investor-carronade-capital-seeks-changes-at-brookdale-senior-living-after-upping-holdings/",
+   "source": "Senior Housing News",
+   "group": "industry",
+   "published": "2026-11-19T21:55:42Z"
+  },
+  {
+   "title": "LUPA Risk, Training Needs Complicate Home Health’s Palliative Care Push",
+   "link": "https://homehealthcarenews.com/2026/11/lupa-risk-training-needs-complicate-home-healths-palliative-care-push/",
+   "source": "Home Health Care News",
+   "group": "industry",
+   "published": "2026-11-19T21:22:45Z"
+  },
+  {
+   "title": "‘Continual Flight to Quality’: Abundant Capital, Including Private Capital, Favors Growth of the Fittest Nursing Home Operators",
+   "link": "https://skillednursingnews.com/2026/11/continual-flight-to-quality-abundant-capital-including-private-capital-favors-growth-of-the-fittest-nursing-home-operators/",
+   "source": "Skilled Nursing News",
+   "group": "industry",
+   "published": "2026-11-17T23:00:00Z"
+  },
+  {
+   "title": "SNL’s ‘Sister’ Sketch a Warning and Opportunity for Senior Living Operators",
+   "link": "https://seniorhousingnews.com/2026/11/19/snls-sister-sketch-a-warning-and-opportunity-for-senior-living-operators/",
+   "source": "Senior Housing News",
+   "group": "industry",
+   "published": "2026-11-19T19:39:06Z"
+  },
+  {
+   "title": "What SNL’s ‘Sister’ Gets Right About Home Care’s Caregiver-Support Opportunity",
+   "link": "https://homehealthcarenews.com/2026/11/what-snls-sister-gets-right-about-home-cares-caregiver-support-opportunity/",
+   "source": "Home Health Care News",
+   "group": "industry",
+   "published": "2026-11-19T19:39:46Z"
+  },
+  {
+   "title": "Hundreds of Nursing Home Beds in State Offline Due to Staffing, With 5,000 Hires Needed",
+   "link": "https://skillednursingnews.com/2026/11/hundreds-of-nursing-home-beds-in-state-offline-due-to-staffing-with-5000-hires-needed/",
+   "source": "Skilled Nursing News",
+   "group": "industry",
+   "published": "2026-11-17T22:43:13Z"
   },
   {
    "title": "Senior Living Dealbook: Chicago Pacific Founders Completes $61.5M Sale; SRI Assumes Management of 64th Community",
@@ -65,11 +128,11 @@
    "published": "2026-11-16T21:34:40Z"
   },
   {
-   "title": "Introducing the Winners of the 2026 SHN Architecture & Design Awards",
-   "link": "https://skillednursingnews.com/2026/11/introducing-the-winners-of-the-2026-shn-architecture-design-awards/",
+   "title": "Nursing Home Attorneys Hope Litigation Triggered by Recent Closures Brings Much-Needed Attention to Employer Obligations – and Planning",
+   "link": "https://skillednursingnews.com/2026/11/nursing-home-attorneys-hope-litigation-triggered-by-recent-closures-brings-much-needed-attention-to-employer-obligations-and-planning/",
    "source": "Skilled Nursing News",
    "group": "industry",
-   "published": "2026-11-18T21:29:56Z"
+   "published": "2026-11-16T23:40:00Z"
   },
   {
    "title": "Inside Two Companies’ Models for Meeting the Growing Active Adult Opportunity",
@@ -86,11 +149,11 @@
    "published": "2026-11-12T21:48:53Z"
   },
   {
-   "title": "‘Continual Flight to Quality’: Abundant Capital, Including Private Capital, Favors Growth of the Fittest Nursing Home Operators",
-   "link": "https://skillednursingnews.com/2026/11/continual-flight-to-quality-abundant-capital-including-private-capital-favors-growth-of-the-fittest-nursing-home-operators/",
+   "title": "Scrutiny of Nursing Home Admission Refusals for Patients With Prescribed Opioids Heats Up",
+   "link": "https://skillednursingnews.com/2026/11/scrutiny-of-nursing-home-admission-refusals-for-patients-with-prescribed-opioids-heats-up/",
    "source": "Skilled Nursing News",
    "group": "industry",
-   "published": "2026-11-17T23:00:00Z"
+   "published": "2026-11-16T23:00:00Z"
   },
   {
    "title": "NexCore, MetLife Launch Senior Living Co-Investment, Development Venture",
@@ -107,11 +170,11 @@
    "published": "2026-11-11T21:43:10Z"
   },
   {
-   "title": "Hundreds of Nursing Home Beds in State Offline Due to Staffing, With 5,000 Hires Needed",
-   "link": "https://skillednursingnews.com/2026/11/hundreds-of-nursing-home-beds-in-state-offline-due-to-staffing-with-5000-hires-needed/",
+   "title": "Skilled Nursing Dealbook: Welltower Acquires 9 Nursing Homes for $386M; 15 Maine Facilities Up for Sale",
+   "link": "https://skillednursingnews.com/2026/11/skilled-nursing-dealbook-welltower-acquires-9-nursing-homes-for-386m-15-maine-facilities-up-for-sale/",
    "source": "Skilled Nursing News",
    "group": "industry",
-   "published": "2026-11-17T22:43:13Z"
+   "published": "2026-11-13T23:00:00Z"
   },
   {
    "title": "Senior Living Demand is Hot, Development is Not. A New Report Helps Explain Why",
@@ -128,11 +191,11 @@
    "published": "2026-11-11T21:06:42Z"
   },
   {
-   "title": "Nursing Home Attorneys Hope Litigation Triggered by Recent Closures Brings Much-Needed Attention to Employer Obligations – and Planning",
-   "link": "https://skillednursingnews.com/2026/11/nursing-home-attorneys-hope-litigation-triggered-by-recent-closures-brings-much-needed-attention-to-employer-obligations-and-planning/",
+   "title": "Nursing Homes Turn to Slow and Steady — but Some Unexpected — Ways to Bolster the Workforce",
+   "link": "https://skillednursingnews.com/2026/11/nursing-homes-turn-to-slow-and-steady-but-some-unexpected-ways-to-bolster-the-workforce/",
    "source": "Skilled Nursing News",
    "group": "industry",
-   "published": "2026-11-16T23:40:00Z"
+   "published": "2026-11-11T23:00:00Z"
   },
   {
    "title": "Not Just for Memory Care: Operators Extend Brain Health into Independent Living, Assisted Living",
@@ -142,74 +205,11 @@
    "published": "2026-11-17T20:43:32Z"
   },
   {
-   "title": "‘Unlimited Opportunity’: How LifeCare Is Navigating Rapidly Rising Clinical Acuity",
-   "link": "https://homehealthcarenews.com/2026/11/unlimited-opportunity-how-lifecare-is-navigating-rapidly-rising-clinical-acuity/",
-   "source": "Home Health Care News",
-   "group": "industry",
-   "published": "2026-11-10T21:53:25Z"
-  },
-  {
-   "title": "Scrutiny of Nursing Home Admission Refusals for Patients With Prescribed Opioids Heats Up",
-   "link": "https://skillednursingnews.com/2026/11/scrutiny-of-nursing-home-admission-refusals-for-patients-with-prescribed-opioids-heats-up/",
+   "title": "‘A Low-Margin Game’: Nursing Home Operators Cascadia, CarDon Turn to Internal AI Systems for M&A, Clinical Efficiencies",
+   "link": "https://skillednursingnews.com/2026/11/a-low-margin-game-nursing-home-operators-cascadia-cardon-turn-to-internal-ai-systems-for-ma-clinical-efficiencies/",
    "source": "Skilled Nursing News",
    "group": "industry",
-   "published": "2026-11-16T23:00:00Z"
-  },
-  {
-   "title": "Alzheimer’s Researcher Calls for Earlier Diagnosis to Better Manage Dementia as Care Needs Grow",
-   "link": "https://seniorhousingnews.com/2026/11/16/alzheimers-researcher-calls-for-earlier-diagnosis-to-better-manage-dementia-as-care-needs-grow/",
-   "source": "Senior Housing News",
-   "group": "industry",
-   "published": "2026-11-16T22:17:46Z"
-  },
-  {
-   "title": "In-Home Care Demand Clashes With Affordability Realities",
-   "link": "https://homehealthcarenews.com/2026/11/in-home-care-demand-clashes-with-affordability-realities/",
-   "source": "Home Health Care News",
-   "group": "industry",
-   "published": "2026-11-10T20:15:04Z"
-  },
-  {
-   "title": "Skilled Nursing Dealbook: Welltower Acquires 9 Nursing Homes for $386M; 15 Maine Facilities Up for Sale",
-   "link": "https://skillednursingnews.com/2026/11/skilled-nursing-dealbook-welltower-acquires-9-nursing-homes-for-386m-15-maine-facilities-up-for-sale/",
-   "source": "Skilled Nursing News",
-   "group": "industry",
-   "published": "2026-11-13T23:00:00Z"
-  },
-  {
-   "title": "Dial Senior Living Grows to 39 Communities in 8 States as it Merges with The Waters Senior Living",
-   "link": "https://seniorhousingnews.com/2026/11/16/dial-senior-living-grows-to-39-communities-in-8-states-as-it-merges-with-the-waters-senior-living/",
-   "source": "Senior Housing News",
-   "group": "industry",
-   "published": "2026-11-16T22:02:10Z"
-  },
-  {
-   "title": "At-Home Care Providers Face High-Stakes Learning Curves With Agentic AI",
-   "link": "https://homehealthcarenews.com/2026/11/at-home-care-providers-face-high-stakes-learning-curves-with-agentic-ai/",
-   "source": "Home Health Care News",
-   "group": "industry",
-   "published": "2026-11-09T20:38:39Z"
-  },
-  {
-   "title": "Nursing Homes Turn to Slow and Steady — but Some Unexpected — Ways to Bolster the Workforce",
-   "link": "https://skillednursingnews.com/2026/11/nursing-homes-turn-to-slow-and-steady-but-some-unexpected-ways-to-bolster-the-workforce/",
-   "source": "Skilled Nursing News",
-   "group": "industry",
-   "published": "2026-11-11T23:00:00Z"
-  },
-  {
-   "title": "How 2Life, Lifespark and Maplewood Are Changing Resident Engagement With Personalized Programming That Fosters Belonging",
-   "link": "https://seniorhousingnews.com/2026/11/16/how-2life-lifespark-and-maplewood-are-changing-resident-engagement-with-personalized-programming-that-fosters-belonging/",
-   "source": "Senior Housing News",
-   "group": "industry",
-   "published": "2026-11-16T21:11:53Z"
-  },
-  {
-   "title": "LiveWell Partners Acquires Assured Home Health and Hospice",
-   "link": "https://homehealthcarenews.com/2026/11/livewell-partners-acquires-assured-home-health-and-hospice/",
-   "source": "Home Health Care News",
-   "group": "industry",
-   "published": "2026-11-09T16:27:48Z"
+   "published": "2026-11-10T22:46:45Z"
   }
  ],
  "regulatory": [
@@ -228,25 +228,18 @@
    "published": "2026-11-18T21:36:36Z"
   },
   {
-   "title": "Medicaid Work Requirement Raises Concerns For Home Care Workers",
-   "link": "https://homehealthcarenews.com/2026/11/medicaid-work-requirement-raises-concerns-for-home-care-workers/",
+   "title": "Inside CMS’ Efforts to Identify and Stop Hospice Fraud",
+   "link": "https://homehealthcarenews.com/2026/11/inside-cms-efforts-to-identify-and-stop-hospice-fraud/",
    "source": "Home Health Care News",
    "group": "industry",
-   "published": "2026-11-18T21:22:32Z"
+   "published": "2026-11-20T11:16:49Z"
   },
   {
-   "title": "2027 Medicare Parts A & B Premiums and Deductibles",
-   "link": "https://www.cms.gov/newsroom/fact-sheets/2027-medicare-parts-b-premiums-deductibles",
+   "title": "HHS Announces $47 Million in MAHA ELEVATE Awards to 15 Organizations to Test Chronic Disease Prevention Approaches in Medicare",
+   "link": "https://www.cms.gov/newsroom/press-releases/hhs-announces-47-million-maha-elevate-awards-15-organizations-test-chronic-disease-prevention",
    "source": "CMS Newsroom",
    "group": "regulatory",
-   "published": "2026-11-17T21:15:18Z"
-  },
-  {
-   "title": "Former Federal Law Enforcement Officer Sentenced for Stealing $340,000 in Cash From Elderly Scam Victims",
-   "link": "https://www.justice.gov/usao-ma/pr/former-federal-law-enforcement-officer-sentenced-stealing-340000-cash-elderly-scam",
-   "source": "U.S. Department of Justice",
-   "group": "regulatory",
-   "published": "2026-11-19T12:00:00Z"
+   "published": "2026-11-20T17:17:04Z"
   },
   {
    "title": "The Tricky Business of Managing Margins in Nursing Homes When Reimbursement Rates Fall Short",
@@ -256,18 +249,18 @@
    "published": "2026-11-13T23:00:00Z"
   },
   {
-   "title": "CMS Releases CRUSH Proposed Rule Following Home-Based Care Advocacy",
-   "link": "https://homehealthcarenews.com/2026/11/cms-releases-crush-proposed-rule-following-home-based-care-advocacy/",
+   "title": "Medicaid Work Requirement Raises Concerns For Home Care Workers",
+   "link": "https://homehealthcarenews.com/2026/11/medicaid-work-requirement-raises-concerns-for-home-care-workers/",
    "source": "Home Health Care News",
    "group": "industry",
-   "published": "2026-11-17T21:54:42Z"
+   "published": "2026-11-18T21:22:32Z"
   },
   {
-   "title": "Medicare Shared Savings Program Saves More Than $2.5 Billion as Participating ACOs Reach Record 12.6 Million Beneficiaries",
-   "link": "https://www.cms.gov/newsroom/press-releases/medicare-shared-savings-program-saves-more-2-5-billion-participating-acos-reach-record-12-6-million",
+   "title": "CMS CRUSH Proposed Rule Aims to Reap Nearly $90 Billion for Taxpayers in Savings by Targeting Fraud Across Medicare, Medicaid/CHIP, and the Marketplace",
+   "link": "https://www.cms.gov/newsroom/press-releases/cms-crush-proposed-rule-aims-reap-nearly-90-billion-taxpayers-savings-targeting-fraud-across",
    "source": "CMS Newsroom",
    "group": "regulatory",
-   "published": "2026-11-17T21:14:42Z"
+   "published": "2026-11-20T17:17:04Z"
   },
   {
    "title": "Federal Fines, One-Star Ratings Spike, as Closures Affect Access for In-State Nursing Home Residents",
@@ -277,18 +270,18 @@
    "published": "2026-11-11T23:00:00Z"
   },
   {
-   "title": "Modified Medicare Home Health Moratorium Favors Existing Providers, Threatens Innovation",
-   "link": "https://homehealthcarenews.com/2026/11/modified-medicare-home-health-moratorium-favors-existing-providers-threatens-innovation/",
+   "title": "CMS Releases CRUSH Proposed Rule Following Home-Based Care Advocacy",
+   "link": "https://homehealthcarenews.com/2026/11/cms-releases-crush-proposed-rule-following-home-based-care-advocacy/",
    "source": "Home Health Care News",
    "group": "industry",
-   "published": "2026-11-17T21:41:52Z"
+   "published": "2026-11-17T21:54:42Z"
   },
   {
-   "title": "Medicare Shared Savings Program Accountable Care Organizations Performance Year 2025 Financial and Quality Results",
-   "link": "https://www.cms.gov/newsroom/fact-sheets/medicare-shared-savings-program-accountable-care-organizations-performance-year-2025-financial",
+   "title": "2027 Medicare Parts A & B Premiums and Deductibles",
+   "link": "https://www.cms.gov/newsroom/fact-sheets/2027-medicare-parts-b-premiums-deductibles",
    "source": "CMS Newsroom",
    "group": "regulatory",
-   "published": "2026-11-17T21:14:09Z"
+   "published": "2026-11-17T21:15:18Z"
   },
   {
    "title": "OIG: County Hospitals Recouped $205M in Medicaid Supplemental Funds Intended for Nursing Homes, Raising Transparency Concerns",
@@ -298,6 +291,20 @@
    "published": "2026-11-10T23:00:00Z"
   },
   {
+   "title": "Modified Medicare Home Health Moratorium Favors Existing Providers, Threatens Innovation",
+   "link": "https://homehealthcarenews.com/2026/11/modified-medicare-home-health-moratorium-favors-existing-providers-threatens-innovation/",
+   "source": "Home Health Care News",
+   "group": "industry",
+   "published": "2026-11-17T21:41:52Z"
+  },
+  {
+   "title": "Medicare Shared Savings Program Saves More Than $2.5 Billion as Participating ACOs Reach Record 12.6 Million Beneficiaries",
+   "link": "https://www.cms.gov/newsroom/press-releases/medicare-shared-savings-program-saves-more-2-5-billion-participating-acos-reach-record-12-6-million",
+   "source": "CMS Newsroom",
+   "group": "regulatory",
+   "published": "2026-11-17T21:14:42Z"
+  },
+  {
    "title": "CMS Offers Option To Delay Medicaid Work Requirements For 6 Months",
    "link": "https://homehealthcarenews.com/2026/11/cms-offers-option-to-delay-medicaid-work-requirements-for-6-months/",
    "source": "Home Health Care News",
@@ -305,11 +312,11 @@
    "published": "2026-11-16T21:55:53Z"
   },
   {
-   "title": "CMS CRUSH Proposed Rule Aims to Reap Nearly $90 Billion for Taxpayers in Savings by Targeting Fraud Across Medicare, Medicaid/CHIP, and the Marketplace",
-   "link": "https://www.cms.gov/newsroom/press-releases/cms-crush-proposed-rule-aims-reap-nearly-90-billion-taxpayers-savings-targeting-fraud-across",
+   "title": "Medicare Shared Savings Program Accountable Care Organizations Performance Year 2025 Financial and Quality Results",
+   "link": "https://www.cms.gov/newsroom/fact-sheets/medicare-shared-savings-program-accountable-care-organizations-performance-year-2025-financial",
    "source": "CMS Newsroom",
    "group": "regulatory",
-   "published": "2026-11-16T21:41:45Z"
+   "published": "2026-11-17T21:14:09Z"
   },
   {
    "title": "Medicare Home Health Payment Rule’s Anti-Fraud Measures Could Chill Investment In Care",
