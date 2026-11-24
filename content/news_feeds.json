@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-11-23T21:22:52Z",
+ "fetched_at": "2026-11-24T20:09:16Z",
  "sources": [
   {
    "name": "Skilled Nursing News",
@@ -37,12 +37,33 @@
    "name": "U.S. Department of Justice",
    "url": "https://www.justice.gov/news/rss?type=press_release",
    "ok": true,
-   "count": 0,
+   "count": 1,
    "error": "",
    "group": "regulatory"
   }
  ],
  "items": [
+  {
+   "title": "The Achilles’ Heel of Hospital Transfers to Nursing Homes: Documentation Gaps, Medication Management and Unrealistic Expectations",
+   "link": "https://skillednursingnews.com/2026/11/the-achilles-heel-of-hospital-transfers-to-nursing-homes-documentation-gaps-medication-management-and-unrealistic-expectations/",
+   "source": "Skilled Nursing News",
+   "group": "industry",
+   "published": "2026-11-23T23:00:00Z"
+  },
+  {
+   "title": "Senior Living Deals, Uneven Occupancy Gains and Slow Development Shape Second Half of 2026",
+   "link": "https://seniorhousingnews.com/2026/11/23/senior-living-deals-uneven-occupancy-gains-and-slow-development-shape-second-half-of-2026/",
+   "source": "Senior Housing News",
+   "group": "industry",
+   "published": "2026-11-23T22:39:39Z"
+  },
+  {
+   "title": "How Bayada And Compassus Navigate Pilot Pitfalls",
+   "link": "https://homehealthcarenews.com/2026/11/how-bayada-and-compassus-navigate-pilot-pitfalls/",
+   "source": "Home Health Care News",
+   "group": "industry",
+   "published": "2026-11-23T22:04:56Z"
+  },
   {
    "title": "Nursing Homes Get Creative With TikTok, iPhones and Celebrity Judges to Combat a Slow-Burning Staffing Crisis",
    "link": "https://skillednursingnews.com/2026/11/nursing-homes-get-creative-with-tiktok-iphones-and-celebrity-judges-to-combat-a-slow-burning-staffing-crisis/",
@@ -189,27 +210,6 @@
    "source": "Home Health Care News",
    "group": "industry",
    "published": "2026-11-12T21:48:53Z"
-  },
-  {
-   "title": "Skilled Nursing Dealbook: Welltower Acquires 9 Nursing Homes for $386M; 15 Maine Facilities Up for Sale",
-   "link": "https://skillednursingnews.com/2026/11/skilled-nursing-dealbook-welltower-acquires-9-nursing-homes-for-386m-15-maine-facilities-up-for-sale/",
-   "source": "Skilled Nursing News",
-   "group": "industry",
-   "published": "2026-11-13T23:00:00Z"
-  },
-  {
-   "title": "Senior Living Dealbook: Chicago Pacific Founders Completes $61.5M Sale; SRI Assumes Management of 64th Community",
-   "link": "https://seniorhousingnews.com/2026/11/18/senior-living-dealbook-chicago-pacific-founders-completes-61-5m-sale-sri-assumes-management-of-64th-community/",
-   "source": "Senior Housing News",
-   "group": "industry",
-   "published": "2026-11-18T22:44:58Z"
-  },
-  {
-   "title": "Nursing Homes Turn to Slow and Steady — but Some Unexpected — Ways to Bolster the Workforce",
-   "link": "https://skillednursingnews.com/2026/11/nursing-homes-turn-to-slow-and-steady-but-some-unexpected-ways-to-bolster-the-workforce/",
-   "source": "Skilled Nursing News",
-   "group": "industry",
-   "published": "2026-11-11T23:00:00Z"
   }
  ],
  "regulatory": [
@@ -235,11 +235,18 @@
    "published": "2026-11-20T11:16:49Z"
   },
   {
-   "title": "CMS Proposes Reforms to Strengthen Competition, Elevate Care Quality, and Expand Beneficiary Choice in Medicare Advantage",
-   "link": "https://www.cms.gov/newsroom/press-releases/cms-proposes-reforms-strengthen-competition-elevate-care-quality-expand-beneficiary-choice-medicare",
+   "title": "HHS Announces $47 Million in MAHA ELEVATE Awards to 15 Organizations to Test Chronic Disease Prevention Approaches in Medicare",
+   "link": "https://www.cms.gov/newsroom/press-releases/hhs-announces-47-million-maha-elevate-awards-15-organizations-test-chronic-disease-prevention",
    "source": "CMS Newsroom",
    "group": "regulatory",
-   "published": "2026-11-20T22:33:12Z"
+   "published": "2026-11-23T21:33:22Z"
+  },
+  {
+   "title": "Oklahoma Hospitals and Physician Group Pay $4.2 Million to Settle Allegations of Submitting False Claims to Medicare, Medicaid, TRICARE, and the Department of Veterans Affairs",
+   "link": "https://www.justice.gov/usao-wdok/pr/oklahoma-hospitals-and-physician-group-pay-42-million-settle-allegations-submitting",
+   "source": "U.S. Department of Justice",
+   "group": "regulatory",
+   "published": "2026-11-24T12:00:00Z"
   },
   {
    "title": "Nursing Homes Face Enrollment Hurdles, Tighter Deadlines Under CRUSH Proposed Rule",
@@ -256,11 +263,11 @@
    "published": "2026-11-18T21:22:32Z"
   },
   {
-   "title": "Contract Year 2028 Policy and Technical Changes to the Medicare Advantage Program, Medicare Prescription Drug Benefit Program, and Medicare Cost Plan Program (CMS-4214-P2)",
-   "link": "https://www.cms.gov/newsroom/fact-sheets/contract-year-2028-policy-technical-changes-medicare-advantage-program-medicare-prescription-drug",
+   "title": "CMS Proposes Reforms to Strengthen Competition, Elevate Care Quality, and Expand Beneficiary Choice in Medicare Advantage",
+   "link": "https://www.cms.gov/newsroom/press-releases/cms-proposes-reforms-strengthen-competition-elevate-care-quality-expand-beneficiary-choice-medicare",
    "source": "CMS Newsroom",
    "group": "regulatory",
-   "published": "2026-11-20T22:23:31Z"
+   "published": "2026-11-20T22:33:12Z"
   },
   {
    "title": "The Tricky Business of Managing Margins in Nursing Homes When Reimbursement Rates Fall Short",
@@ -277,11 +284,11 @@
    "published": "2026-11-17T21:54:42Z"
   },
   {
-   "title": "HHS Announces $47 Million in MAHA ELEVATE Awards to 15 Organizations to Test Chronic Disease Prevention Approaches in Medicare",
-   "link": "https://www.cms.gov/newsroom/press-releases/hhs-announces-47-million-maha-elevate-awards-15-organizations-test-chronic-disease-prevention",
+   "title": "Contract Year 2028 Policy and Technical Changes to the Medicare Advantage Program, Medicare Prescription Drug Benefit Program, and Medicare Cost Plan Program (CMS-4214-P2)",
+   "link": "https://www.cms.gov/newsroom/fact-sheets/contract-year-2028-policy-technical-changes-medicare-advantage-program-medicare-prescription-drug",
    "source": "CMS Newsroom",
    "group": "regulatory",
-   "published": "2026-11-20T17:17:04Z"
+   "published": "2026-11-20T22:23:31Z"
   },
   {
    "title": "Federal Fines, One-Star Ratings Spike, as Closures Affect Access for In-State Nursing Home Residents",
@@ -359,13 +366,6 @@
    "source": "Home Health Care News",
    "group": "industry",
    "published": "2026-11-13T00:00:43Z"
-  },
-  {
-   "title": "New Bill Would Create Medicare Skilled Nursing At-Home Pilot",
-   "link": "https://homehealthcarenews.com/2026/11/new-bill-would-create-medicare-skilled-nursing-at-home-pilot/",
-   "source": "Home Health Care News",
-   "group": "industry",
-   "published": "2026-11-12T21:23:19Z"
   }
  ]
 }
