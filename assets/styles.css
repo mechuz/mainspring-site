@@ -124,12 +124,13 @@ header.nav .btn{min-height:44px;padding:0 1.2rem;font-size:.95rem;box-shadow:non
 .nav-cta{display:none}
 @media(min-width:900px){.nav-cta{display:inline-flex}}
 .nav-hide{display:none}
-@media(min-width:760px){.nav-hide{display:inline}}
+@media(min-width:1200px){.nav-hide{display:inline}}
 header.nav.nav-dark{background:rgba(255,255,255,.86)}   /* no dark hero any more */
 header.nav.scrolled{border-bottom-color:var(--line)}
-/* phones: a scrolling strip of the same links under the logo (Chocham's tabstrip) */
+/* Narrow viewports: a scrolling strip of the same links under the logo.
+   The inline row (Insights, Industry, LinkedIn included) needs ~1020px. */
 .tabstrip{display:none}
-@media(max-width:759px){
+@media(max-width:1199px){
   .tabstrip{display:flex;align-items:center;gap:.4rem;height:50px;overflow-x:auto;
     padding:0 max(16px,env(safe-area-inset-right,0px)) 0 max(16px,env(safe-area-inset-left,0px));
     scrollbar-width:none;-webkit-overflow-scrolling:touch;border-top:1px solid var(--line)}
@@ -495,6 +496,8 @@ form.site-form .checks input,form.site-form input[type="checkbox"],form.site-for
 footer.ft{padding-block:clamp(2.4rem,5vw,3.6rem);border-top:1px solid var(--line);background:var(--soft)}
 .ft-inner{display:flex;flex-wrap:wrap;gap:1.8rem 3rem;justify-content:space-between;align-items:flex-start}
 .ft .wm{font:600 1rem var(--f-display);letter-spacing:.1em;color:var(--ink)}
+.ft-follow{display:inline-block;margin-top:.75rem;font-size:.94rem;color:var(--mute)}
+.ft-follow:hover{color:var(--ink)}
 .ft small{color:var(--mute);font-size:.86rem;display:block;margin-top:.8rem;max-width:40ch;line-height:1.5}
 .ft-cols{display:flex;gap:clamp(1.4rem,5vw,4rem);flex-wrap:wrap}
 .ft-nav{display:flex;flex-direction:column;gap:.45rem;font-size:.94rem;color:var(--mute)}
@@ -1386,6 +1389,9 @@ header.nav.nav-dark .tabstrip a[aria-current="page"],header.nav.nav-dark .tabstr
 .hero-b .what button:hover,.hero-b .what button:focus-visible{border-top-color:#fff;color:#fff;background:none;transform:none}
 .hero-b .what button:hover b{color:#fff}
 @media(max-width:1040px){.hero-b .what{grid-template-columns:repeat(4,minmax(0,1fr));gap:.9rem 1.2rem}}
+@media(min-width:861px) and (max-width:1199px){
+  .hero-b .inner{padding-top:calc(var(--hdr) + 50px + 1.5rem)}
+}
 @media(max-width:860px){
   .hero-b .inner{height:auto;min-height:100svh;max-height:none;padding-top:calc(var(--hdr) + 50px + 1.2rem)}
   .hero-b .cta2 .btn{width:100%}
