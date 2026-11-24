@@ -42,6 +42,8 @@ NAV = [  # ordered by how likely the click is to turn into a lead
     ("consultants", "/consultants/", "Consultants"),
     ("how-we-work", "/how-we-work/", "How we work"),
     ("about", "/about/", "About"),
+    ("insights", "/insights/", "Insights"),
+    ("industry", "/industry/", "Industry"),
 ]
 
 STICKY = f"""<div class="sticky-cta">
@@ -520,8 +522,9 @@ def main():
     assetv = dt.datetime.now().strftime("%Y%m%d%H%M")
     paths = []
 
-    # assets
+    # assets (favicon.ico also lives at the site root; browsers request /favicon.ico)
     shutil.copytree(ASSETS, PUBLIC / "assets")
+    shutil.copy(ASSETS / "favicon.ico", PUBLIC / "favicon.ico")
 
     # pages
     for f in sorted(CONTENT.glob("*.html")):
