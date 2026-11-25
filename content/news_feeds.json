@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-11-24T20:09:16Z",
+ "fetched_at": "2026-11-25T19:14:51Z",
  "sources": [
   {
    "name": "Skilled Nursing News",
@@ -37,12 +37,54 @@
    "name": "U.S. Department of Justice",
    "url": "https://www.justice.gov/news/rss?type=press_release",
    "ok": true,
-   "count": 1,
+   "count": 0,
    "error": "",
    "group": "regulatory"
   }
  ],
  "items": [
+  {
+   "title": "2026 Frontline Honors Awards: Early Bird Deadline Approaching",
+   "link": "https://skillednursingnews.com/2026/11/2026-frontline-honors-awards-early-bird-deadline-approaching/",
+   "source": "Skilled Nursing News",
+   "group": "industry",
+   "published": "2026-11-25T16:31:31Z"
+  },
+  {
+   "title": "Affordable Senior Housing Operator Embrace Living Communities in Growth Mode, With Acquisitions, Renovations Planned",
+   "link": "https://seniorhousingnews.com/2026/11/24/affordable-senior-housing-operator-embrace-living-communities-in-growth-mode-with-acquisitions-renovations-planned/",
+   "source": "Senior Housing News",
+   "group": "industry",
+   "published": "2026-11-24T21:06:09Z"
+  },
+  {
+   "title": "InnovAge PACE Provider Agrees To Pay $36M Over Alleged Specialist Care Delays",
+   "link": "https://homehealthcarenews.com/2026/11/innovage-pace-provider-agrees-to-pay-36m-over-alleged-specialist-care-delays/",
+   "source": "Home Health Care News",
+   "group": "industry",
+   "published": "2026-11-25T18:24:48Z"
+  },
+  {
+   "title": "Skilled Nursing Dealbook: $51.2M Construction Loan for Florida Nursing Home Expansion; Merchants Capital Announces $135M VIUM Deal",
+   "link": "https://skillednursingnews.com/2026/11/skilled-nursing-dealbook-51-2m-construction-loan-for-florida-nursing-home-merchants-capital-announces-135m-vium-deal/",
+   "source": "Skilled Nursing News",
+   "group": "industry",
+   "published": "2026-11-24T23:00:00Z"
+  },
+  {
+   "title": "‘Like Foraging in the Woods’: Adaptive Reuse Still Challenging for Senior Living Operators",
+   "link": "https://seniorhousingnews.com/2026/11/24/like-foraging-in-the-woods-adaptive-reuse-still-challenging-for-senior-living-operators/",
+   "source": "Senior Housing News",
+   "group": "industry",
+   "published": "2026-11-24T20:26:41Z"
+  },
+  {
+   "title": "How Bayada And Compassus Navigate Pilot Pitfalls",
+   "link": "https://homehealthcarenews.com/2026/11/how-bayada-and-compassus-navigate-pilot-pitfalls/",
+   "source": "Home Health Care News",
+   "group": "industry",
+   "published": "2026-11-23T22:04:56Z"
+  },
   {
    "title": "The Achilles’ Heel of Hospital Transfers to Nursing Homes: Documentation Gaps, Medication Management and Unrealistic Expectations",
    "link": "https://skillednursingnews.com/2026/11/the-achilles-heel-of-hospital-transfers-to-nursing-homes-documentation-gaps-medication-management-and-unrealistic-expectations/",
@@ -58,11 +100,11 @@
    "published": "2026-11-23T22:39:39Z"
   },
   {
-   "title": "How Bayada And Compassus Navigate Pilot Pitfalls",
-   "link": "https://homehealthcarenews.com/2026/11/how-bayada-and-compassus-navigate-pilot-pitfalls/",
+   "title": "As Referral Partners Ask More Of Home Health, Providers Weigh Financial Trade-Offs",
+   "link": "https://homehealthcarenews.com/2026/11/as-referral-partners-ask-more-of-home-health-providers-weigh-financial-trade-offs/",
    "source": "Home Health Care News",
    "group": "industry",
-   "published": "2026-11-23T22:04:56Z"
+   "published": "2026-11-20T21:29:59Z"
   },
   {
    "title": "Nursing Homes Get Creative With TikTok, iPhones and Celebrity Judges to Combat a Slow-Burning Staffing Crisis",
@@ -79,11 +121,11 @@
    "published": "2026-11-23T20:12:11Z"
   },
   {
-   "title": "As Referral Partners Ask More Of Home Health, Providers Weigh Financial Trade-Offs",
-   "link": "https://homehealthcarenews.com/2026/11/as-referral-partners-ask-more-of-home-health-providers-weigh-financial-trade-offs/",
+   "title": "Inside Croí Health’s Century-Long Evolution",
+   "link": "https://homehealthcarenews.com/2026/11/inside-croi-healths-century-long-evolution/",
    "source": "Home Health Care News",
    "group": "industry",
-   "published": "2026-11-20T21:29:59Z"
+   "published": "2026-11-20T21:15:10Z"
   },
   {
    "title": "A New Era of Nursing Home-Hospital Collaboration: Why Facilities Are Embracing Clinical ‘Extenders’",
@@ -100,11 +142,11 @@
    "published": "2026-11-20T22:35:50Z"
   },
   {
-   "title": "Inside Croí Health’s Century-Long Evolution",
-   "link": "https://homehealthcarenews.com/2026/11/inside-croi-healths-century-long-evolution/",
+   "title": "Home Care Aide Turnover Hits 34% Amid Modest Pay Bumps, Smaller Bonuses",
+   "link": "https://homehealthcarenews.com/2026/11/home-care-aide-turnover-hits-34-amid-modest-pay-bumps-smaller-bonuses/",
    "source": "Home Health Care News",
    "group": "industry",
-   "published": "2026-11-20T21:15:10Z"
+   "published": "2026-11-19T21:48:08Z"
   },
   {
    "title": "Introducing the Winners of the 2026 SHN Architecture & Design Awards",
@@ -121,11 +163,11 @@
    "published": "2026-11-20T22:21:12Z"
   },
   {
-   "title": "Home Care Aide Turnover Hits 34% Amid Modest Pay Bumps, Smaller Bonuses",
-   "link": "https://homehealthcarenews.com/2026/11/home-care-aide-turnover-hits-34-amid-modest-pay-bumps-smaller-bonuses/",
+   "title": "LUPA Risk, Training Needs Complicate Home Health’s Palliative Care Push",
+   "link": "https://homehealthcarenews.com/2026/11/lupa-risk-training-needs-complicate-home-healths-palliative-care-push/",
    "source": "Home Health Care News",
    "group": "industry",
-   "published": "2026-11-19T21:48:08Z"
+   "published": "2026-11-19T21:22:45Z"
   },
   {
    "title": "‘Continual Flight to Quality’: Abundant Capital, Including Private Capital, Favors Growth of the Fittest Nursing Home Operators",
@@ -142,11 +184,11 @@
    "published": "2026-11-20T20:19:13Z"
   },
   {
-   "title": "LUPA Risk, Training Needs Complicate Home Health’s Palliative Care Push",
-   "link": "https://homehealthcarenews.com/2026/11/lupa-risk-training-needs-complicate-home-healths-palliative-care-push/",
+   "title": "What SNL’s ‘Sister’ Gets Right About Home Care’s Caregiver-Support Opportunity",
+   "link": "https://homehealthcarenews.com/2026/11/what-snls-sister-gets-right-about-home-cares-caregiver-support-opportunity/",
    "source": "Home Health Care News",
    "group": "industry",
-   "published": "2026-11-19T21:22:45Z"
+   "published": "2026-11-19T19:39:46Z"
   },
   {
    "title": "Hundreds of Nursing Home Beds in State Offline Due to Staffing, With 5,000 Hires Needed",
@@ -163,53 +205,11 @@
    "published": "2026-11-19T22:13:14Z"
   },
   {
-   "title": "What SNL’s ‘Sister’ Gets Right About Home Care’s Caregiver-Support Opportunity",
-   "link": "https://homehealthcarenews.com/2026/11/what-snls-sister-gets-right-about-home-cares-caregiver-support-opportunity/",
-   "source": "Home Health Care News",
-   "group": "industry",
-   "published": "2026-11-19T19:39:46Z"
-  },
-  {
-   "title": "Nursing Home Attorneys Hope Litigation Triggered by Recent Closures Brings Much-Needed Attention to Employer Obligations – and Planning",
-   "link": "https://skillednursingnews.com/2026/11/nursing-home-attorneys-hope-litigation-triggered-by-recent-closures-brings-much-needed-attention-to-employer-obligations-and-planning/",
-   "source": "Skilled Nursing News",
-   "group": "industry",
-   "published": "2026-11-16T23:40:00Z"
-  },
-  {
-   "title": "Activist Investor Carronade Capital Seeks Changes at Brookdale Senior Living After Upping Holdings",
-   "link": "https://seniorhousingnews.com/2026/11/19/activist-investor-carronade-capital-seeks-changes-at-brookdale-senior-living-after-upping-holdings/",
-   "source": "Senior Housing News",
-   "group": "industry",
-   "published": "2026-11-19T21:55:42Z"
-  },
-  {
    "title": "Davion Healthcare To Acquire Independence Care For $10M, Anchoring Multi-State Home Care Platform",
    "link": "https://homehealthcarenews.com/2026/11/davion-healthcare-acquires-independence-care-for-10m-to-anchor-multi-state-home-care-platform/",
    "source": "Home Health Care News",
    "group": "industry",
    "published": "2026-11-16T21:34:40Z"
-  },
-  {
-   "title": "Scrutiny of Nursing Home Admission Refusals for Patients With Prescribed Opioids Heats Up",
-   "link": "https://skillednursingnews.com/2026/11/scrutiny-of-nursing-home-admission-refusals-for-patients-with-prescribed-opioids-heats-up/",
-   "source": "Skilled Nursing News",
-   "group": "industry",
-   "published": "2026-11-16T23:00:00Z"
-  },
-  {
-   "title": "SNL’s ‘Sister’ Sketch a Warning and Opportunity for Senior Living Operators",
-   "link": "https://seniorhousingnews.com/2026/11/19/snls-sister-sketch-a-warning-and-opportunity-for-senior-living-operators/",
-   "source": "Senior Housing News",
-   "group": "industry",
-   "published": "2026-11-19T19:39:06Z"
-  },
-  {
-   "title": "Aveanna Freezes California Nurse Base Wage Hike Amid Rate Uncertainty",
-   "link": "https://homehealthcarenews.com/2026/11/aveanna-freezes-california-nurse-base-wage-hike-amid-rate-uncertainty/",
-   "source": "Home Health Care News",
-   "group": "industry",
-   "published": "2026-11-12T21:48:53Z"
   }
  ],
  "regulatory": [
@@ -228,11 +228,11 @@
    "published": "2026-11-18T21:36:36Z"
   },
   {
-   "title": "Inside CMS’ Efforts to Stop Hospice Fraud — And What Home Health Providers Can Learn",
-   "link": "https://homehealthcarenews.com/2026/11/inside-cms-efforts-to-identify-and-stop-hospice-fraud/",
+   "title": "What DOL’s New Worker Classification Rule Means For Home-Based Care Providers",
+   "link": "https://homehealthcarenews.com/2026/11/what-dols-new-worker-classification-rule-means-for-home-based-care-providers/",
    "source": "Home Health Care News",
    "group": "industry",
-   "published": "2026-11-20T11:16:49Z"
+   "published": "2026-11-24T21:20:45Z"
   },
   {
    "title": "HHS Announces $47 Million in MAHA ELEVATE Awards to 15 Organizations to Test Chronic Disease Prevention Approaches in Medicare",
@@ -242,13 +242,6 @@
    "published": "2026-11-23T21:33:22Z"
   },
   {
-   "title": "Oklahoma Hospitals and Physician Group Pay $4.2 Million to Settle Allegations of Submitting False Claims to Medicare, Medicaid, TRICARE, and the Department of Veterans Affairs",
-   "link": "https://www.justice.gov/usao-wdok/pr/oklahoma-hospitals-and-physician-group-pay-42-million-settle-allegations-submitting",
-   "source": "U.S. Department of Justice",
-   "group": "regulatory",
-   "published": "2026-11-24T12:00:00Z"
-  },
-  {
    "title": "Nursing Homes Face Enrollment Hurdles, Tighter Deadlines Under CRUSH Proposed Rule",
    "link": "https://skillednursingnews.com/2026/11/nursing-homes-face-enrollment-hurdles-tighter-deadlines-under-crush-proposed-rule/",
    "source": "Skilled Nursing News",
@@ -256,11 +249,11 @@
    "published": "2026-11-18T23:00:00Z"
   },
   {
-   "title": "Medicaid Work Requirement Raises Concerns For Home Care Workers",
-   "link": "https://homehealthcarenews.com/2026/11/medicaid-work-requirement-raises-concerns-for-home-care-workers/",
+   "title": "Inside CMS’ Efforts to Stop Hospice Fraud — And What Home Health Providers Can Learn",
+   "link": "https://homehealthcarenews.com/2026/11/inside-cms-efforts-to-identify-and-stop-hospice-fraud/",
    "source": "Home Health Care News",
    "group": "industry",
-   "published": "2026-11-18T21:22:32Z"
+   "published": "2026-11-20T11:16:49Z"
   },
   {
    "title": "CMS Proposes Reforms to Strengthen Competition, Elevate Care Quality, and Expand Beneficiary Choice in Medicare Advantage",
@@ -277,11 +270,11 @@
    "published": "2026-11-13T23:00:00Z"
   },
   {
-   "title": "CMS Releases CRUSH Proposed Rule Following Home-Based Care Advocacy",
-   "link": "https://homehealthcarenews.com/2026/11/cms-releases-crush-proposed-rule-following-home-based-care-advocacy/",
+   "title": "Medicaid Work Requirement Raises Concerns For Home Care Workers",
+   "link": "https://homehealthcarenews.com/2026/11/medicaid-work-requirement-raises-concerns-for-home-care-workers/",
    "source": "Home Health Care News",
    "group": "industry",
-   "published": "2026-11-17T21:54:42Z"
+   "published": "2026-11-18T21:22:32Z"
   },
   {
    "title": "Contract Year 2028 Policy and Technical Changes to the Medicare Advantage Program, Medicare Prescription Drug Benefit Program, and Medicare Cost Plan Program (CMS-4214-P2)",
@@ -298,11 +291,11 @@
    "published": "2026-11-11T23:00:00Z"
   },
   {
-   "title": "Modified Medicare Home Health Moratorium Favors Existing Providers, Threatens Innovation",
-   "link": "https://homehealthcarenews.com/2026/11/modified-medicare-home-health-moratorium-favors-existing-providers-threatens-innovation/",
+   "title": "CMS Releases CRUSH Proposed Rule Following Home-Based Care Advocacy",
+   "link": "https://homehealthcarenews.com/2026/11/cms-releases-crush-proposed-rule-following-home-based-care-advocacy/",
    "source": "Home Health Care News",
    "group": "industry",
-   "published": "2026-11-17T21:41:52Z"
+   "published": "2026-11-17T21:54:42Z"
   },
   {
    "title": "CMS CRUSH Proposed Rule Aims to Reap Nearly $90 Billion for Taxpayers in Savings by Targeting Fraud Across Medicare, Medicaid/CHIP, and the Marketplace",
@@ -312,18 +305,11 @@
    "published": "2026-11-20T17:17:04Z"
   },
   {
-   "title": "OIG: County Hospitals Recouped $205M in Medicaid Supplemental Funds Intended for Nursing Homes, Raising Transparency Concerns",
-   "link": "https://skillednursingnews.com/2026/11/oig-county-hospitals-recouped-205m-in-medicaid-supplemental-funds-intended-for-nursing-homes-raising-transparency-concerns/",
-   "source": "Skilled Nursing News",
-   "group": "industry",
-   "published": "2026-11-10T23:00:00Z"
-  },
-  {
-   "title": "CMS Offers Option To Delay Medicaid Work Requirements For 6 Months",
-   "link": "https://homehealthcarenews.com/2026/11/cms-offers-option-to-delay-medicaid-work-requirements-for-6-months/",
+   "title": "Modified Medicare Home Health Moratorium Favors Existing Providers, Threatens Innovation",
+   "link": "https://homehealthcarenews.com/2026/11/modified-medicare-home-health-moratorium-favors-existing-providers-threatens-innovation/",
    "source": "Home Health Care News",
    "group": "industry",
-   "published": "2026-11-16T21:55:53Z"
+   "published": "2026-11-17T21:41:52Z"
   },
   {
    "title": "2027 Medicare Parts A & B Premiums and Deductibles",
@@ -333,11 +319,11 @@
    "published": "2026-11-17T21:15:18Z"
   },
   {
-   "title": "Medicare Home Health Payment Rule’s Anti-Fraud Measures Could Chill Investment In Care",
-   "link": "https://homehealthcarenews.com/2026/11/medicare-home-health-payment-rules-anti-fraud-measures-could-chill-investment-in-care/",
+   "title": "CMS Offers Option To Delay Medicaid Work Requirements For 6 Months",
+   "link": "https://homehealthcarenews.com/2026/11/cms-offers-option-to-delay-medicaid-work-requirements-for-6-months/",
    "source": "Home Health Care News",
    "group": "industry",
-   "published": "2026-11-16T20:48:49Z"
+   "published": "2026-11-16T21:55:53Z"
   },
   {
    "title": "Medicare Shared Savings Program Saves More Than $2.5 Billion as Participating ACOs Reach Record 12.6 Million Beneficiaries",
@@ -347,11 +333,11 @@
    "published": "2026-11-17T21:14:42Z"
   },
   {
-   "title": "A Narrower Freeze: What Changed In CMS’ Medicare Home Health Moratorium",
-   "link": "https://homehealthcarenews.com/2026/11/a-narrower-freeze-what-changed-in-cms-medicare-home-health-moratorium/",
+   "title": "Medicare Home Health Payment Rule’s Anti-Fraud Measures Could Chill Investment In Care",
+   "link": "https://homehealthcarenews.com/2026/11/medicare-home-health-payment-rules-anti-fraud-measures-could-chill-investment-in-care/",
    "source": "Home Health Care News",
    "group": "industry",
-   "published": "2026-11-13T21:25:50Z"
+   "published": "2026-11-16T20:48:49Z"
   },
   {
    "title": "Medicare Shared Savings Program Accountable Care Organizations Performance Year 2025 Financial and Quality Results",
@@ -361,11 +347,11 @@
    "published": "2026-11-17T21:14:09Z"
   },
   {
-   "title": "CMS Extends Medicare Home Health, Hospice Moratorium",
-   "link": "https://homehealthcarenews.com/2026/11/cms-extends-medicare-home-health-hospice-moratorium/",
+   "title": "A Narrower Freeze: What Changed In CMS’ Medicare Home Health Moratorium",
+   "link": "https://homehealthcarenews.com/2026/11/a-narrower-freeze-what-changed-in-cms-medicare-home-health-moratorium/",
    "source": "Home Health Care News",
    "group": "industry",
-   "published": "2026-11-13T00:00:43Z"
+   "published": "2026-11-13T21:25:50Z"
   }
  ]
 }
